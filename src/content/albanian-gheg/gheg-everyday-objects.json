@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-everyday-objects",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-everyday-objects",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 9,
+    "title": "Vardagssaker på albanska",
+    "description": "Läs korta sammanhang och förstå hur vardagsord används.",
+    "emoji": "🎒",
+    "difficulty": 9,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-food"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-everyday-objects-basics",
+    "title": "Saker omkring oss",
+    "content": "Nu möter du orden i korta sammanhang. 'Ku asht libri jem?' betyder 'Var är min bok?' Läs hela frasen innan du väljer betydelse."
+  },
+  "discoveries": [
+    { "id": "gheg-objects-discovery-1", "conceptId": "albanian-gheg-everyday-objects", "title": "Ett alfabet beslutat i en stad", "body": "År 1908 möttes albanska språkexperter i Manastir för att enas om ett gemensamt alfabet. Det använder latinska bokstäver.", "emoji": "🔤" },
+    { "id": "gheg-objects-discovery-2", "conceptId": "albanian-gheg-everyday-objects", "title": "Bestämd form sitter på slutet", "body": "På albanska kan en liten ändelse visa att något är bestämt: 'libër' betyder en bok, medan 'libri' betyder boken.", "emoji": "📖" },
+    { "id": "gheg-objects-discovery-3", "conceptId": "albanian-gheg-everyday-objects", "title": "Ord bär spår av möten", "body": "Albanska har lånat ord från språk som turkiska, grekiska och italienska. Sådana ord berättar om möten mellan människor genom historien.", "emoji": "🌍" }
+  ],
+  "questions": [
+    { "id": "gheg-objects-01", "type": "multiple-choice", "prompt": "Vad heter bok på albanska?", "answer": "Libër", "options": ["Libër", "Karrige", "Derë"] },
+    { "id": "gheg-objects-02", "type": "multiple-choice", "prompt": "Vad betyder 'karrige'?", "answer": "Stol", "options": ["Bord", "Stol", "Väska"] },
+    { "id": "gheg-objects-03", "type": "multiple-choice", "prompt": "Vad heter bord på albanska?", "answer": "Tavolinë", "options": ["Dritare", "Tavolinë", "Laps"] },
+    { "id": "gheg-objects-04", "type": "multiple-choice", "prompt": "Betyder 'derë' dörr?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-objects-05", "type": "multiple-choice", "prompt": "Betyder 'çantë' fönster?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-objects-06", "type": "text", "prompt": "Skriv det albanska ordet för bok.", "answer": "Libër" },
+    { "id": "gheg-objects-07", "type": "text", "prompt": "Skriv det albanska ordet för stol.", "answer": "Karrige" },
+    { "id": "gheg-objects-08", "type": "multiple-choice", "prompt": "Vad betyder 'laps'?", "answer": "Blyertspenna", "options": ["Blyertspenna", "Fönster", "Säng"] },
+    { "id": "gheg-objects-09", "type": "multiple-choice", "prompt": "Vad heter väska på albanska?", "answer": "Çantë", "options": ["Çantë", "Shtrat", "Filxhan"] },
+    { "id": "gheg-objects-10", "type": "multiple-choice", "prompt": "Vad betyder 'dritare'?", "answer": "Fönster", "options": ["Dörr", "Fönster", "Bord"] },
+    { "id": "gheg-objects-11", "type": "multiple-choice", "prompt": "Betyder 'shtrat' säng?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-objects-12", "type": "multiple-choice", "prompt": "Används en 'laps' för att dricka?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-objects-13", "type": "multiple-choice", "prompt": "Vad betyder 'filxhan'?", "answer": "Kopp", "options": ["Kopp", "Bok", "Dörr"] },
+    { "id": "gheg-objects-14", "type": "multiple-choice", "prompt": "Vad betyder 'telefon'?", "answer": "Telefon", "options": ["Telefon", "Stol", "Väska"] },
+    { "id": "gheg-objects-15", "type": "text", "prompt": "Skriv det albanska ordet för dörr.", "answer": "Derë" },
+    { "id": "gheg-objects-16", "type": "multiple-choice", "prompt": "Vad betyder 'orë' när man talar om en sak?", "answer": "Klocka", "options": ["Klocka", "Bord", "Penna"] },
+    { "id": "gheg-objects-17", "type": "multiple-choice", "prompt": "Betyder 'tavolinë' bord?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-objects-18", "type": "text", "prompt": "Skriv det albanska ordet för väska.", "answer": "Çantë" },
+    { "id": "gheg-objects-19", "type": "multiple-choice", "prompt": "Vad betyder 'çelës'?", "answer": "Nyckel", "options": ["Nyckel", "Fönster", "Säng"] },
+    { "id": "gheg-objects-20", "type": "multiple-choice", "prompt": "En bok heter 'libër'. Vad använder du den till?", "answer": "Läsa", "options": ["Läsa", "Sova", "Dricka"] }
+  ]
+}

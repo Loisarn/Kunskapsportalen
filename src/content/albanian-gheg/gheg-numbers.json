@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-numbers",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-numbers",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 3,
+    "title": "Tal på albanska",
+    "description": "Känn igen albanska tal från ett till tjugo.",
+    "emoji": "🔢",
+    "difficulty": 3,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-family"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-numbers-lesson",
+    "title": "Räkna på albanska",
+    "content": "Börja med att känna igen orden för ett till tio. Sedan möter du elva och tolv, som byggs av delar som liknar orden för ett, två och tio."
+  },
+  "discoveries": [
+    { "id": "gheg-numbers-discovery-1", "conceptId": "albanian-gheg-numbers", "title": "Noll kom långt efter ett till nio", "body": "Människor räknade med föremål långt innan noll blev en del av skriftsystemen. Noll gjorde det mycket enklare att skriva stora tal på ett tydligt sätt.", "emoji": "0️⃣" },
+    { "id": "gheg-numbers-discovery-2", "conceptId": "albanian-gheg-numbers", "title": "Elva berättar hur det är byggt", "body": "Det albanska ordet för elva är 'njëmbëdhjetë'. Man kan se delarna för ett och tio i ordet.", "emoji": "🔟" },
+    { "id": "gheg-numbers-discovery-3", "conceptId": "albanian-gheg-numbers", "title": "Siffror reser mellan språk", "body": "De vanliga siffrorna 0–9 används i Albanien och i många andra länder. Samma siffra kan läsas högt med helt olika ord på olika språk.", "emoji": "🌍" }
+  ],
+  "questions": [
+    { "id": "gheg-numbers-01", "type": "multiple-choice", "prompt": "Vad betyder 'një'?", "answer": "Ett", "options": ["Ett", "Två", "Tre"] },
+    { "id": "gheg-numbers-02", "type": "multiple-choice", "prompt": "Vad betyder 'dy'?", "answer": "Två", "options": ["Ett", "Två", "Fyra"] },
+    { "id": "gheg-numbers-03", "type": "multiple-choice", "prompt": "Vad betyder 'tre'?", "answer": "Tre", "options": ["Tre", "Fem", "Sju"] },
+    { "id": "gheg-numbers-04", "type": "multiple-choice", "prompt": "Vad betyder 'katër'?", "answer": "Fyra", "options": ["Två", "Fyra", "Åtta"] },
+    { "id": "gheg-numbers-05", "type": "multiple-choice", "prompt": "Vad betyder 'pesë'?", "answer": "Fem", "options": ["Fem", "Sex", "Nio"] },
+    { "id": "gheg-numbers-06", "type": "multiple-choice", "prompt": "Vad betyder 'gjashtë'?", "answer": "Sex", "options": ["Fyra", "Sex", "Sju"] },
+    { "id": "gheg-numbers-07", "type": "multiple-choice", "prompt": "Vad betyder 'shtatë'?", "answer": "Sju", "options": ["Sju", "Åtta", "Tio"] },
+    { "id": "gheg-numbers-08", "type": "multiple-choice", "prompt": "Vad betyder 'tetë'?", "answer": "Åtta", "options": ["Sex", "Åtta", "Nio"] },
+    { "id": "gheg-numbers-09", "type": "multiple-choice", "prompt": "Vad betyder 'nëntë'?", "answer": "Nio", "options": ["Sju", "Nio", "Tio"] },
+    { "id": "gheg-numbers-10", "type": "multiple-choice", "prompt": "Vad betyder 'dhjetë'?", "answer": "Tio", "options": ["Åtta", "Tio", "Tolv"] },
+    { "id": "gheg-numbers-11", "type": "multiple-choice", "prompt": "Vilket albanskt ord betyder ett?", "answer": "Një", "options": ["Një", "Dy", "Tre"] },
+    { "id": "gheg-numbers-12", "type": "multiple-choice", "prompt": "Vilket albanskt ord betyder fyra?", "answer": "Katër", "options": ["Tre", "Katër", "Pesë"] },
+    { "id": "gheg-numbers-13", "type": "multiple-choice", "prompt": "Vad betyder 'njëmbëdhjetë'?", "answer": "Elva", "options": ["Tio", "Elva", "Tolv"] },
+    { "id": "gheg-numbers-14", "type": "multiple-choice", "prompt": "Vad betyder 'dymbëdhjetë'?", "answer": "Tolv", "options": ["Elva", "Tolv", "Tjugo"] },
+    { "id": "gheg-numbers-15", "type": "multiple-choice", "prompt": "Vad betyder 'njëzet'?", "answer": "Tjugo", "options": ["Tio", "Tolv", "Tjugo"] },
+    { "id": "gheg-numbers-16", "type": "multiple-choice", "prompt": "Vilket tal betyder 'gjashtë'?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "gheg-numbers-17", "type": "multiple-choice", "prompt": "Vilket tal betyder 'tetë'?", "answer": "8", "options": ["6", "8", "9"] },
+    { "id": "gheg-numbers-18", "type": "multiple-choice", "prompt": "Vilket albanskt ord betyder nio?", "answer": "Nëntë", "options": ["Shtatë", "Nëntë", "Dhjetë"] },
+    { "id": "gheg-numbers-19", "type": "multiple-choice", "prompt": "Vad kommer efter 'pesë' när man räknar?", "answer": "Gjashtë", "options": ["Katër", "Gjashtë", "Tetë"] },
+    { "id": "gheg-numbers-20", "type": "multiple-choice", "prompt": "Vad kommer före 'dhjetë' när man räknar?", "answer": "Nëntë", "options": ["Shtatë", "Nëntë", "Njëmbëdhjetë"] }
+  ]
+}

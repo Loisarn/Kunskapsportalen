@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-food",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-food",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 8,
+    "title": "Mat och dryck på albanska",
+    "description": "Öva matord och använd dem i enkla sammanhang.",
+    "emoji": "🍎",
+    "difficulty": 8,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-simple-sentences"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-food-basics",
+    "title": "Vad finns att äta?",
+    "content": "Nu möter du fler matord och korta sammanhang. 'Bukë' betyder bröd, 'mollë' betyder äpple och 'ujë' betyder vatten."
+  },
+  "discoveries": [
+    { "id": "gheg-food-discovery-1", "conceptId": "albanian-gheg-food", "title": "En rätt från staden Elbasan", "body": "Tavë kosi är en känd albansk rätt med lamm och yoghurt. Den förknippas särskilt med staden Elbasan.", "emoji": "🍲" },
+    { "id": "gheg-food-discovery-2", "conceptId": "albanian-gheg-food", "title": "Byrek finns i många länder", "body": "Byrek äts i Albanien och på andra håll på Balkan. Fyllningen och namnet kan ändras från plats till plats.", "emoji": "🥧" },
+    { "id": "gheg-food-discovery-3", "conceptId": "albanian-gheg-food", "title": "Maten speglar landskapet", "body": "Vid Albaniens kust är fisk vanlig, medan mat från bergstrakterna ofta använder ost och andra mjölkprodukter. Landskapet påverkar vad som hamnar på tallriken.", "emoji": "🐟" }
+  ],
+  "questions": [
+    { "id": "gheg-food-01", "type": "multiple-choice", "prompt": "Vad heter äpple på albanska?", "answer": "Mollë", "options": ["Mollë", "Bukë", "Qumësht"] },
+    { "id": "gheg-food-02", "type": "multiple-choice", "prompt": "Vad betyder 'bukë'?", "answer": "Bröd", "options": ["Ost", "Bröd", "Vatten"] },
+    { "id": "gheg-food-03", "type": "multiple-choice", "prompt": "Vad heter mjölk på albanska?", "answer": "Qumësht", "options": ["Qumësht", "Oriz", "Vezë"] },
+    { "id": "gheg-food-04", "type": "multiple-choice", "prompt": "Betyder 'banane' banan?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-food-05", "type": "multiple-choice", "prompt": "Betyder 'ujë' ost?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-food-06", "type": "text", "prompt": "Skriv det albanska ordet för äpple.", "answer": "Mollë" },
+    { "id": "gheg-food-07", "type": "text", "prompt": "Skriv det albanska ordet för vatten.", "answer": "Ujë" },
+    { "id": "gheg-food-08", "type": "multiple-choice", "prompt": "Vad betyder 'djathë'?", "answer": "Ost", "options": ["Ägg", "Ost", "Ris"] },
+    { "id": "gheg-food-09", "type": "multiple-choice", "prompt": "Vad heter ägg på albanska?", "answer": "Vezë", "options": ["Vezë", "Peshk", "Bukë"] },
+    { "id": "gheg-food-10", "type": "multiple-choice", "prompt": "Vad betyder 'oriz'?", "answer": "Ris", "options": ["Ris", "Mjölk", "Äpple"] },
+    { "id": "gheg-food-11", "type": "multiple-choice", "prompt": "Betyder 'karotë' morot?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-food-12", "type": "multiple-choice", "prompt": "Betyder 'qumësht' bröd?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-food-13", "type": "multiple-choice", "prompt": "Vad betyder 'pulë'?", "answer": "Kyckling", "options": ["Kyckling", "Morot", "Banan"] },
+    { "id": "gheg-food-14", "type": "multiple-choice", "prompt": "Vad betyder 'patate'?", "answer": "Potatis", "options": ["Potatis", "Äpple", "Ost"] },
+    { "id": "gheg-food-15", "type": "text", "prompt": "Skriv det albanska ordet för banan.", "answer": "Banane" },
+    { "id": "gheg-food-16", "type": "multiple-choice", "prompt": "Vad betyder 'supë'?", "answer": "Soppa", "options": ["Soppa", "Ägg", "Ris"] },
+    { "id": "gheg-food-17", "type": "multiple-choice", "prompt": "Betyder 'mish' kött?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-food-18", "type": "text", "prompt": "Skriv det albanska ordet för bröd.", "answer": "Bukë" },
+    { "id": "gheg-food-19", "type": "multiple-choice", "prompt": "Vad betyder 'kos'?", "answer": "Yoghurt", "options": ["Yoghurt", "Vatten", "Morot"] },
+    { "id": "gheg-food-20", "type": "multiple-choice", "prompt": "Stämmer det att 'peshk' betyder fisk?", "answer": "Ja", "options": ["Ja", "Nej"] }
+  ]
+}

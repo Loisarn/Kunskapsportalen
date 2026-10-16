@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-body-parts",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-body-parts",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 6,
+    "title": "Kroppen på albanska",
+    "description": "Öva kroppsord och börja förstå dem i korta uttryck.",
+    "emoji": "🧍",
+    "difficulty": 6,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-animals"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-body-parts-basics",
+    "title": "Huvud, händer och fötter",
+    "content": "På albanska heter huvud 'krye', ögon 'sy' och händer 'duer'. Läs först den svenska ledtråden och koppla sedan ordet till rätt kroppsdel."
+  },
+  "discoveries": [
+    { "id": "gheg-body-discovery-1", "conceptId": "albanian-gheg-body-parts", "title": "Två stora dialektgrupper", "body": "Albanska har två stora dialektgrupper: gheg i norr och tosk i söder. Skillnaderna hörs i hur människor talar.", "emoji": "🗣️" },
+    { "id": "gheg-body-discovery-2", "conceptId": "albanian-gheg-body-parts", "title": "Gegiska talas också i Kosovo", "body": "Många albansktalande i Kosovo använder gheg. I skolan och i officiella texter möter de också standardalbanska.", "emoji": "🗺️" },
+    { "id": "gheg-body-discovery-3", "conceptId": "albanian-gheg-body-parts", "title": "Ett gemensamt skriftspråk", "body": "När en gemensam albansk stavning beslutades 1972 byggde standardspråket främst på former från tosk.", "emoji": "📚" }
+  ],
+  "questions": [
+    { "id": "gheg-body-01", "type": "multiple-choice", "prompt": "Vad heter huvud på albanska?", "answer": "Krye", "options": ["Krye", "Dorë", "Kambë"] },
+    { "id": "gheg-body-02", "type": "multiple-choice", "prompt": "Vad betyder 'dorë'?", "answer": "Hand", "options": ["Huvud", "Hand", "Knä"] },
+    { "id": "gheg-body-03", "type": "multiple-choice", "prompt": "Vad kan 'kambë' betyda i många albanska dialekter?", "answer": "Fot eller ben", "options": ["Fot eller ben", "Arm", "Öra"] },
+    { "id": "gheg-body-04", "type": "multiple-choice", "prompt": "Vad betyder 'me sy'?", "answer": "Med ögonen", "options": ["Med ögonen", "Med öronen", "Med fötterna"] },
+    { "id": "gheg-body-05", "type": "multiple-choice", "prompt": "Betyder 'hundë' näsa?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-body-06", "type": "multiple-choice", "prompt": "Betyder 'gojë' öron?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-body-07", "type": "text", "prompt": "Skriv det albanska ordet för huvud.", "answer": "Krye" },
+    { "id": "gheg-body-08", "type": "text", "prompt": "Skriv det albanska ordet för hand.", "answer": "Dorë" },
+    { "id": "gheg-body-09", "type": "multiple-choice", "prompt": "Vad betyder 'veshë'?", "answer": "Öron", "options": ["Öron", "Fötter", "Händer"] },
+    { "id": "gheg-body-10", "type": "multiple-choice", "prompt": "Vad heter mun på albanska?", "answer": "Gojë", "options": ["Gojë", "Hundë", "Sup"] },
+    { "id": "gheg-body-11", "type": "multiple-choice", "prompt": "Betyder 'hundë' näsa?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-body-12", "type": "multiple-choice", "prompt": "Betyder 'krah' arm?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-body-13", "type": "multiple-choice", "prompt": "Vad betyder 'sup'?", "answer": "Axel", "options": ["Axel", "Knä", "Finger"] },
+    { "id": "gheg-body-14", "type": "multiple-choice", "prompt": "Vad betyder 'gju'?", "answer": "Knä", "options": ["Knä", "Öga", "Huvud"] },
+    { "id": "gheg-body-15", "type": "text", "prompt": "Skriv det albanska ordet för ögon.", "answer": "Sy" },
+    { "id": "gheg-body-16", "type": "multiple-choice", "prompt": "Vad betyder 'gisht'?", "answer": "Finger", "options": ["Finger", "Fot", "Öra"] },
+    { "id": "gheg-body-17", "type": "multiple-choice", "prompt": "Betyder 'dhambë' tänder?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-body-18", "type": "text", "prompt": "Skriv det albanska ordet för mun.", "answer": "Gojë" },
+    { "id": "gheg-body-19", "type": "multiple-choice", "prompt": "Vad betyder 'shpinë'?", "answer": "Rygg", "options": ["Rygg", "Näsa", "Hand"] },
+    { "id": "gheg-body-20", "type": "multiple-choice", "prompt": "Kan 'kambë' betyda fot eller ben?", "answer": "Ja", "options": ["Ja", "Nej"] }
+  ]
+}

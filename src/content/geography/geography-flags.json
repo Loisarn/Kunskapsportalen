@@ -1,0 +1,55 @@
+{
+  "id": "geography-flags",
+  "subject": { "id": "geography", "name": "Geografi" },
+  "learningPath": {
+    "id": "geography-world",
+    "subjectId": "geography",
+    "title": "Geografi",
+    "description": "Lär känna kartor, vår värld och platser nära och långt borta.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "geography-flags",
+    "subjectId": "geography",
+    "pathId": "geography-world",
+    "level": 3,
+    "title": "Känn igen flaggor",
+    "description": "Upptäck flaggor från Norden, Europa och resten av världen.",
+    "emoji": "🚩",
+    "difficulty": 3,
+    "requiredMastery": 90,
+    "prerequisites": ["geography-europe"]
+  },
+  "lesson": {
+    "id": "geography-flags-lesson",
+    "title": "Ländernas flaggor",
+    "content": "Varje land har sin egen flagga. Färger och mönster gör det lättare att känna igen vilket land flaggan hör till. Titta noga på kors, ränder och andra symboler."
+  },
+  "discoveries": [
+    { "id": "geography-flags-discovery-1", "conceptId": "geography-flags", "title": "Det nordiska korset", "body": "Sveriges, Norges, Danmarks, Finlands och Islands flaggor har alla ett kors som ligger lite åt vänster.", "emoji": "✝️" },
+    { "id": "geography-flags-discovery-2", "conceptId": "geography-flags", "title": "Lönnlövet på Kanadas flagga", "body": "Kanadas flagga har ett rött lönnlöv i mitten. Lönnlövet är en välkänd symbol för landet.", "emoji": "🍁" },
+    { "id": "geography-flags-discovery-3", "conceptId": "geography-flags", "title": "Japans röda sol", "body": "Japans flagga har en röd cirkel på vit bakgrund. Cirkeln står för solen.", "emoji": "☀️" }
+  ],
+  "questions": [
+    { "id": "geoflag-01", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇸🇪?", "answer": "🇸🇪 Sverige", "options": ["🇸🇪 Sverige", "🇳🇴 Norge", "🇫🇮 Finland"] },
+    { "id": "geoflag-02", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇳🇴?", "answer": "🇳🇴 Norge", "options": ["🇩🇰 Danmark", "🇳🇴 Norge", "🇮🇸 Island"] },
+    { "id": "geoflag-03", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇩🇰?", "answer": "🇩🇰 Danmark", "options": ["🇩🇰 Danmark", "🇸🇪 Sverige", "🇫🇮 Finland"] },
+    { "id": "geoflag-04", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇫🇮?", "answer": "🇫🇮 Finland", "options": ["🇮🇸 Island", "🇫🇮 Finland", "🇳🇴 Norge"] },
+    { "id": "geoflag-05", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇮🇸?", "answer": "🇮🇸 Island", "options": ["🇮🇸 Island", "🇩🇰 Danmark", "🇸🇪 Sverige"] },
+    { "id": "geoflag-06", "type": "multiple-choice", "prompt": "Hitta Frankrikes flagga.", "answer": "🇫🇷 Frankrike", "options": ["🇫🇷 Frankrike", "🇮🇹 Italien", "🇩🇪 Tyskland"] },
+    { "id": "geoflag-07", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇩🇪?", "answer": "🇩🇪 Tyskland", "options": ["🇪🇸 Spanien", "🇩🇪 Tyskland", "🇵🇱 Polen"] },
+    { "id": "geoflag-08", "type": "multiple-choice", "prompt": "Hitta Italiens flagga.", "answer": "🇮🇹 Italien", "options": ["🇮🇹 Italien", "🇫🇷 Frankrike", "🇮🇪 Irland"] },
+    { "id": "geoflag-09", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇪🇸?", "answer": "🇪🇸 Spanien", "options": ["🇵🇹 Portugal", "🇪🇸 Spanien", "🇬🇷 Grekland"] },
+    { "id": "geoflag-10", "type": "multiple-choice", "prompt": "Hitta Portugals flagga.", "answer": "🇵🇹 Portugal", "options": ["🇪🇸 Spanien", "🇵🇹 Portugal", "🇮🇹 Italien"] },
+    { "id": "geoflag-11", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇯🇵?", "answer": "🇯🇵 Japan", "options": ["🇨🇳 Kina", "🇯🇵 Japan", "🇮🇳 Indien"] },
+    { "id": "geoflag-12", "type": "multiple-choice", "prompt": "Vilket land har flaggan med ett rött lönnlöv?", "answer": "🇨🇦 Kanada", "options": ["🇨🇦 Kanada", "🇺🇸 USA", "🇦🇺 Australien"] },
+    { "id": "geoflag-13", "type": "multiple-choice", "prompt": "Hitta Brasiliens flagga.", "answer": "🇧🇷 Brasilien", "options": ["🇦🇷 Argentina", "🇧🇷 Brasilien", "🇲🇽 Mexiko"] },
+    { "id": "geoflag-14", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇺🇸?", "answer": "🇺🇸 USA", "options": ["🇺🇸 USA", "🇬🇧 Storbritannien", "🇨🇦 Kanada"] },
+    { "id": "geoflag-15", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇬🇧?", "answer": "🇬🇧 Storbritannien", "options": ["🇦🇺 Australien", "🇬🇧 Storbritannien", "🇳🇿 Nya Zeeland"] },
+    { "id": "geoflag-16", "type": "multiple-choice", "prompt": "Hitta Greklands flagga.", "answer": "🇬🇷 Grekland", "options": ["🇬🇷 Grekland", "🇫🇮 Finland", "🇺🇾 Uruguay"] },
+    { "id": "geoflag-17", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇵🇱?", "answer": "🇵🇱 Polen", "options": ["🇵🇱 Polen", "🇮🇩 Indonesien", "🇲🇨 Monaco"] },
+    { "id": "geoflag-18", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇮🇳?", "answer": "🇮🇳 Indien", "options": ["🇮🇳 Indien", "🇮🇪 Irland", "🇮🇹 Italien"] },
+    { "id": "geoflag-19", "type": "multiple-choice", "prompt": "Vilket land har flaggan 🇿🇦?", "answer": "🇿🇦 Sydafrika", "options": ["🇰🇪 Kenya", "🇿🇦 Sydafrika", "🇳🇬 Nigeria"] },
+    { "id": "geoflag-20", "type": "true-false", "prompt": "🇸🇪 är Sveriges flagga.", "answer": "Sant" }
+  ]
+}

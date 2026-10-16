@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-animals",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-animals",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 5,
+    "title": "Djur på albanska",
+    "description": "Lär dig djurord på albanska och öva på att själv komma ihåg orden.",
+    "emoji": "🐾",
+    "difficulty": 5,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-colors"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-animals-basics",
+    "title": "Djur omkring oss",
+    "content": "Nu får du öva på att själv komma ihåg de albanska orden. Hund heter 'qen', katt heter 'mace' och fågel heter 'zog'. Läs ledtråden på svenska och välj det albanska ordet."
+  },
+  "discoveries": [
+    { "id": "gheg-animals-discovery-1", "conceptId": "albanian-gheg-animals", "title": "Pelikaner vid Adriatiska havet", "body": "Karavasta-lagunen i Albanien är en viktig plats där den dalmatiska pelikanen häckar. Arten är en av världens största pelikaner.", "emoji": "🦩" },
+    { "id": "gheg-animals-discovery-2", "conceptId": "albanian-gheg-animals", "title": "Björnar i Albaniens berg", "body": "Brunbjörnar lever i Albaniens bergstrakter. De kan gå långt för att hitta mat och vila under vintern.", "emoji": "🐻" },
+    { "id": "gheg-animals-discovery-3", "conceptId": "albanian-gheg-animals", "title": "Två hav möter Albaniens kust", "body": "Albanien har kust mot både Adriatiska havet och Joniska havet. Där stannar många fåglar på väg mellan sina sommar- och vinterområden.", "emoji": "🐦" }
+  ],
+  "questions": [
+    { "id": "gheg-animals-01", "type": "multiple-choice", "prompt": "Vad heter hund på albanska?", "answer": "Qen", "options": ["Qen", "Mace", "Zog"] },
+    { "id": "gheg-animals-02", "type": "multiple-choice", "prompt": "Vad heter katt på albanska?", "answer": "Mace", "options": ["Kalë", "Mace", "Peshk"] },
+    { "id": "gheg-animals-03", "type": "multiple-choice", "prompt": "Vad heter fågel på albanska?", "answer": "Zog", "options": ["Zog", "Qen", "Lepur"] },
+    { "id": "gheg-animals-04", "type": "multiple-choice", "prompt": "Betyder 'qen' hund på albanska?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-animals-05", "type": "multiple-choice", "prompt": "Betyder 'mace' häst på albanska?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-animals-06", "type": "text", "prompt": "Skriv det albanska ordet för hund.", "answer": "Qen" },
+    { "id": "gheg-animals-07", "type": "text", "prompt": "Skriv det albanska ordet för katt.", "answer": "Mace" },
+    { "id": "gheg-animals-08", "type": "multiple-choice", "prompt": "Vad heter häst på albanska?", "answer": "Kalë", "options": ["Lopë", "Kalë", "Qen"] },
+    { "id": "gheg-animals-09", "type": "multiple-choice", "prompt": "Vad heter fisk på albanska?", "answer": "Peshk", "options": ["Peshk", "Zog", "Lepur"] },
+    { "id": "gheg-animals-10", "type": "multiple-choice", "prompt": "Vad heter kanin på albanska?", "answer": "Lepur", "options": ["Lepur", "Rosë", "Dhi"] },
+    { "id": "gheg-animals-11", "type": "multiple-choice", "prompt": "Betyder 'lopë' ko?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-animals-12", "type": "multiple-choice", "prompt": "Betyder 'peshk' fågel?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-animals-13", "type": "multiple-choice", "prompt": "Vad heter anka på albanska?", "answer": "Rosë", "options": ["Qen", "Rosë", "Kalë"] },
+    { "id": "gheg-animals-14", "type": "multiple-choice", "prompt": "Vad betyder 'dhi'?", "answer": "Get", "options": ["Get", "Fisk", "Fågel"] },
+    { "id": "gheg-animals-15", "type": "text", "prompt": "Skriv det albanska ordet för häst.", "answer": "Kalë" },
+    { "id": "gheg-animals-16", "type": "multiple-choice", "prompt": "Vad heter får på albanska?", "answer": "Dele", "options": ["Dele", "Mace", "Peshk"] },
+    { "id": "gheg-animals-17", "type": "multiple-choice", "prompt": "Betyder 'zog' fågel?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-animals-18", "type": "text", "prompt": "Skriv det albanska ordet för fisk.", "answer": "Peshk" },
+    { "id": "gheg-animals-19", "type": "multiple-choice", "prompt": "Vad betyder 'ariu'?", "answer": "Björn", "options": ["Björn", "Kanin", "Anka"] },
+    { "id": "gheg-animals-20", "type": "multiple-choice", "prompt": "Betyder 'rosë' anka?", "answer": "Ja", "options": ["Ja", "Nej"] }
+  ]
+}

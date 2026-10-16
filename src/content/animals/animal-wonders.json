@@ -1,0 +1,97 @@
+{
+  "id": "animal-wonders",
+  "version": "1.0",
+  "subject": { "id": "animals", "name": "Djur" },
+  "learningPath": {
+    "id": "animal-wonders",
+    "subjectId": "animals",
+    "title": "Djurens värld",
+    "description": "Upptäck hur djur rör sig, känner och överlever.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "animal-wonders",
+    "subjectId": "animals",
+    "pathId": "animal-wonders",
+    "level": 1,
+    "title": "Djurens superkrafter",
+    "description": "Lär känna några av de märkligaste förmågorna i djurvärlden.",
+    "emoji": "🐾",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "animal-wonders-lesson",
+    "title": "Djur hittar smarta lösningar",
+    "content": "Djur kan lösa problem på många olika sätt. Vissa använder ljud, andra färger eller starka sinnen."
+  },
+  "knowledgeCards": [
+    {
+      "id": "animal-card-octopus",
+      "conceptId": "animal-wonders",
+      "title": "Bläckfisken",
+      "description": "En mjuk kropp och tre överraskande förmågor.",
+      "emoji": "🐙",
+      "facts": {
+        "Hjärtan": "Tre hjärtan pumpar blod.",
+        "Blod": "Blodet är blåaktigt eftersom det använder koppar för att bära syre.",
+        "Armar": "Åtta armar hjälper den att känna och fånga mat."
+      },
+      "discoveries": ["animal-discovery-octopus", "animal-discovery-dolphin"]
+    },
+    {
+      "id": "animal-card-giraffe",
+      "conceptId": "animal-wonders",
+      "title": "Giraffen",
+      "description": "En lång hals och ett ännu längre räckhåll.",
+      "emoji": "🦒",
+      "facts": {
+        "Tunga": "Kan bli ungefär 45 centimeter lång.",
+        "Hals": "Har sju halskotor, precis som människan.",
+        "Mönster": "Varje giraff har sitt eget fläckmönster."
+      },
+      "discoveries": ["animal-discovery-giraffe", "animal-discovery-dolphin"]
+    },
+    {
+      "id": "animal-card-dolphin",
+      "conceptId": "animal-wonders",
+      "title": "Delfinen",
+      "description": "Visslingar hjälper delfiner att hitta varandra.",
+      "emoji": "🐬",
+      "facts": {
+        "Vissling": "Flasknosdelfiner använder individuella visslingar som namn.",
+        "Hörsel": "Ekon hjälper dem att hitta saker under vattnet.",
+        "Andning": "De måste upp till ytan för att andas luft."
+      },
+      "discoveries": ["animal-discovery-dolphin", "animal-discovery-octopus"]
+    }
+  ],
+  "discoveries": [
+    { "id": "animal-discovery-octopus", "conceptId": "animal-wonders", "title": "Bläckfisken har tre hjärtan", "body": "Två hjärtan skickar blod till gälarna och ett pumpar blodet vidare i kroppen. Blodet är blåaktigt eftersom det använder koppar för att bära syre.", "emoji": "🐙" },
+    { "id": "animal-discovery-giraffe", "conceptId": "animal-wonders", "title": "En girafftunga kan bli 45 centimeter", "body": "Giraffen kan sträcka sin långa tunga runt blad på träd. Tungan är mörk, vilket kan skydda den från stark sol.", "emoji": "🦒" },
+    { "id": "animal-discovery-dolphin", "conceptId": "animal-wonders", "title": "Delfiner har egna visslingsnamn", "body": "Flasknosdelfiner använder särskilda visslingar för att känna igen varandra. En delfin kan svara när den hör sin egen vissling.", "emoji": "🐬" }
+  ],
+  "questions": [
+    { "id": "animal-wonders-01", "type": "multiple-choice", "prompt": "Hur många hjärtan har en bläckfisk?", "answer": "Tre", "options": ["Ett", "Två", "Tre"] },
+    { "id": "animal-wonders-02", "type": "multiple-choice", "prompt": "Varför är bläckfiskens blod blåaktigt?", "answer": "Det använder koppar för att bära syre", "options": ["Det använder koppar för att bära syre", "Den dricker havsvatten", "Den saknar hjärta"] },
+    { "id": "animal-wonders-03", "type": "multiple-choice", "prompt": "Hur många armar har en bläckfisk?", "answer": "Åtta", "options": ["Sex", "Åtta", "Tio"] },
+    { "id": "animal-wonders-04", "type": "multiple-choice", "prompt": "Ungefär hur lång kan en girafftunga bli?", "answer": "45 centimeter", "options": ["10 centimeter", "45 centimeter", "En meter"] },
+    { "id": "animal-wonders-05", "type": "multiple-choice", "prompt": "Hur många halskotor har en giraff?", "answer": "Sju", "options": ["Sju", "Tolv", "Tjugo"] },
+    { "id": "animal-wonders-06", "type": "multiple-choice", "prompt": "Vad använder flasknosdelfiner för att känna igen varandra?", "answer": "Särskilda visslingar", "options": ["Färgade fenor", "Särskilda visslingar", "Ljus från ögonen"] },
+    { "id": "animal-wonders-07", "type": "multiple-choice", "prompt": "Hur hittar många fladdermöss insekter i mörker?", "answer": "De lyssnar på ekon av ljud", "options": ["De lyssnar på ekon av ljud", "De följer doften av månen", "De använder ficklampor"] },
+    { "id": "animal-wonders-08", "type": "multiple-choice", "prompt": "Vad kan kråkor känna igen och komma ihåg?", "answer": "Människors ansikten", "options": ["Bara färgen blå", "Människors ansikten", "Månens form"] },
+    { "id": "animal-wonders-09", "type": "multiple-choice", "prompt": "Vad är sköldpaddans skal kopplat till?", "answer": "Skelettet", "options": ["Skelettet", "Fjädrarna", "Svansen på en fisk"] },
+    { "id": "animal-wonders-10", "type": "multiple-choice", "prompt": "Varifrån kommer flamingons rosa färg?", "answer": "Färgämnen i maten", "options": ["Färgämnen i maten", "Solen målar fjädrarna", "Vattnet färgar dem"] },
+    { "id": "animal-wonders-11", "type": "multiple-choice", "prompt": "Vem håller kejsarpingvinens ägg varmt först?", "answer": "Hanen", "options": ["Hanen", "En fisk", "Båda föräldrarna lämnar det"] },
+    { "id": "animal-wonders-12", "type": "multiple-choice", "prompt": "Hur kan honungsbin visa andra bin var mat finns?", "answer": "Genom en dans", "options": ["Genom en dans", "Genom att rita en karta", "Genom att ropa"] },
+    { "id": "animal-wonders-13", "type": "multiple-choice", "prompt": "Vilken fågel kan flyga baklänges?", "answer": "Kolibrin", "options": ["Kolibrin", "Strutsen", "Pingvinen"] },
+    { "id": "animal-wonders-14", "type": "multiple-choice", "prompt": "Vilken färg har isbjörnens hud under pälsen?", "answer": "Svart", "options": ["Vit", "Svart", "Blå"] },
+    { "id": "animal-wonders-15", "type": "multiple-choice", "prompt": "Vad hjälper elefanter att känna av mycket låga ljud?", "answer": "Fötterna", "options": ["Fötterna", "Snabelns spets", "Svansen"] },
+    { "id": "animal-wonders-16", "type": "multiple-choice", "prompt": "Vad hjälper en katt sina morrhår med?", "answer": "Att känna av nära saker och utrymmen", "options": ["Att känna av nära saker och utrymmen", "Att se färger bättre", "Att andas under vatten"] },
+    { "id": "animal-wonders-17", "type": "multiple-choice", "prompt": "Vad använder en orm för att känna dofter i luften?", "answer": "Tungan", "options": ["Tungan", "Fötterna", "Öronlapparna"] },
+    { "id": "animal-wonders-18", "type": "multiple-choice", "prompt": "Vad är speciellt med en kameleonts färgskifte?", "answer": "Det kan visa temperatur och känsloläge", "options": ["Det kan visa temperatur och känsloläge", "Den blir osynlig", "Färgen kommer från maten"] },
+    { "id": "animal-wonders-19", "type": "multiple-choice", "prompt": "Vilket djur kan använda en pinne som verktyg för att fånga mat?", "answer": "Schimpansen", "options": ["Schimpansen", "Guldfisken", "Snigeln"] },
+    { "id": "animal-wonders-20", "type": "multiple-choice", "prompt": "Vad måste delfiner göra för att andas?", "answer": "Simma upp till ytan", "options": ["Simma upp till ytan", "Dricka saltvatten", "Stanna på havsbotten"] }
+  ]
+}

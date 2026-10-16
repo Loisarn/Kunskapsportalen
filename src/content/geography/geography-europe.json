@@ -1,0 +1,55 @@
+{
+  "id": "geography-europe",
+  "subject": { "id": "geography", "name": "Geografi" },
+  "learningPath": {
+    "id": "geography-world",
+    "subjectId": "geography",
+    "title": "Geografi",
+    "description": "Lär känna kartor, vår värld och platser nära och långt borta.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "geography-europe",
+    "subjectId": "geography",
+    "pathId": "geography-world",
+    "level": 2,
+    "title": "Nordens och Europas länder",
+    "description": "Lär känna några länder och huvudstäder i Norden och Europa.",
+    "emoji": "🧭",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["geography-world"]
+  },
+  "lesson": {
+    "id": "geography-europe-lesson",
+    "title": "Länder och huvudstäder",
+    "content": "Europa består av många länder. Varje land har en huvudstad, som ofta är en viktig stad. Sverige har Stockholm som huvudstad, och Norge har Oslo."
+  },
+  "discoveries": [
+    { "id": "geography-europe-discovery-1", "conceptId": "geography-europe", "title": "Norden har fem länder", "body": "De nordiska länderna är Sverige, Norge, Danmark, Finland och Island.", "emoji": "❄️" },
+    { "id": "geography-europe-discovery-2", "conceptId": "geography-europe", "title": "En huvudstad är en viktig stad", "body": "I huvudstaden finns ofta landets regering och andra viktiga platser.", "emoji": "🏙️" },
+    { "id": "geography-europe-discovery-3", "conceptId": "geography-europe", "title": "Europa har många språk", "body": "Människor i Europas länder talar många olika språk. I Sverige är svenska det största språket.", "emoji": "💬" }
+  ],
+  "questions": [
+    { "id": "geoeurope-01", "type": "multiple-choice", "prompt": "Vad heter Sveriges huvudstad?", "answer": "Stockholm", "options": ["Stockholm", "Oslo", "Helsingfors"] },
+    { "id": "geoeurope-02", "type": "multiple-choice", "prompt": "Vad heter Norges huvudstad?", "answer": "Oslo", "options": ["Oslo", "Köpenhamn", "Stockholm"] },
+    { "id": "geoeurope-03", "type": "multiple-choice", "prompt": "Vad heter Danmarks huvudstad?", "answer": "Köpenhamn", "options": ["Köpenhamn", "Helsingfors", "Reykjavik"] },
+    { "id": "geoeurope-04", "type": "multiple-choice", "prompt": "Vad heter Finlands huvudstad?", "answer": "Helsingfors", "options": ["Helsingfors", "Oslo", "Stockholm"] },
+    { "id": "geoeurope-05", "type": "multiple-choice", "prompt": "Vad heter Islands huvudstad?", "answer": "Reykjavik", "options": ["Reykjavik", "Köpenhamn", "Helsingfors"] },
+    { "id": "geoeurope-06", "type": "multiple-choice", "prompt": "Vilket land har Berlin som huvudstad?", "answer": "Tyskland", "options": ["Tyskland", "Frankrike", "Spanien"] },
+    { "id": "geoeurope-07", "type": "multiple-choice", "prompt": "Vilket land har Paris som huvudstad?", "answer": "Frankrike", "options": ["Frankrike", "Italien", "Polen"] },
+    { "id": "geoeurope-08", "type": "multiple-choice", "prompt": "Vilket land har Rom som huvudstad?", "answer": "Italien", "options": ["Italien", "Portugal", "Tyskland"] },
+    { "id": "geoeurope-09", "type": "multiple-choice", "prompt": "Vilket land har Madrid som huvudstad?", "answer": "Spanien", "options": ["Spanien", "Grekland", "Frankrike"] },
+    { "id": "geoeurope-10", "type": "multiple-choice", "prompt": "Vilket land har Lissabon som huvudstad?", "answer": "Portugal", "options": ["Portugal", "Polen", "Norge"] },
+    { "id": "geoeurope-11", "type": "multiple-choice", "prompt": "Vilket av dessa länder ligger i Norden?", "answer": "Finland", "options": ["Finland", "Frankrike", "Italien"] },
+    { "id": "geoeurope-12", "type": "multiple-choice", "prompt": "Vilket land ligger väster om Sverige?", "answer": "Norge", "options": ["Norge", "Finland", "Danmark"] },
+    { "id": "geoeurope-13", "type": "multiple-choice", "prompt": "Vilket land ligger öster om Sverige?", "answer": "Finland", "options": ["Finland", "Norge", "Island"] },
+    { "id": "geoeurope-14", "type": "multiple-choice", "prompt": "Hur många länder brukar räknas till Norden?", "answer": "Fem", "options": ["Tre", "Fem", "Åtta"] },
+    { "id": "geoeurope-15", "type": "multiple-choice", "prompt": "Vilken stad är Danmarks huvudstad?", "answer": "Köpenhamn", "options": ["Köpenhamn", "Oslo", "Berlin"] },
+    { "id": "geoeurope-16", "type": "multiple-choice", "prompt": "Vilket land ligger på en ö i Nordatlanten?", "answer": "Island", "options": ["Island", "Polen", "Schweiz"] },
+    { "id": "geoeurope-17", "type": "multiple-choice", "prompt": "Vilket land har Aten som huvudstad?", "answer": "Grekland", "options": ["Grekland", "Tyskland", "Spanien"] },
+    { "id": "geoeurope-18", "type": "multiple-choice", "prompt": "Vad kallas den viktigaste staden i ett land?", "answer": "Huvudstad", "options": ["Huvudstad", "Kontinent", "Väderstreck"] },
+    { "id": "geoeurope-19", "type": "true-false", "prompt": "Oslo är Norges huvudstad.", "answer": "Sant" },
+    { "id": "geoeurope-20", "type": "true-false", "prompt": "Paris är huvudstad i Italien.", "answer": "Falskt" }
+  ]
+}

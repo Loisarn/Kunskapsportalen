@@ -1,0 +1,56 @@
+{
+  "id": "english-family",
+  "version": "1.0",
+  "subject": { "id": "english", "name": "Engelska" },
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "english-family",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 3,
+    "title": "Familj på engelska",
+    "description": "Lär dig engelska ord för familj och släktingar.",
+    "emoji": "👨‍👩‍👧‍👦",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["english-animals"]
+  },
+  "lesson": {
+    "id": "english-family-basics",
+    "title": "Min familj",
+    "content": "På engelska heter mamma mother och pappa father. Syster heter sister och bror heter brother. Nu lär vi oss fler ord för familjen!"
+  },
+  "discoveries": [
+    { "id": "family-discovery-1", "conceptId": "english-family", "title": "Mom eller mum?", "body": "I USA skriver många 'mom', medan 'mum' är vanligt i Storbritannien och Australien. Det är samma familjeord med olika stavning.", "emoji": "👩‍👧" },
+    { "id": "family-discovery-2", "conceptId": "english-family", "title": "Grandmother täcker båda sidorna", "body": "På engelska kan 'grandmother' vara både mormor och farmor. Vill man säga vilken sida det gäller kan man lägga till 'maternal' eller 'paternal'.", "emoji": "👵" },
+    { "id": "family-discovery-3", "conceptId": "english-family", "title": "You var en gång två olika ord", "body": "Förr kunde engelska skilja på 'thou' till en person och 'you' till flera. I dag används 'you' oftast för både en person och en grupp.", "emoji": "🗣️" }
+  ],
+  "questions": [
+    { "id": "family-01", "type": "multiple-choice", "prompt": "Vad heter mamma på engelska?", "answer": "Mother", "options": ["Mother", "Sister", "Daughter"] },
+    { "id": "family-02", "type": "multiple-choice", "prompt": "Vad heter pappa på engelska?", "answer": "Father", "options": ["Brother", "Father", "Son"] },
+    { "id": "family-03", "type": "multiple-choice", "prompt": "Vad betyder 'sister'?", "answer": "Syster", "options": ["Mamma", "Syster", "Mormor"] },
+    { "id": "family-04", "type": "multiple-choice", "prompt": "Vad betyder 'brother'?", "answer": "Bror", "options": ["Bror", "Pappa", "Son"] },
+    { "id": "family-05", "type": "true-false", "prompt": "Heter mamma 'mother' på engelska?", "answer": "Sant" },
+    { "id": "family-06", "type": "true-false", "prompt": "Heter pappa 'sister' på engelska?", "answer": "Falskt" },
+    { "id": "family-07", "type": "text", "prompt": "Skriv engelska ordet för syster.", "answer": "Sister" },
+    { "id": "family-08", "type": "text", "prompt": "Skriv engelska ordet för bror.", "answer": "Brother" },
+    { "id": "family-09", "type": "multiple-choice", "prompt": "Vad betyder 'grandmother'?", "answer": "Mormor eller farmor", "options": ["Syster", "Mormor eller farmor", "Dotter"] },
+    { "id": "family-10", "type": "multiple-choice", "prompt": "Vad betyder 'grandfather'?", "answer": "Morfar eller farfar", "options": ["Morfar eller farfar", "Pappa", "Bror"] },
+    { "id": "family-11", "type": "true-false", "prompt": "Heter son 'son' på engelska?", "answer": "Sant" },
+    { "id": "family-12", "type": "true-false", "prompt": "Betyder 'daughter' son?", "answer": "Falskt" },
+    { "id": "family-13", "type": "multiple-choice", "prompt": "Vad betyder 'parents'?", "answer": "Föräldrar", "options": ["Föräldrar", "Kusiner", "Syskon"] },
+    { "id": "family-14", "type": "multiple-choice", "prompt": "Vad heter dotter på engelska?", "answer": "Daughter", "options": ["Aunt", "Daughter", "Grandmother"] },
+    { "id": "family-15", "type": "text", "prompt": "Skriv engelska ordet för pappa.", "answer": "Father" },
+    { "id": "family-16", "type": "multiple-choice", "prompt": "Vad betyder 'family'?", "answer": "Familj", "options": ["Familj", "Vän", "Skola"] },
+    { "id": "family-17", "type": "true-false", "prompt": "Betyder 'brother' bror?", "answer": "Sant" },
+    { "id": "family-18", "type": "text", "prompt": "Skriv engelska ordet för familj.", "answer": "Family" },
+    { "id": "family-19", "type": "multiple-choice", "prompt": "Vad betyder 'aunt'?", "answer": "Faster eller moster", "options": ["Faster eller moster", "Mamma", "Kusin"] },
+    { "id": "family-20", "type": "true-false", "prompt": "Heter en familj 'a family' på engelska?", "answer": "Sant" }
+  ]
+}

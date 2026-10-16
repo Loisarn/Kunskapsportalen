@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-simple-sentences",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-simple-sentences",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 7,
+    "title": "Enkla meningar på albanska",
+    "description": "Läs korta albanska meningar och förstå vad de betyder.",
+    "emoji": "💬",
+    "difficulty": 7,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-body-parts"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-simple-sentences-basics",
+    "title": "Läs hela meningen",
+    "content": "Nu möter du korta meningar på albanska. Titta efter ord du känner igen och använd dem tillsammans för att förstå hela meningen."
+  },
+  "discoveries": [
+    { "id": "gheg-sentences-discovery-1", "conceptId": "albanian-gheg-simple-sentences", "title": "Ett ord kan låta olika i dialekter", "body": "I gheg kan 'jom' betyda 'jag är', medan standardspråket oftast använder 'jam'. Dialekten hörs alltså mitt i en enkel mening.", "emoji": "🗣️" },
+    { "id": "gheg-sentences-discovery-2", "conceptId": "albanian-gheg-simple-sentences", "title": "Gheg har sitt eget sätt att säga är", "body": "I många gheg meningar används 'asht' där standardspråket har 'është'. Små skillnader kan avslöja vilken dialekt någon talar.", "emoji": "💬" },
+    { "id": "gheg-sentences-discovery-3", "conceptId": "albanian-gheg-simple-sentences", "title": "Adjektivet kommer ofta efter", "body": "På albanska står beskrivande ord ofta efter saken: 'një libër i mirë' betyder 'en bra bok'. Ordföljden kan kännas annorlunda än på svenska.", "emoji": "📚" }
+  ],
+  "questions": [
+    { "id": "gheg-sentences-01", "type": "multiple-choice", "prompt": "Vad betyder 'Unë jom mirë'?", "answer": "Jag mår bra", "options": ["Jag mår bra", "Jag har en bok", "Jag tycker om bröd"] },
+    { "id": "gheg-sentences-02", "type": "multiple-choice", "prompt": "Hur säger man 'Jag har en bok' på albanska?", "answer": "Unë kom nji libër", "options": ["Unë kom nji libër", "Unë jom libër", "Mue m'pelqen libri"] },
+    { "id": "gheg-sentences-03", "type": "multiple-choice", "prompt": "Vad betyder 'Mue m'pelqejn macet'?", "answer": "Jag tycker om katter", "options": ["Jag tycker om katter", "Jag har katterna", "Jag ser fåglarna"] },
+    { "id": "gheg-sentences-04", "type": "multiple-choice", "prompt": "Används 'asht' i många albanska dialekter för 'är'?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-sentences-05", "type": "multiple-choice", "prompt": "Betyder 'Unë kom nji qen' att jag har en katt?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-sentences-06", "type": "text", "prompt": "Skriv 'Jag mår bra' på albanska.", "answer": "Unë jom mirë" },
+    { "id": "gheg-sentences-07", "type": "text", "prompt": "Skriv 'Jag har en bok' på albanska.", "answer": "Unë kom nji libër" },
+    { "id": "gheg-sentences-08", "type": "multiple-choice", "prompt": "Vad betyder 'Ky asht libri jem'?", "answer": "Det här är min bok", "options": ["Det här är min bok", "Jag läser", "Boken är ny"] },
+    { "id": "gheg-sentences-09", "type": "multiple-choice", "prompt": "Hur säger man 'Jag tycker om äpplen' på albanska?", "answer": "Mue m'pelqejn mollët", "options": ["Mue m'pelqejn mollët", "Unë kom mollë", "Molla asht e kuqe"] },
+    { "id": "gheg-sentences-10", "type": "multiple-choice", "prompt": "Vad betyder 'Qeni asht i madh'?", "answer": "Hunden är stor", "options": ["Hunden är stor", "Hunden är liten", "Katten är stor"] },
+    { "id": "gheg-sentences-11", "type": "multiple-choice", "prompt": "Betyder 'Ti je shoku jem' att du är min vän?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-sentences-12", "type": "multiple-choice", "prompt": "Betyder 'Mue m'pelqen qumështi' att jag inte tycker om mjölk?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-sentences-13", "type": "multiple-choice", "prompt": "Vad betyder 'Unë shoh nji zog'?", "answer": "Jag ser en fågel", "options": ["Jag ser en fågel", "Jag har en fågel", "Jag tycker om fåglar"] },
+    { "id": "gheg-sentences-14", "type": "multiple-choice", "prompt": "Hur säger man 'Det här är min mamma' på albanska?", "answer": "Kjo asht nana jeme", "options": ["Kjo asht nana jeme", "Unë jom nana", "Ajo asht motra"] },
+    { "id": "gheg-sentences-15", "type": "text", "prompt": "Skriv 'Jag tycker om katter' på albanska.", "answer": "Mue m'pelqejn macet" },
+    { "id": "gheg-sentences-16", "type": "multiple-choice", "prompt": "Vad betyder 'Na jena shokë'?", "answer": "Vi är vänner", "options": ["Vi är vänner", "De är bröder", "Jag är en vän"] },
+    { "id": "gheg-sentences-17", "type": "multiple-choice", "prompt": "Frågar 'Ku asht libri?' var boken är?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-sentences-18", "type": "text", "prompt": "Skriv 'Jag har en katt' på albanska.", "answer": "Unë kom nji mace" },
+    { "id": "gheg-sentences-19", "type": "multiple-choice", "prompt": "Vad betyder 'Macja asht e vogël'?", "answer": "Katten är liten", "options": ["Katten är liten", "Katten är stor", "Hunden är liten"] },
+    { "id": "gheg-sentences-20", "type": "multiple-choice", "prompt": "Vad frågar man med 'Çka don me hangër?'?", "answer": "Vad vill du äta?", "options": ["Vad vill du äta?", "Var bor du?", "Vad heter du?"] }
+  ]
+}

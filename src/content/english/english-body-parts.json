@@ -1,0 +1,56 @@
+{
+  "id": "english-body-parts",
+  "version": "1.0",
+  "subject": { "id": "english", "name": "Engelska" },
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "english-body-parts",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 4,
+    "title": "Kroppen på engelska",
+    "description": "Lär dig namnen på kroppens vanligaste delar.",
+    "emoji": "🧍",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["english-family"]
+  },
+  "lesson": {
+    "id": "english-body-parts-basics",
+    "title": "Huvud, händer och fötter",
+    "content": "Kroppen har många delar. Huvud heter head, hand heter hand och fot heter foot. Vi använder dem varje dag!"
+  },
+  "discoveries": [
+    { "id": "body-discovery-1", "conceptId": "english-body-parts", "title": "'Th' har två olika ljud", "body": "I engelska låter 'th' olika i 'think' och 'this'. Samma två bokstäver gömmer alltså två skilda ljud.", "emoji": "🔊" },
+    { "id": "body-discovery-2", "conceptId": "english-body-parts", "title": "En tyst bokstav i knee", "body": "Förr uttalades k-ljudet i engelska 'knee' och 'knight'. Uttalet ändrades, men stavningen behöll den gamla bokstaven.", "emoji": "🔤" },
+    { "id": "body-discovery-3", "conceptId": "english-body-parts", "title": "Engelska fötter blir 'feet'", "body": "Många engelska ord får plural med ett s, men 'foot' blir 'feet'. Det är ett gammalt mönster som finns kvar i några vanliga ord.", "emoji": "👣" }
+  ],
+  "questions": [
+    { "id": "body-01", "type": "multiple-choice", "prompt": "Vad heter huvud på engelska?", "answer": "Head", "options": ["Head", "Hand", "Foot"] },
+    { "id": "body-02", "type": "multiple-choice", "prompt": "Vad betyder 'hand'?", "answer": "Hand", "options": ["Huvud", "Hand", "Knä"] },
+    { "id": "body-03", "type": "multiple-choice", "prompt": "Vad betyder 'foot'?", "answer": "Fot", "options": ["Fot", "Arm", "Öra"] },
+    { "id": "body-04", "type": "multiple-choice", "prompt": "Vad heter ögon på engelska?", "answer": "Eyes", "options": ["Ears", "Eyes", "Nose"] },
+    { "id": "body-05", "type": "true-false", "prompt": "Betyder 'nose' näsa?", "answer": "Sant" },
+    { "id": "body-06", "type": "true-false", "prompt": "Heter mun 'eye' på engelska?", "answer": "Falskt" },
+    { "id": "body-07", "type": "text", "prompt": "Skriv engelska ordet för huvud.", "answer": "Head" },
+    { "id": "body-08", "type": "text", "prompt": "Skriv engelska ordet för hand.", "answer": "Hand" },
+    { "id": "body-09", "type": "multiple-choice", "prompt": "Vad betyder 'ears'?", "answer": "Öron", "options": ["Ögon", "Öron", "Axlar"] },
+    { "id": "body-10", "type": "multiple-choice", "prompt": "Vad heter mun på engelska?", "answer": "Mouth", "options": ["Mouth", "Nose", "Knee"] },
+    { "id": "body-11", "type": "true-false", "prompt": "Heter näsa 'nose' på engelska?", "answer": "Sant" },
+    { "id": "body-12", "type": "true-false", "prompt": "Betyder 'arm' ben?", "answer": "Falskt" },
+    { "id": "body-13", "type": "multiple-choice", "prompt": "Vad betyder 'shoulders'?", "answer": "Axlar", "options": ["Axlar", "Knän", "Fötter"] },
+    { "id": "body-14", "type": "multiple-choice", "prompt": "Vad heter knä på engelska?", "answer": "Knee", "options": ["Toe", "Knee", "Finger"] },
+    { "id": "body-15", "type": "text", "prompt": "Skriv engelska ordet för öga.", "answer": "Eye" },
+    { "id": "body-16", "type": "multiple-choice", "prompt": "Vad heter två fötter på engelska?", "answer": "Feet", "options": ["Foot", "Feet", "Hands"] },
+    { "id": "body-17", "type": "true-false", "prompt": "Heter tå 'toe' på engelska?", "answer": "Sant" },
+    { "id": "body-18", "type": "text", "prompt": "Skriv engelska ordet för mun.", "answer": "Mouth" },
+    { "id": "body-19", "type": "multiple-choice", "prompt": "Vilket ord betyder arm?", "answer": "Arm", "options": ["Leg", "Arm", "Ear"] },
+    { "id": "body-20", "type": "true-false", "prompt": "Betyder 'legs' ben?", "answer": "Sant" }
+  ]
+}

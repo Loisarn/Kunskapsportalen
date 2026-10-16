@@ -1,0 +1,55 @@
+{
+  "id": "multiplication-basics",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-multiplication",
+    "subjectId": "mathematics",
+    "title": "Multiplikation",
+    "description": "Räkna lika stora grupper och lär känna multiplikation.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "multiplication-basics",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-multiplication",
+    "level": 1,
+    "title": "Multiplikation med lika grupper",
+    "description": "Upptäck multiplikation genom lika grupper och upprepad addition.",
+    "emoji": "✖️",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "multiplication-groups",
+    "title": "Lika många i varje grupp",
+    "content": "Multiplikation är ett snabbt sätt att räkna lika stora grupper. Tre grupper med två i varje blir 2 + 2 + 2, alltså 3 × 2 = 6."
+  },
+  "discoveries": [
+    { "id": "mult-discovery-1", "conceptId": "multiplication-basics", "title": "Plus flera gånger", "body": "4 × 2 betyder 2 + 2 + 2 + 2. Båda sätten blir 8.", "emoji": "➕" },
+    { "id": "mult-discovery-2", "conceptId": "multiplication-basics", "title": "Tvåans tabell är dubbelt", "body": "Att multiplicera med 2 är samma sak som att dubbla talet. 6 × 2 blir därför 12.", "emoji": "👯" },
+    { "id": "mult-discovery-3", "conceptId": "multiplication-basics", "title": "Femman slutar ofta på fem eller noll", "body": "När du räknar fem i taget får du 5, 10, 15, 20 och så vidare.", "emoji": "🖐️" }
+  ],
+  "questions": [
+    { "id": "mult-01", "type": "multiple-choice", "prompt": "Vad blir 2 × 2?", "answer": "4", "options": ["3", "4", "5"] },
+    { "id": "mult-02", "type": "text", "prompt": "Vad blir 3 × 2?", "answer": "6" },
+    { "id": "mult-03", "type": "multiple-choice", "prompt": "Vad blir 4 × 2?", "answer": "8", "options": ["6", "8", "10"] },
+    { "id": "mult-04", "type": "text", "prompt": "Vad blir 5 × 2?", "answer": "10" },
+    { "id": "mult-05", "type": "multiple-choice", "prompt": "Vad blir 2 × 5?", "answer": "10", "options": ["7", "10", "12"] },
+    { "id": "mult-06", "type": "text", "prompt": "Vad blir 3 × 5?", "answer": "15" },
+    { "id": "mult-07", "type": "multiple-choice", "prompt": "Vad blir 4 × 5?", "answer": "20", "options": ["15", "20", "25"] },
+    { "id": "mult-08", "type": "text", "prompt": "Vad blir 5 × 5?", "answer": "25" },
+    { "id": "mult-09", "type": "multiple-choice", "prompt": "Vad blir 2 × 10?", "answer": "20", "options": ["12", "20", "22"] },
+    { "id": "mult-10", "type": "text", "prompt": "Vad blir 3 × 10?", "answer": "30" },
+    { "id": "mult-11", "type": "multiple-choice", "prompt": "Vad blir 6 × 2?", "answer": "12", "options": ["10", "12", "14"] },
+    { "id": "mult-12", "type": "text", "prompt": "Vad blir 7 × 2?", "answer": "14" },
+    { "id": "mult-13", "type": "multiple-choice", "prompt": "Vad blir 6 × 5?", "answer": "30", "options": ["25", "30", "35"] },
+    { "id": "mult-14", "type": "text", "prompt": "Vad blir 8 × 5?", "answer": "40" },
+    { "id": "mult-15", "type": "true-false", "prompt": "Blir 4 × 2 lika med 8?", "answer": "Sant" },
+    { "id": "mult-16", "type": "text", "prompt": "Tre påsar har 2 äpplen var. Hur många äpplen är det?", "answer": "6" },
+    { "id": "mult-17", "type": "multiple-choice", "prompt": "Vad blir 9 × 2?", "answer": "18", "options": ["16", "18", "20"] },
+    { "id": "mult-18", "type": "text", "prompt": "Vad blir 7 × 5?", "answer": "35" },
+    { "id": "mult-19", "type": "multiple-choice", "prompt": "Vad blir 10 × 2?", "answer": "20", "options": ["18", "20", "22"] },
+    { "id": "mult-20", "type": "true-false", "prompt": "Blir 3 × 5 lika med 15?", "answer": "Sant" }
+  ]
+}

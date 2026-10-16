@@ -1,0 +1,193 @@
+{
+  "id": "english-colors",
+  "version": "1.0",
+
+  "subject": {
+    "id": "english",
+    "name": "Engelska"
+  },
+
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+
+  "concept": {
+    "id": "english-colors",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 1,
+    "title": "Färger på engelska",
+    "description": "Lär dig de vanligaste färgerna på engelska.",
+    "emoji": "🎨",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+
+  "lesson": {
+    "id": "english-colors-basics",
+    "title": "Färger överallt",
+    "content": "Vi ser färger varje dag. På engelska heter röd 'red', blå heter 'blue' och grön heter 'green'. Nu ska vi upptäcka fler färger!"
+  },
+
+  "discoveries": [
+    {
+      "id": "color-discovery-1",
+      "conceptId": "english-colors",
+      "title": "Color eller colour?",
+      "body": "Både 'color' och 'colour' betyder färg på engelska. Den kortare stavningen är vanlig i USA och den längre i Storbritannien.",
+      "emoji": "🔤"
+    },
+    {
+      "id": "color-discovery-2",
+      "conceptId": "english-colors",
+      "title": "Gray eller grey?",
+      "body": "Engelska ordet för grå kan stavas 'gray' eller 'grey'. Båda är rätt, men stavningen varierar mellan länder och personer.",
+      "emoji": "🩶"
+    },
+    {
+      "id": "color-discovery-3",
+      "conceptId": "english-colors",
+      "title": "Orange fick namn efter frukten",
+      "body": "Det engelska färgordet 'orange' kommer från namnet på frukten. Innan ordet blev vanligt beskrev många färgen som gulröd.",
+      "emoji": "🍊"
+    }
+  ],
+
+  "questions": [
+    {
+      "id": "color-01",
+      "type": "multiple-choice",
+      "prompt": "Vad heter röd på engelska?",
+      "answer": "Red",
+      "options": ["Blue", "Red", "Green"]
+    },
+    {
+      "id": "color-02",
+      "type": "multiple-choice",
+      "prompt": "Vad heter blå på engelska?",
+      "answer": "Blue",
+      "options": ["Blue", "Yellow", "Black"]
+    },
+    {
+      "id": "color-03",
+      "type": "multiple-choice",
+      "prompt": "Vad heter grön på engelska?",
+      "answer": "Green",
+      "options": ["Green", "Red", "White"]
+    },
+    {
+      "id": "color-04",
+      "type": "true-false",
+      "prompt": "Heter gul 'Yellow' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "color-05",
+      "type": "true-false",
+      "prompt": "Heter svart 'Pink' på engelska?",
+      "answer": "Falskt"
+    },
+    {
+      "id": "color-06",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för blå.",
+      "answer": "Blue"
+    },
+    {
+      "id": "color-07",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för röd.",
+      "answer": "Red"
+    },
+    {
+      "id": "color-08",
+      "type": "multiple-choice",
+      "prompt": "Vilken färg betyder 'Green'?",
+      "answer": "Grön",
+      "options": ["Grön", "Blå", "Röd"]
+    },
+    {
+      "id": "color-09",
+      "type": "multiple-choice",
+      "prompt": "Vilken färg betyder 'Yellow'?",
+      "answer": "Gul",
+      "options": ["Rosa", "Gul", "Svart"]
+    },
+    {
+      "id": "color-10",
+      "type": "multiple-choice",
+      "prompt": "Vilket engelskt ord betyder svart?",
+      "answer": "Black",
+      "options": ["White", "Purple", "Black"]
+    },
+    {
+      "id": "color-11",
+      "type": "true-false",
+      "prompt": "Heter vit 'White' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "color-12",
+      "type": "true-false",
+      "prompt": "Heter grön 'Orange' på engelska?",
+      "answer": "Falskt"
+    },
+    {
+      "id": "color-13",
+      "type": "multiple-choice",
+      "prompt": "Vad betyder 'Pink'?",
+      "answer": "Rosa",
+      "options": ["Lila", "Rosa", "Brun"]
+    },
+    {
+      "id": "color-14",
+      "type": "multiple-choice",
+      "prompt": "Vad betyder 'Orange'?",
+      "answer": "Orange",
+      "options": ["Orange", "Grå", "Vit"]
+    },
+    {
+      "id": "color-15",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för gul.",
+      "answer": "Yellow"
+    },
+    {
+      "id": "color-16",
+      "type": "multiple-choice",
+      "prompt": "Vilket engelskt ord betyder lila?",
+      "answer": "Purple",
+      "options": ["Purple", "Pink", "Blue"]
+    },
+    {
+      "id": "color-17",
+      "type": "true-false",
+      "prompt": "Heter rosa 'Pink' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "color-18",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för svart.",
+      "answer": "Black"
+    },
+    {
+      "id": "color-19",
+      "type": "multiple-choice",
+      "prompt": "Vilken färg betyder 'White'?",
+      "answer": "Vit",
+      "options": ["Svart", "Vit", "Brun"]
+    },
+    {
+      "id": "color-20",
+      "type": "true-false",
+      "prompt": "Heter orange 'Orange' på engelska?",
+      "answer": "Sant"
+    }
+  ]
+}

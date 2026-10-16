@@ -1,0 +1,56 @@
+{
+  "id": "english-food",
+  "version": "1.0",
+  "subject": { "id": "english", "name": "Engelska" },
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "english-food",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 5,
+    "title": "Mat på engelska",
+    "description": "Lär dig engelska ord för mat och dryck.",
+    "emoji": "🍎",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["english-body-parts"]
+  },
+  "lesson": {
+    "id": "english-food-basics",
+    "title": "Vad finns på tallriken?",
+    "content": "Äpple heter apple, bröd heter bread och mjölk heter milk på engelska. Vad tycker du om att äta?"
+  },
+  "discoveries": [
+    { "id": "food-discovery-1", "conceptId": "english-food", "title": "Chocolate reste från Amerika", "body": "Det engelska ordet 'chocolate' kom via spanskan från ett ord i språket nahuatl. Namnet följde med kakaon när den kom till Europa.", "emoji": "🍫" },
+    { "id": "food-discovery-2", "conceptId": "english-food", "title": "Curry har ett tamilskt ordsläktskap", "body": "Det engelska ordet 'curry' hänger ihop med det tamilska ordet 'kaṟi', som används om mat och sås. Ord reser ofta tillsammans med mat.", "emoji": "🍛" },
+    { "id": "food-discovery-3", "conceptId": "english-food", "title": "Tea och chai har en lång resa", "body": "Engelskans 'tea' och ordet 'chai' går tillbaka på kinesiska ord för te. De spreds längs olika handelsvägar och fick olika former.", "emoji": "🫖" }
+  ],
+  "questions": [
+    { "id": "food-01", "type": "multiple-choice", "prompt": "Vad heter äpple på engelska?", "answer": "Apple", "options": ["Apple", "Bread", "Milk"] },
+    { "id": "food-02", "type": "multiple-choice", "prompt": "Vad betyder 'bread'?", "answer": "Bröd", "options": ["Ost", "Bröd", "Vatten"] },
+    { "id": "food-03", "type": "multiple-choice", "prompt": "Vad heter mjölk på engelska?", "answer": "Milk", "options": ["Milk", "Rice", "Egg"] },
+    { "id": "food-04", "type": "true-false", "prompt": "Heter banan 'banana' på engelska?", "answer": "Sant" },
+    { "id": "food-05", "type": "true-false", "prompt": "Betyder 'water' ost?", "answer": "Falskt" },
+    { "id": "food-06", "type": "text", "prompt": "Skriv engelska ordet för äpple.", "answer": "Apple" },
+    { "id": "food-07", "type": "text", "prompt": "Skriv engelska ordet för vatten.", "answer": "Water" },
+    { "id": "food-08", "type": "multiple-choice", "prompt": "Vad betyder 'cheese'?", "answer": "Ost", "options": ["Ägg", "Ost", "Ris"] },
+    { "id": "food-09", "type": "multiple-choice", "prompt": "Vad heter ägg på engelska?", "answer": "Egg", "options": ["Egg", "Fish", "Bread"] },
+    { "id": "food-10", "type": "multiple-choice", "prompt": "Vad betyder 'rice'?", "answer": "Ris", "options": ["Ris", "Mjölk", "Äpple"] },
+    { "id": "food-11", "type": "true-false", "prompt": "Betyder 'carrot' morot?", "answer": "Sant" },
+    { "id": "food-12", "type": "true-false", "prompt": "Heter bröd 'milk' på engelska?", "answer": "Falskt" },
+    { "id": "food-13", "type": "multiple-choice", "prompt": "Vad heter ost på engelska?", "answer": "Cheese", "options": ["Cheese", "Chicken", "Apple"] },
+    { "id": "food-14", "type": "multiple-choice", "prompt": "Vad betyder 'chicken'?", "answer": "Kyckling", "options": ["Morot", "Kyckling", "Banan"] },
+    { "id": "food-15", "type": "text", "prompt": "Skriv engelska ordet för banan.", "answer": "Banana" },
+    { "id": "food-16", "type": "multiple-choice", "prompt": "Vad heter morot på engelska?", "answer": "Carrot", "options": ["Carrot", "Cheese", "Rice"] },
+    { "id": "food-17", "type": "true-false", "prompt": "Betyder 'orange' apelsin?", "answer": "Sant" },
+    { "id": "food-18", "type": "text", "prompt": "Skriv engelska ordet för bröd.", "answer": "Bread" },
+    { "id": "food-19", "type": "multiple-choice", "prompt": "Vad betyder 'sandwich'?", "answer": "Smörgås", "options": ["Smörgås", "Vatten", "Ägg"] },
+    { "id": "food-20", "type": "true-false", "prompt": "Heter ris 'rice' på engelska?", "answer": "Sant" }
+  ]
+}

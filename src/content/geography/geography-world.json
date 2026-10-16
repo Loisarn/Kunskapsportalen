@@ -1,0 +1,55 @@
+{
+  "id": "geography-world",
+  "subject": { "id": "geography", "name": "Geografi" },
+  "learningPath": {
+    "id": "geography-world",
+    "subjectId": "geography",
+    "title": "Geografi",
+    "description": "Lär känna kartor, vår värld och platser nära och långt borta.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "geography-world",
+    "subjectId": "geography",
+    "pathId": "geography-world",
+    "level": 1,
+    "title": "Kartan och vår värld",
+    "description": "Upptäck kartor, väderstreck, kontinenter och världshav.",
+    "emoji": "🌍",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "geography-world-lesson",
+    "title": "Hitta runt på jorden",
+    "content": "En karta visar platser uppifrån. En jordglob visar jorden som en boll. På jorden finns stora landområden som kallas kontinenter och stora hav med saltvatten."
+  },
+  "discoveries": [
+    { "id": "geography-world-discovery-1", "conceptId": "geography-world", "title": "Jorden är nästan rund", "body": "En jordglob visar jordens form bättre än en platt karta. Kartor hjälper oss ändå att se var platser ligger.", "emoji": "🌐" },
+    { "id": "geography-world-discovery-2", "conceptId": "geography-world", "title": "Sju kontinenter", "body": "Världen delas ofta in i sju kontinenter: Europa, Asien, Afrika, Nordamerika, Sydamerika, Oceanien och Antarktis.", "emoji": "🗺️" },
+    { "id": "geography-world-discovery-3", "conceptId": "geography-world", "title": "Stilla havet är störst", "body": "Stilla havet är så stort att det täcker en större yta än alla jordens landområden tillsammans.", "emoji": "🌊" }
+  ],
+  "questions": [
+    { "id": "geoworld-01", "type": "multiple-choice", "prompt": "Vad visar en jordglob?", "answer": "Jorden som en boll", "options": ["Jorden som en boll", "Bara Sverige", "Månen"] },
+    { "id": "geoworld-02", "type": "multiple-choice", "prompt": "Vad visar en karta?", "answer": "Platser uppifrån", "options": ["Platser uppifrån", "Bara väder", "Planeter på nära håll"] },
+    { "id": "geoworld-03", "type": "multiple-choice", "prompt": "Vad kallas riktningarna norr, söder, öster och väster?", "answer": "Väderstreck", "options": ["Väderstreck", "Årstider", "Kontinenter"] },
+    { "id": "geoworld-04", "type": "multiple-choice", "prompt": "På vilken kontinent ligger Sverige?", "answer": "Europa", "options": ["Europa", "Afrika", "Sydamerika"] },
+    { "id": "geoworld-05", "type": "multiple-choice", "prompt": "Vad kallas ett stort landområde på jorden?", "answer": "Kontinent", "options": ["Kontinent", "Väderstreck", "Öken"] },
+    { "id": "geoworld-06", "type": "multiple-choice", "prompt": "Vad kallas ett stort område med saltvatten?", "answer": "Hav", "options": ["Hav", "Skog", "Berg"] },
+    { "id": "geoworld-07", "type": "multiple-choice", "prompt": "Vilken kontinent ligger runt sydpolen?", "answer": "Antarktis", "options": ["Antarktis", "Europa", "Asien"] },
+    { "id": "geoworld-08", "type": "multiple-choice", "prompt": "Vilket är världens största hav?", "answer": "Stilla havet", "options": ["Stilla havet", "Atlanten", "Östersjön"] },
+    { "id": "geoworld-09", "type": "multiple-choice", "prompt": "Vilken kontinent ligger söder om Europa?", "answer": "Afrika", "options": ["Afrika", "Nordamerika", "Oceanien"] },
+    { "id": "geoworld-10", "type": "multiple-choice", "prompt": "Vilken är jordens största kontinent?", "answer": "Asien", "options": ["Asien", "Europa", "Antarktis"] },
+    { "id": "geoworld-11", "type": "multiple-choice", "prompt": "Vad heter den tänkta linjen mitt runt jorden?", "answer": "Ekvatorn", "options": ["Ekvatorn", "Atlanten", "Nordpolen"] },
+    { "id": "geoworld-12", "type": "multiple-choice", "prompt": "Vilken kontinent ligger söder om Nordamerika?", "answer": "Sydamerika", "options": ["Sydamerika", "Europa", "Asien"] },
+    { "id": "geoworld-13", "type": "multiple-choice", "prompt": "Vilket världshav ligger mellan Europa och Amerika?", "answer": "Atlanten", "options": ["Atlanten", "Indiska oceanen", "Stilla havet"] },
+    { "id": "geoworld-14", "type": "multiple-choice", "prompt": "Vilken kontinent ligger längst söderut?", "answer": "Antarktis", "options": ["Antarktis", "Afrika", "Europa"] },
+    { "id": "geoworld-15", "type": "multiple-choice", "prompt": "Vilken världsdel är Sverige en del av?", "answer": "Europa", "options": ["Europa", "Oceanien", "Nordamerika"] },
+    { "id": "geoworld-16", "type": "multiple-choice", "prompt": "Vad hjälper en kompass dig att hitta?", "answer": "Riktning", "options": ["Riktning", "Temperatur", "Djupet på havet"] },
+    { "id": "geoworld-17", "type": "multiple-choice", "prompt": "Vad finns på en karta som hjälper dig hitta platser?", "answer": "Karttecken", "options": ["Karttecken", "Moln", "Stjärnbilder"] },
+    { "id": "geoworld-18", "type": "true-false", "prompt": "Jorden har både land och hav.", "answer": "Sant" },
+    { "id": "geoworld-19", "type": "multiple-choice", "prompt": "Vilket väderstreck ligger mitt emot norr?", "answer": "Söder", "options": ["Söder", "Öster", "Väster"] },
+    { "id": "geoworld-20", "type": "true-false", "prompt": "En karta kan visa var olika länder ligger.", "answer": "Sant" }
+  ]
+}

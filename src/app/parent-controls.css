@@ -1,0 +1,12 @@
+.inline-country-flag{width:1.333em;height:1em;display:inline-block;margin-inline:.16em;vertical-align:-.08em;border:1px solid #0001;border-radius:2px}
+.flag-only-option{justify-content:center}
+.flag-only-option .inline-country-flag{width:3.6em;height:2.7em;margin:0}
+.parent-concept-actions{grid-column:3;grid-row:1;align-self:center;display:grid;gap:7px;min-width:145px}
+.parent-concept-actions .introduce-button,.completion-button{min-height:36px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:7px 9px;border-radius:8px;font-size:9px;font-weight:800;white-space:normal}
+.parent-concept-actions .introduce-button{grid-column:auto}
+.completion-button{border:1px solid #d8e9df;color:#46745a;background:#f1f8f3;cursor:pointer}
+.completion-button.is-complete{border-color:#b7ddc5;color:#286b43;background:#e4f4e9}
+.concept-status.is-available,.path-level-status.is-available{color:#756c80;background:#f2f0f5}
+.concept-status.is-completed,.path-level-status.is-completed{color:#286b43;background:#e4f4e9}
+@media(max-width:920px){.parent-concept-actions{grid-column:2;grid-row:2;grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}}
+@media(max-width:680px){.parent-concept-actions{grid-template-columns:1fr}.parent-concept-actions button{width:100%}}

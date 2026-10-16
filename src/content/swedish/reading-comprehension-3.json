@@ -1,0 +1,56 @@
+{
+  "id": "reading-comprehension-3",
+  "version": "1.0",
+  "subject": { "id": "swedish", "name": "Svenska" },
+  "learningPath": {
+    "id": "reading-comprehension",
+    "subjectId": "swedish",
+    "title": "Läsförståelse",
+    "description": "Lär dig förstå och tänka kring det du läser.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "reading-comprehension-3",
+    "subjectId": "swedish",
+    "pathId": "reading-comprehension",
+    "level": 3,
+    "title": "Läsförståelse nivå 3",
+    "description": "Dra slutsatser, jämför ledtrådar och förstå sådant som inte sägs rakt ut.",
+    "emoji": "🧠",
+    "difficulty": 3,
+    "requiredMastery": 90,
+    "prerequisites": ["reading-comprehension-2"]
+  },
+  "lesson": {
+    "id": "reading-basics-3",
+    "title": "Läs mellan raderna",
+    "content": "Ibland står inte allt i en text. Du kan behöva lägga ihop flera ledtrådar för att förstå hur någon känner sig, varför något händer eller vad som troligen kommer att hända."
+  },
+  "discoveries": [
+    { "id": "reading-discovery-3-1", "conceptId": "reading-comprehension-3", "title": "Torsdag har fått namn av Tor", "body": "Veckodagen torsdag har fått sitt namn från Tor, åskguden i nordisk mytologi. Namnet påminner om hur gamla berättelser lever kvar i språket.", "emoji": "🕵️" },
+    { "id": "reading-discovery-3-2", "conceptId": "reading-comprehension-3", "title": "Svenskans ord har en egen melodi", "body": "I svenskan kan ordmelodin hjälpa till att skilja mellan ord. Därför kan samma bokstäver ibland låta olika och betyda olika saker.", "emoji": "🧠" },
+    { "id": "reading-discovery-3-3", "conceptId": "reading-comprehension-3", "title": "En bok hjälpte till att forma svenskan", "body": "År 1541 trycktes en hel svensk bibelöversättning. Den fick stor betydelse för hur skriven svenska såg ut.", "emoji": "💭" }
+  ],
+  "questions": [
+    { "id": "read3-01", "type": "multiple-choice", "prompt": "När Alva kom in droppade det från jackan. Hon ställde sina blöta stövlar på tidningspapper och hämtade en handduk. Hur var vädret ute?", "answer": "Det regnade", "options": ["Det regnade", "Det var mycket varmt", "Det snöade inte alls"] },
+    { "id": "read3-02", "type": "multiple-choice", "prompt": "Farfar dukade fram saft och bullar. Sedan kom gästerna in och ropade 'Grattis!'. Vad firade familjen troligen?", "answer": "En födelsedag", "options": ["En födelsedag", "En vanlig skoldag", "Att de skulle städa"] },
+    { "id": "read3-03", "type": "multiple-choice", "prompt": "Nils tittade på den tomma fågelholken. På marken låg ett litet fjäder. Han hämtade kikaren och såg en fågel flyga tillbaka med kvistar. Vad byggde fågeln troligen?", "answer": "Ett bo", "options": ["Ett bo", "En snögubbe", "En koja åt Nils"] },
+    { "id": "read3-04", "type": "true-false", "prompt": "När ljudet från filmen blev högt kröp katten under soffan. Katten verkade tycka att ljudet var obehagligt.", "answer": "Sant" },
+    { "id": "read3-05", "type": "multiple-choice", "prompt": "Amina tog fram en karta, en kompass och en ryggsäck. Hon följde den blå leden genom skogen. Vad gjorde Amina troligen?", "answer": "Vandrade", "options": ["Vandrade", "Bakade", "Simmande i en bassäng"] },
+    { "id": "read3-06", "type": "multiple-choice", "prompt": "Leo hade sparat sina veckopengar i flera månader. I skyltfönstret såg han en röd hjälm och räknade pengarna i plånboken. Vad ville Leo troligen köpa?", "answer": "Hjälmen", "options": ["En tårta", "Hjälmen", "En bussbiljett"] },
+    { "id": "read3-07", "type": "multiple-choice", "prompt": "Först var vattnet klart. Efter att många badat blev det grumligt, och badvakten bad alla gå upp. Varför fick badgästerna gå upp?", "answer": "Badvakten ville kontrollera vattnet", "options": ["Badvakten ville kontrollera vattnet", "Det var dags att äta tårta", "Alla hade glömt sina skor"] },
+    { "id": "read3-08", "type": "multiple-choice", "prompt": "Mira log när hon såg sitt namn på lappen. Hon hade övat på sången varje kväll och skulle snart gå upp på scenen. Hur känner sig Mira troligen?", "answer": "Glad och förväntansfull", "options": ["Glad och förväntansfull", "Arg på sången", "Sömnig efter att ha badat"] },
+    { "id": "read3-09", "type": "multiple-choice", "prompt": "På måndagen låg snön kvar på marken. På tisdagen rann vatten längs gatan och små gröna blad syntes vid husväggen. Vilken årstid är troligen på väg?", "answer": "Våren", "options": ["Våren", "Sommaren är slut", "Hösten"] },
+    { "id": "read3-10", "type": "text", "prompt": "Oskar satte fram två extra tallrikar. Strax därefter ringde det på dörren och hans kusiner kom in. Vilka väntade Oskar på?", "answer": "Kusiner" },
+    { "id": "read3-11", "type": "multiple-choice", "prompt": "Ella läste först instruktionen. Sedan sorterade hon bitarna efter färg och började bygga. Varför sorterade Ella bitarna?", "answer": "För att lättare hitta rätt bitar", "options": ["För att lättare hitta rätt bitar", "För att bitarna skulle bli blöta", "För att hon skulle gå ut"] },
+    { "id": "read3-12", "type": "true-false", "prompt": "Sam hade packat badbyxor och en handduk. När familjen kom fram såg de att poolen var stängd för reparation. Sam kunde inte bada där den dagen.", "answer": "Sant" },
+    { "id": "read3-13", "type": "multiple-choice", "prompt": "När bibliotekarien började läsa blev det tyst i rummet. Barnen satte sig nära och följde bilderna i boken. Vad ville barnen göra?", "answer": "Lyssna på sagan", "options": ["Lyssna på sagan", "Börja spela fotboll", "Gå hem och sova"] },
+    { "id": "read3-14", "type": "multiple-choice", "prompt": "Vera såg att molnen blev mörka. Hon avslutade picknicken, packade ner maten och fällde ihop filten. Vad trodde Vera skulle hända?", "answer": "Det skulle börja regna", "options": ["Det skulle bli natt mitt på dagen", "Det skulle börja regna", "Det skulle komma en buss"] },
+    { "id": "read3-15", "type": "text", "prompt": "Efter att ha letat i alla rum hittade Amir nyckeln i fickan på sin jacka. Var låg nyckeln?", "answer": "I jackfickan" },
+    { "id": "read3-16", "type": "multiple-choice", "prompt": "Klara lånade ut sitt sudd till en klasskamrat. När hon själv behövde sudda frågade hon om hon kunde få tillbaka det. Vad visar Klara?", "answer": "Hon hjälper gärna till men behöver också sina saker", "options": ["Hon vill aldrig dela med sig", "Hon hjälper gärna till men behöver också sina saker", "Hon har tappat bort hela sin väska"] },
+    { "id": "read3-17", "type": "true-false", "prompt": "Hunden satte sig vid dörren med kopplet i munnen. När husse tog på sig skorna började hunden vifta på svansen. Hunden ville troligen gå ut.", "answer": "Sant" },
+    { "id": "read3-18", "type": "multiple-choice", "prompt": "På skylten stod det 'Stängt på måndagar'. Familjen kom dit på måndagen och dörren var låst. Varför kunde de inte gå in?", "answer": "Platsen var stängd den dagen", "options": ["De hade glömt att ringa", "Platsen var stängd den dagen", "De hade kommit före frukost"] },
+    { "id": "read3-19", "type": "multiple-choice", "prompt": "Noah valde den kortare vägen över bron. När han kom fram var skorna torra, medan kompisarna som gick genom bäcken fick byta strumpor. Vilken väg gick kompisarna?", "answer": "Genom bäcken", "options": ["Över bron", "Genom bäcken", "De stannade hemma"] },
+    { "id": "read3-20", "type": "multiple-choice", "prompt": "När Elin såg att den lilla plantan lutade hämtade hon en pinne och band försiktigt fast stjälken. Varför gjorde hon det?", "answer": "För att hjälpa plantan att stå stadigt", "options": ["För att hjälpa plantan att stå stadigt", "För att göra plantan kortare", "För att gömma plantan i en låda"] }
+  ]
+}

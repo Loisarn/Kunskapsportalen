@@ -1,0 +1,56 @@
+{
+  "id": "early-reading-2",
+  "version": "1.0",
+  "subject": { "id": "swedish", "name": "Svenska" },
+  "learningPath": {
+    "id": "early-reading",
+    "subjectId": "swedish",
+    "title": "Lära läsa",
+    "description": "Bokstäver, språkljud och de första orden.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "early-reading-2",
+    "subjectId": "swedish",
+    "pathId": "early-reading",
+    "level": 2,
+    "title": "Enkla ord · 3–4 bokstäver",
+    "description": "Läs vanliga, korta ord och koppla dem till sådant du känner igen.",
+    "emoji": "🔡",
+    "difficulty": 2,
+    "requiredMastery": 80,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "early-reading-2-basics",
+    "title": "Läs korta ord",
+    "content": "Börja med ord du känner igen, som sol, mus, bil och hus. Läs bokstäverna från vänster till höger och sätt ihop dem till ett ord."
+  },
+  "discoveries": [
+    { "id": "early-reading-2-discovery-1", "conceptId": "early-reading-2", "title": "Korta ord går att dela upp", "body": "Ordet sol har tre bokstäver: S, O och L. Läs från vänster till höger och sätt ihop bokstäverna.", "emoji": "☀️" },
+    { "id": "early-reading-2-discovery-2", "conceptId": "early-reading-2", "title": "Ett ord kan börja som ett annat", "body": "Sol och stol börjar båda med S. Den första bokstaven kan hjälpa dig att känna igen ordet.", "emoji": "🔎" },
+    { "id": "early-reading-2-discovery-3", "conceptId": "early-reading-2", "title": "Läs hela ordet", "body": "Hus och mus liknar varandra, men den första bokstaven gör att det blir två olika ord.", "emoji": "🏠" }
+  ],
+  "questions": [
+    { "id": "early-read2-01", "type": "multiple-choice", "prompt": "Läs: SOL", "answer": "SOL", "options": ["SOL", "MUS", "RIS"] },
+    { "id": "early-read2-02", "type": "multiple-choice", "prompt": "Läs: MUS", "answer": "MUS", "options": ["HUS", "MUS", "BIL"] },
+    { "id": "early-read2-03", "type": "multiple-choice", "prompt": "Läs: HUS", "answer": "HUS", "options": ["SOL", "MAT", "HUS"] },
+    { "id": "early-read2-04", "type": "multiple-choice", "prompt": "Läs: MAT", "answer": "MAT", "options": ["BIL", "MAT", "RIS"] },
+    { "id": "early-read2-05", "type": "multiple-choice", "prompt": "Läs: BIL", "answer": "BIL", "options": ["SOL", "BIL", "HUS"] },
+    { "id": "early-read2-06", "type": "multiple-choice", "prompt": "Läs: RIS", "answer": "RIS", "options": ["RIS", "ROS", "MAT"] },
+    { "id": "early-read2-07", "type": "multiple-choice", "prompt": "Läs: BEN", "answer": "BEN", "options": ["BIL", "BEN", "ROS"] },
+    { "id": "early-read2-08", "type": "multiple-choice", "prompt": "Läs: KATT", "answer": "KATT", "options": ["HUND", "KATT", "FISK"] },
+    { "id": "early-read2-09", "type": "multiple-choice", "prompt": "Läs: BUSS", "answer": "BUSS", "options": ["BIL", "SOL", "BUSS"] },
+    { "id": "early-read2-10", "type": "multiple-choice", "prompt": "Läs: FISK", "answer": "FISK", "options": ["MUS", "FISK", "HUS"] },
+    { "id": "early-read2-11", "type": "multiple-choice", "prompt": "Läs: BOK", "answer": "BOK", "options": ["MAT", "BOK", "ROS"] },
+    { "id": "early-read2-12", "type": "multiple-choice", "prompt": "Läs: ROS", "answer": "ROS", "options": ["RIS", "ROS", "BUSS"] },
+    { "id": "early-read2-13", "type": "multiple-choice", "prompt": "Läs: SKO", "answer": "SKO", "options": ["BIL", "HUS", "SKO"] },
+    { "id": "early-read2-14", "type": "multiple-choice", "prompt": "Läs: HÅR", "answer": "HÅR", "options": ["MAT", "HÅR", "MUS"] },
+    { "id": "early-read2-15", "type": "multiple-choice", "prompt": "Läs: ARM", "answer": "ARM", "options": ["BEN", "SOL", "ARM"] },
+    { "id": "early-read2-16", "type": "multiple-choice", "prompt": "Läs: KALL", "answer": "KALL", "options": ["VARM", "SOL", "KALL"] },
+    { "id": "early-read2-17", "type": "multiple-choice", "prompt": "Läs: VARM", "answer": "VARM", "options": ["KALL", "VARM", "ROS"] },
+    { "id": "early-read2-18", "type": "multiple-choice", "prompt": "Läs: RÖD", "answer": "RÖD", "options": ["SOL", "RÖD", "BIL"] },
+    { "id": "early-read2-19", "type": "multiple-choice", "prompt": "Läs: APA", "answer": "APA", "options": ["MUS", "APA", "HUS"] },
+    { "id": "early-read2-20", "type": "multiple-choice", "prompt": "Läs: BÄR", "answer": "BÄR", "options": ["RIS", "BÄR", "MAT"] }
+  ]
+}

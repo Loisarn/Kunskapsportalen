@@ -1,0 +1,56 @@
+{
+  "id": "reading-comprehension-2",
+  "version": "1.0",
+  "subject": { "id": "swedish", "name": "Svenska" },
+  "learningPath": {
+    "id": "reading-comprehension",
+    "subjectId": "swedish",
+    "title": "Läsförståelse",
+    "description": "Lär dig förstå och tänka kring det du läser.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "reading-comprehension-2",
+    "subjectId": "swedish",
+    "pathId": "reading-comprehension",
+    "level": 2,
+    "title": "Läsförståelse nivå 2",
+    "description": "Läs lite längre texter och hitta samband och ledtrådar.",
+    "emoji": "🔎",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["reading-comprehension-1"]
+  },
+  "lesson": {
+    "id": "reading-basics-2",
+    "title": "Leta efter samband",
+    "content": "I en text kan flera meningar höra ihop. Leta efter ledtrådar om vad som hände först, varför något hände och vad som hände sedan."
+  },
+  "discoveries": [
+    { "id": "reading-discovery-2-1", "conceptId": "reading-comprehension-2", "title": "'Gift' kan betyda två olika saker", "body": "På svenska kan 'gift' betyda att någon är gift eller att något är giftigt. Meningen visar vilket ordet betyder just där.", "emoji": "⏳" },
+    { "id": "reading-discovery-2-2", "conceptId": "reading-comprehension-2", "title": "'Banan' finns både i fruktskålen och på vägen", "body": "En banan kan vara en frukt eller en bana, till exempel en tävlingsbana. Samma ord får sin betydelse av sammanhanget.", "emoji": "🧩" },
+    { "id": "reading-discovery-2-3", "conceptId": "reading-comprehension-2", "title": "Svenska ord kan lura engelsktalande", "body": "Svenskans 'glass' betyder en frusen efterrätt. Det engelska ordet 'glass' betyder oftast materialet glas.", "emoji": "🔗" }
+  ],
+  "questions": [
+    { "id": "read2-01", "type": "multiple-choice", "prompt": "Nora packade badkläder, handduk och solkräm. Sedan gick hon till stranden. Vart gick Nora?", "answer": "Stranden", "options": ["Skogen", "Stranden", "Skolan"] },
+    { "id": "read2-02", "type": "multiple-choice", "prompt": "Olle blandade mjöl, vatten och jäst. När degen hade jäst gräddade han den i ugnen. Vad bakade Olle?", "answer": "Bröd", "options": ["Bröd", "Glass", "Soppa"] },
+    { "id": "read2-03", "type": "multiple-choice", "prompt": "Det började regna på vägen hem. Alva öppnade sitt paraply för att inte bli blöt. Varför öppnade hon paraplyet?", "answer": "För att det regnade", "options": ["För att det regnade", "För att solen sken", "För att hon skulle bada"] },
+    { "id": "read2-04", "type": "true-false", "prompt": "Viggo vattnade fröet varje dag. Efter några dagar kom ett grönt skott. Fröet började växa.", "answer": "Sant" },
+    { "id": "read2-05", "type": "multiple-choice", "prompt": "Först tog Selma på sig stövlarna. Sedan hoppade hon i vattenpölarna. Vad gjorde Selma först?", "answer": "Tog på sig stövlarna", "options": ["Hoppade i pölarna", "Tog på sig stövlarna", "Gick och lade sig"] },
+    { "id": "read2-06", "type": "multiple-choice", "prompt": "Samir letade efter sin mössa. Han tittade i hallen och hittade den på hyllan bredvid skorna. Var hittade han mössan?", "answer": "På hyllan i hallen", "options": ["Under sängen", "På hyllan i hallen", "I köket"] },
+    { "id": "read2-07", "type": "true-false", "prompt": "Maja tog med en matsäck och en kikare. Hon gick till skogen för att titta på fåglar. Maja skulle simma i en bassäng.", "answer": "Falskt" },
+    { "id": "read2-08", "type": "multiple-choice", "prompt": "När klockan ringde på morgonen steg Leo upp. Han åt frukost och borstade tänderna innan han gick till skolan. Vad gjorde Leo efter frukosten?", "answer": "Borstade tänderna", "options": ["Gick och lade sig", "Borstade tänderna", "Åt middag"] },
+    { "id": "read2-09", "type": "multiple-choice", "prompt": "Det var kallt ute, så Mira tog på sig en varm jacka och vantar. Hur var vädret?", "answer": "Kallt", "options": ["Kallt", "Mycket varmt", "Regnigt och varmt"] },
+    { "id": "read2-10", "type": "text", "prompt": "Edvin tappade sin vante i snön. Vad tappade Edvin?", "answer": "Vante" },
+    { "id": "read2-11", "type": "multiple-choice", "prompt": "Tova läste receptet. Först knäckte hon äggen, sedan vispade hon smeten och till sist gräddade hon pannkakorna. Vad gjorde hon efter att hon knäckt äggen?", "answer": "Vispade smeten", "options": ["Åt pannkakorna", "Vispade smeten", "Gick till affären"] },
+    { "id": "read2-12", "type": "true-false", "prompt": "Aron glömde sin vattenflaska hemma. På utflykten fick han låna vatten av sin kompis. Aron hade med sig sin egen flaska.", "answer": "Falskt" },
+    { "id": "read2-13", "type": "multiple-choice", "prompt": "Hunden skällde vid dörren. När familjen öppnade såg de grannen med ett paket. Varför skällde hunden troligen?", "answer": "Någon stod vid dörren", "options": ["Den ville läsa en bok", "Någon stod vid dörren", "Den såg en fisk"] },
+    { "id": "read2-14", "type": "text", "prompt": "Nina hade tre röda pärlor och två blå. Hur många pärlor hade hon sammanlagt?", "answer": "Fem" },
+    { "id": "read2-15", "type": "multiple-choice", "prompt": "Bussen var sen, så pappa och Ella väntade vid hållplatsen. Vad gjorde de medan de väntade?", "answer": "Väntade vid hållplatsen", "options": ["Åkte tåg", "Väntade vid hållplatsen", "Badade"] },
+    { "id": "read2-16", "type": "true-false", "prompt": "Först var himlen blå. Sedan kom mörka moln och regn. Till slut tog Amir fram sitt paraply. Amir tog fram paraplyet innan molnen kom.", "answer": "Falskt" },
+    { "id": "read2-17", "type": "multiple-choice", "prompt": "Lina ställde blomman vid fönstret och vattnade den. Efter ett tag fick blomman nya blad. Vad hjälpte blomman att växa?", "answer": "Vatten och ljus", "options": ["Vatten och ljus", "En varm mössa", "En leksaksbil"] },
+    { "id": "read2-18", "type": "text", "prompt": "Efter matchen skakade spelarna hand och tackade varandra. Vad gjorde de efter matchen?", "answer": "Skakade hand" },
+    { "id": "read2-19", "type": "multiple-choice", "prompt": "Kim hörde ett pip från köket. Där stod vattenkokaren och lät. Varifrån kom pipet?", "answer": "Från vattenkokaren", "options": ["Från en fågel i trädet", "Från vattenkokaren", "Från en cykel"] },
+    { "id": "read2-20", "type": "true-false", "prompt": "Milo satte in en tom kruka i ugnen. När ugnen blev varm tog han ut en nyckel. Texten berättar att Milo bakade en kaka.", "answer": "Falskt" }
+  ]
+}

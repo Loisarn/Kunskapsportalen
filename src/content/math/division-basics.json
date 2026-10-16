@@ -1,0 +1,55 @@
+{
+  "id": "division-basics",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-division",
+    "subjectId": "mathematics",
+    "title": "Division",
+    "description": "Dela lika och se hur division hör ihop med multiplikation.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "division-basics",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-division",
+    "level": 1,
+    "title": "Dela lika",
+    "description": "Öva på att dela upp saker i lika stora grupper utan rest.",
+    "emoji": "➗",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "division-sharing",
+    "title": "Dela lika många",
+    "content": "Division betyder att dela upp i lika stora grupper. Om 10 äpplen delas lika mellan 2 personer får varje person 5 äpplen."
+  },
+  "discoveries": [
+    { "id": "div-discovery-1", "conceptId": "division-basics", "title": "Multiplikation hjälper till", "body": "För att räkna 12 ÷ 3 kan du fråga vilket tal gånger 3 blir 12. Svaret är 4.", "emoji": "🔗" },
+    { "id": "div-discovery-2", "conceptId": "division-basics", "title": "Lika stora grupper", "body": "När 15 delas i 5 lika stora grupper blir det 3 i varje grupp.", "emoji": "⚖️" },
+    { "id": "div-discovery-3", "conceptId": "division-basics", "title": "Delning utan rest", "body": "I de här uppgifterna går det jämnt upp. Alla saker får plats i lika stora grupper.", "emoji": "🧩" }
+  ],
+  "questions": [
+    { "id": "div-01", "type": "multiple-choice", "prompt": "Vad blir 4 ÷ 2?", "answer": "2", "options": ["1", "2", "3"] },
+    { "id": "div-02", "type": "text", "prompt": "Vad blir 6 ÷ 2?", "answer": "3" },
+    { "id": "div-03", "type": "multiple-choice", "prompt": "Vad blir 8 ÷ 2?", "answer": "4", "options": ["3", "4", "5"] },
+    { "id": "div-04", "type": "text", "prompt": "Vad blir 10 ÷ 2?", "answer": "5" },
+    { "id": "div-05", "type": "multiple-choice", "prompt": "Vad blir 10 ÷ 5?", "answer": "2", "options": ["2", "5", "10"] },
+    { "id": "div-06", "type": "text", "prompt": "Vad blir 15 ÷ 5?", "answer": "3" },
+    { "id": "div-07", "type": "multiple-choice", "prompt": "Vad blir 20 ÷ 5?", "answer": "4", "options": ["3", "4", "5"] },
+    { "id": "div-08", "type": "text", "prompt": "Vad blir 25 ÷ 5?", "answer": "5" },
+    { "id": "div-09", "type": "multiple-choice", "prompt": "Vad blir 20 ÷ 10?", "answer": "2", "options": ["2", "10", "20"] },
+    { "id": "div-10", "type": "text", "prompt": "Vad blir 30 ÷ 10?", "answer": "3" },
+    { "id": "div-11", "type": "multiple-choice", "prompt": "Vad blir 12 ÷ 2?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "div-12", "type": "text", "prompt": "Vad blir 14 ÷ 2?", "answer": "7" },
+    { "id": "div-13", "type": "multiple-choice", "prompt": "Vad blir 30 ÷ 5?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "div-14", "type": "text", "prompt": "Vad blir 40 ÷ 5?", "answer": "8" },
+    { "id": "div-15", "type": "true-false", "prompt": "Blir 16 ÷ 2 lika med 8?", "answer": "Sant" },
+    { "id": "div-16", "type": "text", "prompt": "12 kakor delas lika mellan 3 barn. Hur många får varje barn?", "answer": "4" },
+    { "id": "div-17", "type": "multiple-choice", "prompt": "Vad blir 18 ÷ 2?", "answer": "9", "options": ["8", "9", "10"] },
+    { "id": "div-18", "type": "text", "prompt": "Vad blir 35 ÷ 5?", "answer": "7" },
+    { "id": "div-19", "type": "multiple-choice", "prompt": "Vad blir 40 ÷ 10?", "answer": "4", "options": ["3", "4", "5"] },
+    { "id": "div-20", "type": "true-false", "prompt": "Blir 20 ÷ 5 lika med 5?", "answer": "Falskt" }
+  ]
+}

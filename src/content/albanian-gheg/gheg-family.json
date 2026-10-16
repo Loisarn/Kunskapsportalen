@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-family",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-family",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 2,
+    "title": "Familj",
+    "description": "Öva på familjeord och enkla uttryck på albanska.",
+    "emoji": "👨‍👩‍👧‍👦",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-common-words"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-family-basics",
+    "title": "Familjeord och korta uttryck",
+    "content": "Nu övar du fler albanska ord och korta uttryck. 'Nanë e babë' betyder mamma och pappa, medan 'motër' och 'vëlla' betyder syster och bror."
+  },
+  "discoveries": [
+    { "id": "gheg-family-discovery-1", "conceptId": "albanian-gheg-family", "title": "Släktord avslöjar familjesidan", "body": "På albanska finns särskilda ord för moster och faster: 'teze' och 'hallë'. Orden visar om släktingen hör till mammans eller pappans sida.", "emoji": "👨‍👩‍👧‍👦" },
+    { "id": "gheg-family-discovery-2", "conceptId": "albanian-gheg-family", "title": "Ett artigt sätt att säga du", "body": "'Ju' betyder ni, men kan också användas artigt till en enda person. Då visar ordet respekt, inte att man pratar med flera.", "emoji": "🗣️" },
+    { "id": "gheg-family-discovery-3", "conceptId": "albanian-gheg-family", "title": "Ett löfte som kallas besa", "body": "'Besa' är ett albanskt begrepp för ett hederslöfte att hålla sitt ord. Det har en viktig plats i albanska berättelser och traditioner.", "emoji": "🤝" }
+  ],
+  "questions": [
+    { "id": "gheg-family-01", "type": "multiple-choice", "prompt": "Vad betyder 'nanë'?", "answer": "Mamma", "options": ["Mamma", "Syster", "Flicka"] },
+    { "id": "gheg-family-02", "type": "multiple-choice", "prompt": "Vad betyder 'babë'?", "answer": "Pappa", "options": ["Pappa", "Bror", "Pojke"] },
+    { "id": "gheg-family-03", "type": "multiple-choice", "prompt": "Vad betyder 'motër' på albanska?", "answer": "Syster", "options": ["Syster", "Pappa", "Morfar"] },
+    { "id": "gheg-family-04", "type": "multiple-choice", "prompt": "Vad betyder 'vëlla' på albanska?", "answer": "Bror", "options": ["Mormor", "Bror", "Mamma"] },
+    { "id": "gheg-family-05", "type": "multiple-choice", "prompt": "Betyder 'nanë' mamma?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-family-06", "type": "multiple-choice", "prompt": "Betyder 'babë' syster?", "answer": "Nej", "options": ["Ja", "Nej"] },
+    { "id": "gheg-family-07", "type": "multiple-choice", "prompt": "Vad betyder 'nanë'?", "answer": "Mamma", "options": ["Mamma", "Flicka", "Mormor"] },
+    { "id": "gheg-family-08", "type": "multiple-choice", "prompt": "Vad betyder 'vëlla'?", "answer": "Bror", "options": ["Bror", "Pappa", "Son"] },
+    { "id": "gheg-family-09", "type": "multiple-choice", "prompt": "Vad betyder 'gjyshja'?", "answer": "Mormor eller farmor", "options": ["Mormor eller farmor", "Syster", "Dotter"] },
+    { "id": "gheg-family-10", "type": "multiple-choice", "prompt": "Vad betyder 'gjyshi'?", "answer": "Morfar eller farfar", "options": ["Morfar eller farfar", "Son", "Bror"] },
+    { "id": "gheg-family-11", "type": "multiple-choice", "prompt": "Vad betyder 'djalë'?", "answer": "Pojke", "options": ["Pojke", "Mamma", "Moster"] },
+    { "id": "gheg-family-12", "type": "multiple-choice", "prompt": "Vilket albanskt ord kan betyda flicka?", "answer": "Çikë", "options": ["Çikë", "Gjysh", "Babë"] },
+    { "id": "gheg-family-13", "type": "multiple-choice", "prompt": "Vad betyder 'nanë e babë'?", "answer": "Mamma och pappa", "options": ["Mamma och pappa", "Syster och bror", "Mor- och farföräldrar"] },
+    { "id": "gheg-family-14", "type": "multiple-choice", "prompt": "Vad betyder 'teze'?", "answer": "Moster", "options": ["Moster", "Son", "Morfar"] },
+    { "id": "gheg-family-15", "type": "multiple-choice", "prompt": "Vad betyder 'babë'?", "answer": "Pappa", "options": ["Pappa", "Bror", "Morfar"] },
+    { "id": "gheg-family-16", "type": "multiple-choice", "prompt": "Vad betyder 'familje'?", "answer": "Familj", "options": ["Familj", "Djur", "Skola"] },
+    { "id": "gheg-family-17", "type": "multiple-choice", "prompt": "Betyder 'vëlla' bror?", "answer": "Ja", "options": ["Ja", "Nej"] },
+    { "id": "gheg-family-18", "type": "multiple-choice", "prompt": "Vad betyder 'motër'?", "answer": "Syster", "options": ["Syster", "Mamma", "Faster"] },
+    { "id": "gheg-family-19", "type": "multiple-choice", "prompt": "Vad betyder 'hallë'?", "answer": "Faster", "options": ["Faster", "Morfar", "Son"] },
+    { "id": "gheg-family-20", "type": "multiple-choice", "prompt": "Vad betyder 'gjyshja dhe gjyshi' tillsammans?", "answer": "Mormor och morfar eller farmor och farfar", "options": ["Mormor och morfar eller farmor och farfar", "Syster och bror", "Mamma och pappa"] }
+  ]
+}

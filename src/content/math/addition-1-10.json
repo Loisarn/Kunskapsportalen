@@ -1,0 +1,55 @@
+{
+  "id": "addition-1-10",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-addition",
+    "subjectId": "mathematics",
+    "title": "Tal och räkning",
+    "description": "Utforska tal, mönster och smarta sätt att räkna.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "addition-1-10",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-addition",
+    "level": 1,
+    "title": "Addition 1–10",
+    "description": "Upptäck hur tal blir större när vi lägger ihop dem.",
+    "emoji": "🌈",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "addition-basics",
+    "title": "Tal som blir fler",
+    "content": "När vi adderar lägger vi ihop tal. Du kan räkna på fingrarna, rita prickar eller tänka på saker du tycker om. Tre äpplen och två äpplen blir fem äpplen!"
+  },
+  "discoveries": [
+    { "id": "addition-discovery-1", "conceptId": "addition-1-10", "title": "Noll är ett jämnt tal", "body": "Noll betyder ingenting, men räknas ändå som ett jämnt tal. Det passar precis i mönstret där vartannat heltal är jämnt.", "emoji": "🖐️" },
+    { "id": "addition-discovery-2", "conceptId": "addition-1-10", "title": "Romarna skrev tal med bokstäver", "body": "I romerska siffror står I för ett och V för fem. Därför skrevs fyra som IV: ett före fem betyder ett mindre än fem.", "emoji": "🪞" },
+    { "id": "addition-discovery-3", "conceptId": "addition-1-10", "title": "Ett tal med hundra nollor", "body": "En googol är en etta följd av hundra nollor. Det är så stort att det är mycket större än antalet atomer i den synliga delen av universum.", "emoji": "👣" }
+  ],
+  "questions": [
+    { "id": "add-01", "type": "multiple-choice", "prompt": "Vad blir 2 + 3?", "answer": "5", "options": ["4", "5", "6"] },
+    { "id": "add-02", "type": "true-false", "prompt": "Blir 1 + 4 lika med 5?", "answer": "Sant" },
+    { "id": "add-03", "type": "text", "prompt": "Vad blir 6 + 2?", "answer": "8" },
+    { "id": "add-04", "type": "multiple-choice", "prompt": "Vad blir 3 + 3?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "add-05", "type": "true-false", "prompt": "Blir 2 + 5 lika med 8?", "answer": "Falskt" },
+    { "id": "add-06", "type": "text", "prompt": "Du har 4 kulor och får 3 till. Hur många har du?", "answer": "7" },
+    { "id": "add-07", "type": "multiple-choice", "prompt": "Vad blir 1 + 7?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "add-08", "type": "true-false", "prompt": "Blir 4 + 4 lika med 8?", "answer": "Sant" },
+    { "id": "add-09", "type": "text", "prompt": "Vad blir 5 + 2?", "answer": "7" },
+    { "id": "add-10", "type": "multiple-choice", "prompt": "Vad blir 2 + 6?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "add-11", "type": "true-false", "prompt": "Blir 3 + 5 lika med 8?", "answer": "Sant" },
+    { "id": "add-12", "type": "text", "prompt": "Vad blir 1 + 9?", "answer": "10" },
+    { "id": "add-13", "type": "multiple-choice", "prompt": "Vad blir 4 + 2?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "add-14", "type": "true-false", "prompt": "Blir 6 + 3 lika med 9?", "answer": "Sant" },
+    { "id": "add-15", "type": "text", "prompt": "Du ser 2 fåglar och 4 till flyger dit. Hur många fåglar är det?", "answer": "6" },
+    { "id": "add-16", "type": "multiple-choice", "prompt": "Vad blir 3 + 6?", "answer": "9", "options": ["8", "9", "10"] },
+    { "id": "add-17", "type": "true-false", "prompt": "Blir 5 + 5 lika med 10?", "answer": "Sant" },
+    { "id": "add-18", "type": "text", "prompt": "Vad blir 2 + 2?", "answer": "4" },
+    { "id": "add-19", "type": "multiple-choice", "prompt": "Vad blir 7 + 2?", "answer": "9", "options": ["8", "9", "10"] },
+    { "id": "add-20", "type": "true-false", "prompt": "Blir 6 + 4 lika med 10?", "answer": "Sant" }
+  ]
+}

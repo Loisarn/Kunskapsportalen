@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-colors",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-colors",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 4,
+    "title": "Färger på albanska",
+    "description": "Lär dig vad vanliga färgord på albanska betyder på svenska.",
+    "emoji": "🎨",
+    "difficulty": 4,
+    "requiredMastery": 90,
+    "prerequisites": ["albanian-gheg-numbers"]
+  },
+  "lesson": {
+    "id": "albanian-gheg-colors-basics",
+    "title": "Färger omkring oss",
+    "content": "På albanska betyder 'e kuqe' röd, 'blu' blå och 'i gjelbër' grön. Läs ett färgord och fundera på vad det betyder på svenska."
+  },
+  "discoveries": [
+    { "id": "gheg-colors-discovery-1", "conceptId": "albanian-gheg-colors", "title": "En örn med två huvuden", "body": "Albaniens flagga har en svart dubbelhövdad örn mot röd bakgrund. Örnen är en välkänd symbol för landet.", "emoji": "🦅" },
+    { "id": "gheg-colors-discovery-2", "conceptId": "albanian-gheg-colors", "title": "Ett alfabet med 36 bokstäver", "body": "Albanska skrivs med 36 bokstäver. Några skrivs med två tecken, som 'dh' och 'sh', men räknas ändå som egna bokstäver.", "emoji": "🔤" },
+    { "id": "gheg-colors-discovery-3", "conceptId": "albanian-gheg-colors", "title": "Albanska är en egen språkgren", "body": "Albanska hör till en egen gren av de indoeuropeiska språken. Det är alltså inte nära släkt med grannspråken grekiska eller slaviska språk.", "emoji": "🌍" }
+  ],
+  "questions": [
+    { "id": "gheg-colors-01", "type": "multiple-choice", "prompt": "Vad betyder 'e kuqe'?", "answer": "Röd", "options": ["Blå", "Röd", "Grön"] },
+    { "id": "gheg-colors-02", "type": "multiple-choice", "prompt": "Vad betyder 'blu'?", "answer": "Blå", "options": ["Blå", "Brun", "Svart"] },
+    { "id": "gheg-colors-03", "type": "multiple-choice", "prompt": "Vilken färg betyder 'i gjelbër'?", "answer": "Grön", "options": ["Grön", "Röd", "Vit"] },
+    { "id": "gheg-colors-04", "type": "multiple-choice", "prompt": "Vad betyder 'e verdhë'?", "answer": "Gul", "options": ["Gul", "Rosa", "Grå"] },
+    { "id": "gheg-colors-05", "type": "multiple-choice", "prompt": "Betyder 'e bardhë' vit?", "answer": "Sant", "options": ["Sant", "Falskt"] },
+    { "id": "gheg-colors-06", "type": "text", "prompt": "Skriv den svenska betydelsen av 'e kuqe'.", "answer": "Röd" },
+    { "id": "gheg-colors-07", "type": "text", "prompt": "Skriv den svenska betydelsen av 'blu'.", "answer": "Blå" },
+    { "id": "gheg-colors-08", "type": "multiple-choice", "prompt": "Vad betyder 'e zezë'?", "answer": "Svart", "options": ["Svart", "Gul", "Rosa"] },
+    { "id": "gheg-colors-09", "type": "multiple-choice", "prompt": "Vad betyder 'rozë'?", "answer": "Rosa", "options": ["Rosa", "Blå", "Brun"] },
+    { "id": "gheg-colors-10", "type": "multiple-choice", "prompt": "Vad betyder 'portokalli'?", "answer": "Orange", "options": ["Orange", "Grå", "Svart"] },
+    { "id": "gheg-colors-11", "type": "multiple-choice", "prompt": "Betyder 'e zezë' svart?", "answer": "Sant", "options": ["Sant", "Falskt"] },
+    { "id": "gheg-colors-12", "type": "multiple-choice", "prompt": "Betyder 'blu' grön?", "answer": "Falskt", "options": ["Sant", "Falskt"] },
+    { "id": "gheg-colors-13", "type": "multiple-choice", "prompt": "Vad betyder 'vjollcë'?", "answer": "Lila", "options": ["Lila", "Vit", "Röd"] },
+    { "id": "gheg-colors-14", "type": "multiple-choice", "prompt": "Vad betyder 'gri'?", "answer": "Grå", "options": ["Grå", "Gul", "Grön"] },
+    { "id": "gheg-colors-15", "type": "text", "prompt": "Skriv den svenska betydelsen av 'i gjelbër'.", "answer": "Grön" },
+    { "id": "gheg-colors-16", "type": "multiple-choice", "prompt": "Vad betyder 'kafe' när man talar om en färg?", "answer": "Brun", "options": ["Brun", "Blå", "Rosa"] },
+    { "id": "gheg-colors-17", "type": "multiple-choice", "prompt": "Betyder 'e verdhë' gul?", "answer": "Sant", "options": ["Sant", "Falskt"] },
+    { "id": "gheg-colors-18", "type": "text", "prompt": "Skriv den svenska betydelsen av 'portokalli'.", "answer": "Orange" },
+    { "id": "gheg-colors-19", "type": "multiple-choice", "prompt": "Vad betyder 'vjollcë'?", "answer": "Lila", "options": ["Lila", "Vit", "Röd"] },
+    { "id": "gheg-colors-20", "type": "multiple-choice", "prompt": "Betyder 'rozë' rosa?", "answer": "Sant", "options": ["Sant", "Falskt"] }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "english-simple-sentences",
+  "version": "1.0",
+  "subject": { "id": "english", "name": "Engelska" },
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "english-simple-sentences",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 7,
+    "title": "Enkla meningar på engelska",
+    "description": "Sätt ihop vanliga ord till korta engelska meningar.",
+    "emoji": "💬",
+    "difficulty": 3,
+    "requiredMastery": 90,
+    "prerequisites": ["english-everyday-objects"]
+  },
+  "lesson": {
+    "id": "english-simple-sentences-basics",
+    "title": "Ord blir meningar",
+    "content": "På engelska kan du säga 'I am happy' när du är glad och 'I like apples' när du tycker om äpplen. Nu övar vi på att sätta ihop ord!"
+  },
+  "discoveries": [
+    { "id": "sentences-discovery-1", "conceptId": "english-simple-sentences", "title": "Bokstaven I skrivs alltid stor", "body": "På engelska skrivs ordet 'I', som betyder 'jag', alltid med stor bokstav. Det gäller även mitt i en mening.", "emoji": "😊" },
+    { "id": "sentences-discovery-2", "conceptId": "english-simple-sentences", "title": "Robot kommer från ett annat språk", "body": "Det engelska ordet 'robot' kommer från tjeckiskan. Ordet började användas i en pjäs för över hundra år sedan.", "emoji": "📖" },
+    { "id": "sentences-discovery-3", "conceptId": "english-simple-sentences", "title": "Alfabetets namn började på grekiska", "body": "Ordet 'alphabet' kommer från namnen på de två första grekiska bokstäverna: alfa och beta. Många språk har lånat ordet.", "emoji": "🐱" }
+  ],
+  "questions": [
+    { "id": "sentences-01", "type": "multiple-choice", "prompt": "Vad betyder 'I am happy'?", "answer": "Jag är glad", "options": ["Jag är glad", "Jag har en bok", "Jag gillar mat"] },
+    { "id": "sentences-02", "type": "multiple-choice", "prompt": "Hur säger man 'Jag har en bok' på engelska?", "answer": "I have a book", "options": ["I have a book", "I am a book", "I like a book"] },
+    { "id": "sentences-03", "type": "multiple-choice", "prompt": "Vad betyder 'I like cats'?", "answer": "Jag tycker om katter", "options": ["Jag har katter", "Jag tycker om katter", "Jag ser en katt"] },
+    { "id": "sentences-04", "type": "true-false", "prompt": "Betyder 'I am' jag är?", "answer": "Sant" },
+    { "id": "sentences-05", "type": "true-false", "prompt": "Betyder 'I have a dog' jag har en katt?", "answer": "Falskt" },
+    { "id": "sentences-06", "type": "text", "prompt": "Skriv 'Jag är glad' på engelska.", "answer": "I am happy" },
+    { "id": "sentences-07", "type": "text", "prompt": "Skriv 'Jag har en bok' på engelska.", "answer": "I have a book" },
+    { "id": "sentences-08", "type": "multiple-choice", "prompt": "Vad betyder 'This is a cat'?", "answer": "Det här är en katt", "options": ["Det här är en katt", "Jag har en katt", "Katten är glad"] },
+    { "id": "sentences-09", "type": "multiple-choice", "prompt": "Hur säger man 'Jag tycker om äpplen'?", "answer": "I like apples", "options": ["I have apples", "I like apples", "I am apples"] },
+    { "id": "sentences-10", "type": "multiple-choice", "prompt": "Vad betyder 'It is red'?", "answer": "Den är röd", "options": ["Den är röd", "Jag är röd", "Det är ett äpple"] },
+    { "id": "sentences-11", "type": "true-false", "prompt": "Betyder 'You are kind' du är snäll?", "answer": "Sant" },
+    { "id": "sentences-12", "type": "true-false", "prompt": "Betyder 'I like milk' jag tycker om vatten?", "answer": "Falskt" },
+    { "id": "sentences-13", "type": "multiple-choice", "prompt": "Vad betyder 'I see a bird'?", "answer": "Jag ser en fågel", "options": ["Jag har en fågel", "Jag ser en fågel", "Jag tycker om fåglar"] },
+    { "id": "sentences-14", "type": "multiple-choice", "prompt": "Hur säger man 'Det här är min mamma'?", "answer": "This is my mother", "options": ["This is my mother", "I am my mother", "I like my mother"] },
+    { "id": "sentences-15", "type": "text", "prompt": "Skriv 'Jag tycker om katter' på engelska.", "answer": "I like cats" },
+    { "id": "sentences-16", "type": "multiple-choice", "prompt": "Vad betyder 'We are friends'?", "answer": "Vi är vänner", "options": ["Vi har vänner", "Vi är vänner", "De är vänner"] },
+    { "id": "sentences-17", "type": "true-false", "prompt": "Betyder 'This is my book' det här är min bok?", "answer": "Sant" },
+    { "id": "sentences-18", "type": "text", "prompt": "Skriv 'Jag har en katt' på engelska.", "answer": "I have a cat" },
+    { "id": "sentences-19", "type": "multiple-choice", "prompt": "Vad betyder 'The dog is big'?", "answer": "Hunden är stor", "options": ["Hunden är liten", "Hunden är stor", "Katten är stor"] },
+    { "id": "sentences-20", "type": "true-false", "prompt": "Betyder 'I am hungry' jag är hungrig?", "answer": "Sant" }
+  ]
+}

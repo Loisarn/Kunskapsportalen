@@ -1,0 +1,56 @@
+{
+  "id": "early-reading-3",
+  "version": "1.0",
+  "subject": { "id": "swedish", "name": "Svenska" },
+  "learningPath": {
+    "id": "early-reading",
+    "subjectId": "swedish",
+    "title": "Lära läsa",
+    "description": "Bokstäver, språkljud och de första orden.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "early-reading-3",
+    "subjectId": "swedish",
+    "pathId": "early-reading",
+    "level": 3,
+    "title": "Längre ord och korta meningar",
+    "description": "Läs längre ord och förstå korta meningar.",
+    "emoji": "📖",
+    "difficulty": 3,
+    "requiredMastery": 80,
+    "prerequisites": ["early-reading-2"]
+  },
+  "lesson": {
+    "id": "early-reading-3-basics",
+    "title": "Läs en hel mening",
+    "content": "Nu kan du läsa lite längre ord och korta meningar. Läs hela meningen och leta efter ledtrådar som berättar vem som gör något och vad som händer."
+  },
+  "discoveries": [
+    { "id": "early-reading-3-discovery-1", "conceptId": "early-reading-3", "title": "Ord kan byggas av mindre delar", "body": "I ordet fotboll kan du hitta orden fot och boll. Att känna igen delar kan hjälpa dig läsa längre ord.", "emoji": "⚽" },
+    { "id": "early-reading-3-discovery-2", "conceptId": "early-reading-3", "title": "En mening berättar något", "body": "En mening kan berätta vem som gör något. Läs från början till slut för att förstå vad som händer.", "emoji": "💬" },
+    { "id": "early-reading-3-discovery-3", "conceptId": "early-reading-3", "title": "Punkten visar att meningen är slut", "body": "När du ser en punkt vet du att meningen är färdig. Då kan du stanna upp och tänka på vad du läste.", "emoji": "🔴" }
+  ],
+  "questions": [
+    { "id": "early-read3-01", "type": "multiple-choice", "prompt": "Maja läser en bok. Vad läser Maja?", "answer": "BOK", "options": ["BOK", "MAT", "BIL"] },
+    { "id": "early-read3-02", "type": "multiple-choice", "prompt": "Hunden sover på mattan. Vem sover?", "answer": "HUNDEN", "options": ["MATTAN", "HUNDEN", "PAPPAN"] },
+    { "id": "early-read3-03", "type": "multiple-choice", "prompt": "Pappa kokar pasta. Vad kokar pappa?", "answer": "PASTA", "options": ["PASTA", "FISK", "SOPPA"] },
+    { "id": "early-read3-04", "type": "multiple-choice", "prompt": "Lina tar på sig en jacka. Vad tar Lina på sig?", "answer": "JACKA", "options": ["MÖSSA", "JACKA", "SKOR"] },
+    { "id": "early-read3-05", "type": "multiple-choice", "prompt": "Katten jagar en liten mus. Vem jagar musen?", "answer": "KATTEN", "options": ["MUSEN", "KATTEN", "LILLE"] },
+    { "id": "early-read3-06", "type": "multiple-choice", "prompt": "Elias cyklar till skolan. Hur tar han sig dit?", "answer": "CYKLAR", "options": ["SPRINGER", "CYKLAR", "SIMMAR"] },
+    { "id": "early-read3-07", "type": "multiple-choice", "prompt": "Solen lyser över huset. Vad lyser?", "answer": "SOLEN", "options": ["HUSET", "SOLEN", "MOLNET"] },
+    { "id": "early-read3-08", "type": "multiple-choice", "prompt": "Noah hittar en röd vante. Vad hittar Noah?", "answer": "VANTE", "options": ["BOLL", "VANTE", "BOK"] },
+    { "id": "early-read3-09", "type": "multiple-choice", "prompt": "Hästen springer över ängen. Vad gör hästen?", "answer": "SPRINGER", "options": ["SOVER", "SPRINGER", "ÄTER"] },
+    { "id": "early-read3-10", "type": "multiple-choice", "prompt": "Mira dricker vatten efter leken. Vad dricker Mira?", "answer": "VATTEN", "options": ["MJÖLK", "VATTEN", "SAFT"] },
+    { "id": "early-read3-11", "type": "multiple-choice", "prompt": "Farfar planterar ett frö i jorden. Vad planterar han?", "answer": "FRÖ", "options": ["TRÄD", "FRÖ", "BLOMMA"] },
+    { "id": "early-read3-12", "type": "multiple-choice", "prompt": "Den gula bussen stannar vid skolan. Vilken färg har bussen?", "answer": "GUL", "options": ["BLÅ", "GUL", "RÖD"] },
+    { "id": "early-read3-13", "type": "multiple-choice", "prompt": "Amina öppnar fönstret för att vädra. Vad öppnar hon?", "answer": "FÖNSTRET", "options": ["DÖRREN", "FÖNSTRET", "VÄSKAN"] },
+    { "id": "early-read3-14", "type": "multiple-choice", "prompt": "Leo lägger den rena tröjan i lådan. Vad lägger Leo undan?", "answer": "TRÖJAN", "options": ["SKEDEN", "TRÖJAN", "BOLLEN"] },
+    { "id": "early-read3-15", "type": "multiple-choice", "prompt": "Sara matar kaninen med en morot. Vad får kaninen?", "answer": "MOROT", "options": ["ÄPPLE", "MOROT", "GRÄS"] },
+    { "id": "early-read3-16", "type": "multiple-choice", "prompt": "Viggo tar stövlarna när det regnar. Vad tar Viggo på sig?", "answer": "STÖVLAR", "options": ["SANDALER", "STÖVLAR", "TOFFLOR"] },
+    { "id": "early-read3-17", "type": "multiple-choice", "prompt": "Efter maten borstar Elin sina tänder. Vad borstar hon?", "answer": "TÄNDER", "options": ["HÅRET", "TÄNDER", "SKORNA"] },
+    { "id": "early-read3-18", "type": "multiple-choice", "prompt": "Olle bygger ett högt torn av klossar. Vad bygger Olle?", "answer": "TORN", "options": ["BÅT", "TORN", "KOJA"] },
+    { "id": "early-read3-19", "type": "multiple-choice", "prompt": "Mamma läser en saga före läggdags. När läser mamma sagan?", "answer": "FÖRE LÄGGDAGS", "options": ["PÅ MORGONEN", "FÖRE LÄGGDAGS", "VID LUNCH"] },
+    { "id": "early-read3-20", "type": "multiple-choice", "prompt": "En liten fågel bygger bo i trädet. Var bygger fågeln bo?", "answer": "I TRÄDET", "options": ["I VATTNET", "I TRÄDET", "I HUSET"] }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "english-everyday-objects",
+  "version": "1.0",
+  "subject": { "id": "english", "name": "Engelska" },
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "english-everyday-objects",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 6,
+    "title": "Vardagssaker på engelska",
+    "description": "Lär dig engelska ord för saker du använder varje dag.",
+    "emoji": "🎒",
+    "difficulty": 3,
+    "requiredMastery": 90,
+    "prerequisites": ["english-food"]
+  },
+  "lesson": {
+    "id": "english-everyday-objects-basics",
+    "title": "Saker omkring oss",
+    "content": "En bok heter book, en stol heter chair och en väska heter bag på engelska. Vi hittar engelska ord hemma, i skolan och nästan överallt!"
+  },
+  "discoveries": [
+    { "id": "objects-discovery-1", "conceptId": "english-everyday-objects", "title": "Robot kom från tjeckiska", "body": "Det engelska ordet 'robot' kommer från tjeckiska. Det blev känt genom en pjäs från 1920 om konstgjorda arbetare.", "emoji": "🤖" },
+    { "id": "objects-discovery-2", "conceptId": "english-everyday-objects", "title": "Shampoo har rötter i hindi", "body": "Engelskans 'shampoo' kom från hindi. Ordet användes först om att massera eller tvätta håret.", "emoji": "🧴" },
+    { "id": "objects-discovery-3", "conceptId": "english-everyday-objects", "title": "Pajamas kom långväga", "body": "Engelskans 'pajamas' lånades från hindi och urdu, där ordet beskrev lösa byxor. Klädesplagget och ordet spreds vidare mellan länder.", "emoji": "🛏️" }
+  ],
+  "questions": [
+    { "id": "objects-01", "type": "multiple-choice", "prompt": "Vad heter bok på engelska?", "answer": "Book", "options": ["Book", "Chair", "Door"] },
+    { "id": "objects-02", "type": "multiple-choice", "prompt": "Vad betyder 'chair'?", "answer": "Stol", "options": ["Bord", "Stol", "Väska"] },
+    { "id": "objects-03", "type": "multiple-choice", "prompt": "Vad heter bord på engelska?", "answer": "Table", "options": ["Window", "Table", "Pencil"] },
+    { "id": "objects-04", "type": "true-false", "prompt": "Betyder 'door' dörr?", "answer": "Sant" },
+    { "id": "objects-05", "type": "true-false", "prompt": "Heter fönster 'bag' på engelska?", "answer": "Falskt" },
+    { "id": "objects-06", "type": "text", "prompt": "Skriv engelska ordet för bok.", "answer": "Book" },
+    { "id": "objects-07", "type": "text", "prompt": "Skriv engelska ordet för stol.", "answer": "Chair" },
+    { "id": "objects-08", "type": "multiple-choice", "prompt": "Vad betyder 'pencil'?", "answer": "Blyertspenna", "options": ["Blyertspenna", "Fönster", "Säng"] },
+    { "id": "objects-09", "type": "multiple-choice", "prompt": "Vad heter väska på engelska?", "answer": "Bag", "options": ["Bag", "Bed", "Cup"] },
+    { "id": "objects-10", "type": "multiple-choice", "prompt": "Vad betyder 'window'?", "answer": "Fönster", "options": ["Dörr", "Fönster", "Bord"] },
+    { "id": "objects-11", "type": "true-false", "prompt": "Betyder 'bed' säng?", "answer": "Sant" },
+    { "id": "objects-12", "type": "true-false", "prompt": "Heter bok 'phone' på engelska?", "answer": "Falskt" },
+    { "id": "objects-13", "type": "multiple-choice", "prompt": "Vad heter kopp på engelska?", "answer": "Cup", "options": ["Cup", "Book", "Door"] },
+    { "id": "objects-14", "type": "multiple-choice", "prompt": "Vad betyder 'phone'?", "answer": "Telefon", "options": ["Telefon", "Väska", "Stol"] },
+    { "id": "objects-15", "type": "text", "prompt": "Skriv engelska ordet för dörr.", "answer": "Door" },
+    { "id": "objects-16", "type": "multiple-choice", "prompt": "Vad heter penna på engelska?", "answer": "Pencil", "options": ["Pencil", "Table", "Bed"] },
+    { "id": "objects-17", "type": "true-false", "prompt": "Heter bord 'table' på engelska?", "answer": "Sant" },
+    { "id": "objects-18", "type": "text", "prompt": "Skriv engelska ordet för väska.", "answer": "Bag" },
+    { "id": "objects-19", "type": "multiple-choice", "prompt": "Vad betyder 'clock'?", "answer": "Klocka", "options": ["Klocka", "Fönster", "Telefon"] },
+    { "id": "objects-20", "type": "true-false", "prompt": "Betyder 'cup' kopp?", "answer": "Sant" }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "subtraction-1-10",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-subtraction",
+    "subjectId": "mathematics",
+    "title": "Subtraktion",
+    "description": "Ta bort, jämför och räkna bakåt.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "subtraction-1-10",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-subtraction",
+    "level": 1,
+    "title": "Subtraktion inom 10",
+    "description": "Öva på att ta bort och räkna bakåt från tal upp till tio.",
+    "emoji": "➖",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "subtraction-to-10",
+    "title": "När något tas bort",
+    "content": "Subtraktion betyder att ta bort eller jämföra. Om du har 7 äpplen och äter 3 finns 4 kvar. Du kan också räkna bakåt: 7, 6, 5, 4."
+  },
+  "discoveries": [
+    { "id": "sub10-discovery-1", "conceptId": "subtraction-1-10", "title": "Räkna bakåt", "body": "När du tar bort 3 från 8 kan du ta tre steg bakåt: 7, 6, 5. Svaret är 5.", "emoji": "↩️" },
+    { "id": "sub10-discovery-2", "conceptId": "subtraction-1-10", "title": "Minus och plus hör ihop", "body": "Om 5 + 3 = 8 vet du också att 8 − 3 = 5.", "emoji": "🔗" },
+    { "id": "sub10-discovery-3", "conceptId": "subtraction-1-10", "title": "Tar du bort allt?", "body": "När du tar bort ett tal från sig självt blir det noll. Till exempel är 6 − 6 = 0.", "emoji": "⭕" }
+  ],
+  "questions": [
+    { "id": "sub10-01", "type": "multiple-choice", "prompt": "Vad blir 5 − 2?", "answer": "3", "options": ["2", "3", "4"] },
+    { "id": "sub10-02", "type": "text", "prompt": "Vad blir 7 − 3?", "answer": "4" },
+    { "id": "sub10-03", "type": "multiple-choice", "prompt": "Vad blir 9 − 4?", "answer": "5", "options": ["4", "5", "6"] },
+    { "id": "sub10-04", "type": "text", "prompt": "Vad blir 6 − 1?", "answer": "5" },
+    { "id": "sub10-05", "type": "multiple-choice", "prompt": "Vad blir 8 − 3?", "answer": "5", "options": ["4", "5", "6"] },
+    { "id": "sub10-06", "type": "text", "prompt": "Vad blir 10 − 4?", "answer": "6" },
+    { "id": "sub10-07", "type": "multiple-choice", "prompt": "Vad blir 7 − 5?", "answer": "2", "options": ["1", "2", "3"] },
+    { "id": "sub10-08", "type": "text", "prompt": "Vad blir 9 − 2?", "answer": "7" },
+    { "id": "sub10-09", "type": "multiple-choice", "prompt": "Vad blir 6 − 4?", "answer": "2", "options": ["1", "2", "3"] },
+    { "id": "sub10-10", "type": "text", "prompt": "Vad blir 8 − 6?", "answer": "2" },
+    { "id": "sub10-11", "type": "multiple-choice", "prompt": "Vad blir 10 − 7?", "answer": "3", "options": ["2", "3", "4"] },
+    { "id": "sub10-12", "type": "text", "prompt": "Vad blir 5 − 1?", "answer": "4" },
+    { "id": "sub10-13", "type": "multiple-choice", "prompt": "Vad blir 4 − 4?", "answer": "0", "options": ["0", "1", "4"] },
+    { "id": "sub10-14", "type": "text", "prompt": "Vad blir 9 − 9?", "answer": "0" },
+    { "id": "sub10-15", "type": "true-false", "prompt": "Blir 8 − 3 lika med 5?", "answer": "Sant" },
+    { "id": "sub10-16", "type": "text", "prompt": "Du har 7 päron och äter 2. Hur många finns kvar?", "answer": "5" },
+    { "id": "sub10-17", "type": "multiple-choice", "prompt": "Vad blir 10 − 2?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "sub10-18", "type": "text", "prompt": "Vad blir 6 − 3?", "answer": "3" },
+    { "id": "sub10-19", "type": "multiple-choice", "prompt": "Vad blir 7 − 1?", "answer": "6", "options": ["5", "6", "7"] },
+    { "id": "sub10-20", "type": "true-false", "prompt": "Blir 9 − 5 lika med 3?", "answer": "Falskt" }
+  ]
+}

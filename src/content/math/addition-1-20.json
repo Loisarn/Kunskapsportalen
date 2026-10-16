@@ -1,0 +1,55 @@
+{
+  "id": "addition-1-20",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-addition",
+    "subjectId": "mathematics",
+    "title": "Tal och räkning",
+    "description": "Utforska tal, mönster och smarta sätt att räkna.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "addition-1-20",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-addition",
+    "level": 2,
+    "title": "Addition upp till 20",
+    "description": "Lägg ihop tal och utforska summor upp till tjugo.",
+    "emoji": "➕",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["addition-1-10"]
+  },
+  "lesson": {
+    "id": "addition-to-20",
+    "title": "Räkna vidare till tjugo",
+    "content": "När summan blir större än tio kan du först räkna upp till tio och sedan vidare. Till exempel blir 8 + 5 samma sak som 8 + 2 + 3, alltså 13."
+  },
+  "discoveries": [
+    { "id": "addition20-discovery-1", "conceptId": "addition-1-20", "title": "Gör en tia", "body": "Talet 8 behöver 2 för att bli 10. Därför kan 8 + 5 räknas som 10 + 3 = 13.", "emoji": "🔟" },
+    { "id": "addition20-discovery-2", "conceptId": "addition-1-20", "title": "Ordningen spelar ingen roll", "body": "5 + 8 och 8 + 5 blir båda 13. Du kan börja med det tal som känns lättast.", "emoji": "🔄" },
+    { "id": "addition20-discovery-3", "conceptId": "addition-1-20", "title": "Dubbelt och en till", "body": "6 + 7 är nästan 6 + 6. Ett dubbeltal och en till blir 13.", "emoji": "✨" }
+  ],
+  "questions": [
+    { "id": "add20-01", "type": "multiple-choice", "prompt": "Vad blir 8 + 5?", "answer": "13", "options": ["12", "13", "14"] },
+    { "id": "add20-02", "type": "text", "prompt": "Vad blir 9 + 4?", "answer": "13" },
+    { "id": "add20-03", "type": "multiple-choice", "prompt": "Vad blir 7 + 6?", "answer": "13", "options": ["12", "13", "15"] },
+    { "id": "add20-04", "type": "text", "prompt": "Vad blir 8 + 7?", "answer": "15" },
+    { "id": "add20-05", "type": "multiple-choice", "prompt": "Vad blir 9 + 8?", "answer": "17", "options": ["16", "17", "18"] },
+    { "id": "add20-06", "type": "text", "prompt": "Vad blir 6 + 8?", "answer": "14" },
+    { "id": "add20-07", "type": "multiple-choice", "prompt": "Vad blir 12 + 3?", "answer": "15", "options": ["14", "15", "16"] },
+    { "id": "add20-08", "type": "text", "prompt": "Vad blir 10 + 6?", "answer": "16" },
+    { "id": "add20-09", "type": "multiple-choice", "prompt": "Vad blir 11 + 7?", "answer": "18", "options": ["17", "18", "19"] },
+    { "id": "add20-10", "type": "text", "prompt": "Vad blir 13 + 5?", "answer": "18" },
+    { "id": "add20-11", "type": "multiple-choice", "prompt": "Vad blir 14 + 4?", "answer": "18", "options": ["17", "18", "20"] },
+    { "id": "add20-12", "type": "text", "prompt": "Vad blir 12 + 8?", "answer": "20" },
+    { "id": "add20-13", "type": "multiple-choice", "prompt": "Vad blir 15 + 3?", "answer": "18", "options": ["17", "18", "19"] },
+    { "id": "add20-14", "type": "text", "prompt": "Vad blir 9 + 9?", "answer": "18" },
+    { "id": "add20-15", "type": "true-false", "prompt": "Blir 7 + 8 lika med 15?", "answer": "Sant" },
+    { "id": "add20-16", "type": "text", "prompt": "Du har 8 kulor och får 9 till. Hur många har du?", "answer": "17" },
+    { "id": "add20-17", "type": "multiple-choice", "prompt": "Vad blir 16 + 2?", "answer": "18", "options": ["17", "18", "20"] },
+    { "id": "add20-18", "type": "text", "prompt": "Vad blir 5 + 9?", "answer": "14" },
+    { "id": "add20-19", "type": "multiple-choice", "prompt": "Vad blir 11 + 9?", "answer": "20", "options": ["19", "20", "21"] },
+    { "id": "add20-20", "type": "true-false", "prompt": "Blir 6 + 7 lika med 14?", "answer": "Falskt" }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "early-reading-1",
+  "version": "1.0",
+  "subject": {
+    "id": "swedish",
+    "name": "Svenska"
+  },
+  "learningPath": {
+    "id": "early-reading",
+    "subjectId": "swedish",
+    "title": "Lära läsa",
+    "description": "Bokstäver, språkljud och de första orden.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "early-reading-1",
+    "subjectId": "swedish",
+    "pathId": "early-reading",
+    "level": 1,
+    "title": "Bokstäver och de första ljuden",
+    "description": "Känn igen bokstäver, lyssna efter språkljud och ljuda ihop korta ord.",
+    "emoji": "🔤",
+    "difficulty": 1,
+    "requiredMastery": 80,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "early-reading-basics",
+    "title": "Bokstäver blir ord",
+    "content": "Bokstäver står för ljud. När vi säger ljuden långsamt och sätter ihop dem kan de bilda ett ord. Börja med att känna igen bokstäverna och läsa korta ord."
+  },
+  "discoveries": [
+    {
+      "id": "early-reading-discovery-1",
+      "conceptId": "early-reading-1",
+      "title": "Bokstäver visar språkljud",
+      "body": "När vi läser kopplar vi bokstäver till ljud. Bokstaven S står till exempel ofta för ljudet sss.",
+      "emoji": "🔊"
+    },
+    {
+      "id": "early-reading-discovery-2",
+      "conceptId": "early-reading-1",
+      "title": "Ljud kan bli ord",
+      "body": "Säg S, O och L långsamt. När ljuden sätts ihop hör du ordet sol.",
+      "emoji": "☀️"
+    },
+    {
+      "id": "early-reading-discovery-3",
+      "conceptId": "early-reading-1",
+      "title": "Samma bokstav kan se olika ut",
+      "body": "A och a är samma bokstav. Den ena är stor och den andra liten.",
+      "emoji": "🔠"
+    }
+  ],
+  "questions": [
+    { "id": "early-read-01", "type": "multiple-choice", "prompt": "Vilken bokstav hörs först i ordet sol?", "answer": "S", "options": ["S", "M", "L"] },
+    { "id": "early-read-02", "type": "multiple-choice", "prompt": "Vilken bokstav hörs först i ordet mus?", "answer": "M", "options": ["S", "M", "T"] },
+    { "id": "early-read-03", "type": "multiple-choice", "prompt": "Vilken bokstav hörs först i ordet apa?", "answer": "A", "options": ["O", "A", "U"] },
+    { "id": "early-read-04", "type": "multiple-choice", "prompt": "Vilken bokstav hörs sist i ordet sol?", "answer": "L", "options": ["L", "S", "M"] },
+    { "id": "early-read-05", "type": "multiple-choice", "prompt": "Vilken liten bokstav hör ihop med stora A?", "answer": "a", "options": ["o", "a", "e"] },
+    { "id": "early-read-06", "type": "multiple-choice", "prompt": "Vilken stor bokstav hör ihop med lilla m?", "answer": "M", "options": ["N", "W", "M"] },
+    { "id": "early-read-07", "type": "multiple-choice", "prompt": "Vilka ljud hör du i ordet is?", "answer": "I - S", "options": ["I - S", "S - I", "M - S"] },
+    { "id": "early-read-08", "type": "multiple-choice", "prompt": "Vilket ord blir ljuden S - O - L?", "answer": "SOL", "options": ["MOS", "SOL", "LOS"] },
+    { "id": "early-read-09", "type": "multiple-choice", "prompt": "Vilket ord blir ljuden M - U - S?", "answer": "MUS", "options": ["SUM", "MUS", "SOM"] },
+    { "id": "early-read-10", "type": "multiple-choice", "prompt": "Vilken bokstav börjar ordet bil?", "answer": "B", "options": ["D", "B", "L"] },
+    { "id": "early-read-11", "type": "multiple-choice", "prompt": "Vilken bokstav slutar ordet ris?", "answer": "S", "options": ["R", "I", "S"] },
+    { "id": "early-read-12", "type": "multiple-choice", "prompt": "Vilket ord blir ljuden M - A - T?", "answer": "MAT", "options": ["MAT", "TAM", "MOT"] },
+    { "id": "early-read-13", "type": "multiple-choice", "prompt": "Vilket ljud hörs först i ordet får?", "answer": "F", "options": ["F", "Å", "R"] },
+    { "id": "early-read-14", "type": "multiple-choice", "prompt": "Vilket ord börjar med bokstaven S?", "answer": "SOL", "options": ["APA", "SOL", "MAT"] },
+    { "id": "early-read-15", "type": "multiple-choice", "prompt": "Vilken av bokstäverna är en vokal?", "answer": "A", "options": ["S", "M", "A"] },
+    { "id": "early-read-16", "type": "multiple-choice", "prompt": "Vilken av bokstäverna är en konsonant?", "answer": "M", "options": ["A", "O", "M"] },
+    { "id": "early-read-17", "type": "multiple-choice", "prompt": "Vilket ljud saknas i S - O - _ när ordet ska bli sol?", "answer": "L", "options": ["M", "L", "S"] },
+    { "id": "early-read-18", "type": "multiple-choice", "prompt": "Vilket ljud saknas i _ - U - S när ordet ska bli mus?", "answer": "M", "options": ["S", "R", "M"] },
+    { "id": "early-read-19", "type": "multiple-choice", "prompt": "Vilken bokstav kommer efter A i alfabetet?", "answer": "B", "options": ["Z", "B", "C"] },
+    { "id": "early-read-20", "type": "multiple-choice", "prompt": "Vilken bokstav kommer före C i alfabetet?", "answer": "B", "options": ["A", "B", "D"] }
+  ]
+}

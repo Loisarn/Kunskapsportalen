@@ -1,0 +1,193 @@
+{
+  "id": "english-animals",
+  "version": "1.0",
+
+  "subject": {
+    "id": "english",
+    "name": "Engelska"
+  },
+
+  "learningPath": {
+    "id": "english-vocabulary",
+    "subjectId": "english",
+    "title": "Engelska ord",
+    "description": "Lär dig vanliga engelska ord genom lek, upptäckter och äventyr.",
+    "discoveryMasteryBonus": 5
+  },
+
+  "concept": {
+    "id": "english-animals",
+    "subjectId": "english",
+    "pathId": "english-vocabulary",
+    "level": 2,
+    "title": "Djur på engelska",
+    "description": "Lär dig vad vanliga djur heter på engelska.",
+    "emoji": "🐾",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["english-colors"]
+  },
+
+  "lesson": {
+    "id": "english-animals-basics",
+    "title": "Djur runt omkring oss",
+    "content": "Många djur har engelska namn som används över hela världen. Hund heter dog, katt heter cat och fågel heter bird. Nu ska vi upptäcka fler djur!"
+  },
+
+  "discoveries": [
+    {
+      "id": "animal-discovery-1",
+      "conceptId": "english-animals",
+      "title": "Ladybird eller ladybug?",
+      "body": "En liten röd skalbagge heter 'ladybird' i brittisk engelska och 'ladybug' i amerikansk engelska. Båda orden beskriver samma insekt.",
+      "emoji": "🐞"
+    },
+    {
+      "id": "animal-discovery-2",
+      "conceptId": "english-animals",
+      "title": "Mus blir mice, inte mouses",
+      "body": "På engelska blir 'mouse' till 'mice' i plural. Det är ett gammalt ordmönster som engelskan har behållit.",
+      "emoji": "🐭"
+    },
+    {
+      "id": "animal-discovery-3",
+      "conceptId": "english-animals",
+      "title": "En fisk går i en 'school'",
+      "body": "På engelska kan en grupp fiskar kallas 'a school of fish'. Det låter som om fiskarna är på väg till lektionen tillsammans.",
+      "emoji": "🐟"
+    }
+  ],
+
+  "questions": [
+    {
+      "id": "animal-01",
+      "type": "multiple-choice",
+      "prompt": "Vad heter hund på engelska?",
+      "answer": "Dog",
+      "options": ["Dog", "Cat", "Bird"]
+    },
+    {
+      "id": "animal-02",
+      "type": "multiple-choice",
+      "prompt": "Vad heter katt på engelska?",
+      "answer": "Cat",
+      "options": ["Horse", "Cat", "Fish"]
+    },
+    {
+      "id": "animal-03",
+      "type": "multiple-choice",
+      "prompt": "Vad heter fågel på engelska?",
+      "answer": "Bird",
+      "options": ["Bird", "Dog", "Rabbit"]
+    },
+    {
+      "id": "animal-04",
+      "type": "true-false",
+      "prompt": "Heter hund 'Dog' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "animal-05",
+      "type": "true-false",
+      "prompt": "Heter katt 'Horse' på engelska?",
+      "answer": "Falskt"
+    },
+    {
+      "id": "animal-06",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för hund.",
+      "answer": "Dog"
+    },
+    {
+      "id": "animal-07",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för katt.",
+      "answer": "Cat"
+    },
+    {
+      "id": "animal-08",
+      "type": "multiple-choice",
+      "prompt": "Vilket djur betyder 'Horse'?",
+      "answer": "Häst",
+      "options": ["Ko", "Häst", "Hund"]
+    },
+    {
+      "id": "animal-09",
+      "type": "multiple-choice",
+      "prompt": "Vilket djur betyder 'Fish'?",
+      "answer": "Fisk",
+      "options": ["Fisk", "Fågel", "Kanin"]
+    },
+    {
+      "id": "animal-10",
+      "type": "multiple-choice",
+      "prompt": "Vad heter häst på engelska?",
+      "answer": "Horse",
+      "options": ["Horse", "Cow", "Duck"]
+    },
+    {
+      "id": "animal-11",
+      "type": "true-false",
+      "prompt": "Heter ko 'Cow' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "animal-12",
+      "type": "true-false",
+      "prompt": "Heter fisk 'Bird' på engelska?",
+      "answer": "Falskt"
+    },
+    {
+      "id": "animal-13",
+      "type": "multiple-choice",
+      "prompt": "Vad betyder 'Rabbit'?",
+      "answer": "Kanin",
+      "options": ["Kanin", "Häst", "Anka"]
+    },
+    {
+      "id": "animal-14",
+      "type": "multiple-choice",
+      "prompt": "Vad betyder 'Duck'?",
+      "answer": "Anka",
+      "options": ["Hund", "Anka", "Ko"]
+    },
+    {
+      "id": "animal-15",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för ko.",
+      "answer": "Cow"
+    },
+    {
+      "id": "animal-16",
+      "type": "multiple-choice",
+      "prompt": "Vilket engelskt ord betyder fågel?",
+      "answer": "Bird",
+      "options": ["Bird", "Fish", "Rabbit"]
+    },
+    {
+      "id": "animal-17",
+      "type": "true-false",
+      "prompt": "Heter kanin 'Rabbit' på engelska?",
+      "answer": "Sant"
+    },
+    {
+      "id": "animal-18",
+      "type": "text",
+      "prompt": "Skriv engelska ordet för fisk.",
+      "answer": "Fish"
+    },
+    {
+      "id": "animal-19",
+      "type": "multiple-choice",
+      "prompt": "Vilket djur betyder 'Cow'?",
+      "answer": "Ko",
+      "options": ["Ko", "Häst", "Kanin"]
+    },
+    {
+      "id": "animal-20",
+      "type": "true-false",
+      "prompt": "Heter anka 'Duck' på engelska?",
+      "answer": "Sant"
+    }
+  ]
+}

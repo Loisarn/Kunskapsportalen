@@ -1,0 +1,55 @@
+{
+  "id": "subtraction-1-20",
+  "subject": { "id": "mathematics", "name": "Matematik" },
+  "learningPath": {
+    "id": "mathematics-subtraction",
+    "subjectId": "mathematics",
+    "title": "Subtraktion",
+    "description": "Ta bort, jämför och räkna bakåt.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "subtraction-1-20",
+    "subjectId": "mathematics",
+    "pathId": "mathematics-subtraction",
+    "level": 2,
+    "title": "Subtraktion inom 20",
+    "description": "Räkna bakåt och ta bort tal upp till tjugo.",
+    "emoji": "➖",
+    "difficulty": 2,
+    "requiredMastery": 90,
+    "prerequisites": ["subtraction-1-10"]
+  },
+  "lesson": {
+    "id": "subtraction-to-20",
+    "title": "Ta bort från tal över tio",
+    "content": "Du kan dela upp tal för att räkna lättare. För 15 − 7 kan du först ta bort 5 för att komma till 10 och sedan ta bort 2 till. Svaret blir 8."
+  },
+  "discoveries": [
+    { "id": "sub20-discovery-1", "conceptId": "subtraction-1-20", "title": "Räkna till tio först", "body": "För 14 − 6 kan du ta bort 4 för att komma till 10 och sedan 2 till. Svaret blir 8.", "emoji": "🔟" },
+    { "id": "sub20-discovery-2", "conceptId": "subtraction-1-20", "title": "Kontrollera med plus", "body": "Du kan kontrollera 16 − 7 = 9 med plus: 9 + 7 = 16.", "emoji": "🔍" },
+    { "id": "sub20-discovery-3", "conceptId": "subtraction-1-20", "title": "Hur stor är skillnaden?", "body": "Subtraktion kan också jämföra tal. Skillnaden mellan 15 och 11 är 4.", "emoji": "📏" }
+  ],
+  "questions": [
+    { "id": "sub20-01", "type": "multiple-choice", "prompt": "Vad blir 12 − 5?", "answer": "7", "options": ["6", "7", "8"] },
+    { "id": "sub20-02", "type": "text", "prompt": "Vad blir 14 − 8?", "answer": "6" },
+    { "id": "sub20-03", "type": "multiple-choice", "prompt": "Vad blir 16 − 9?", "answer": "7", "options": ["6", "7", "8"] },
+    { "id": "sub20-04", "type": "text", "prompt": "Vad blir 20 − 6?", "answer": "14" },
+    { "id": "sub20-05", "type": "multiple-choice", "prompt": "Vad blir 17 − 8?", "answer": "9", "options": ["8", "9", "10"] },
+    { "id": "sub20-06", "type": "text", "prompt": "Vad blir 13 − 4?", "answer": "9" },
+    { "id": "sub20-07", "type": "multiple-choice", "prompt": "Vad blir 18 − 9?", "answer": "9", "options": ["8", "9", "11"] },
+    { "id": "sub20-08", "type": "text", "prompt": "Vad blir 15 − 7?", "answer": "8" },
+    { "id": "sub20-09", "type": "multiple-choice", "prompt": "Vad blir 11 − 3?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "sub20-10", "type": "text", "prompt": "Vad blir 19 − 5?", "answer": "14" },
+    { "id": "sub20-11", "type": "multiple-choice", "prompt": "Vad blir 14 − 6?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "sub20-12", "type": "text", "prompt": "Vad blir 16 − 7?", "answer": "9" },
+    { "id": "sub20-13", "type": "multiple-choice", "prompt": "Vad blir 20 − 8?", "answer": "12", "options": ["11", "12", "13"] },
+    { "id": "sub20-14", "type": "text", "prompt": "Vad blir 13 − 6?", "answer": "7" },
+    { "id": "sub20-15", "type": "true-false", "prompt": "Blir 15 − 8 lika med 7?", "answer": "Sant" },
+    { "id": "sub20-16", "type": "text", "prompt": "Du har 18 klossar och lägger undan 9. Hur många är kvar?", "answer": "9" },
+    { "id": "sub20-17", "type": "multiple-choice", "prompt": "Vad blir 12 − 4?", "answer": "8", "options": ["7", "8", "9"] },
+    { "id": "sub20-18", "type": "text", "prompt": "Vad blir 17 − 9?", "answer": "8" },
+    { "id": "sub20-19", "type": "multiple-choice", "prompt": "Vad blir 19 − 9?", "answer": "10", "options": ["9", "10", "11"] },
+    { "id": "sub20-20", "type": "true-false", "prompt": "Blir 14 − 5 lika med 8?", "answer": "Falskt" }
+  ]
+}

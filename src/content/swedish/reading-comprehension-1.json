@@ -1,0 +1,194 @@
+{
+  "id": "reading-comprehension-1",
+  "version": "1.0",
+
+  "subject": {
+    "id": "swedish",
+    "name": "Svenska"
+  },
+
+  "learningPath": {
+    "id": "reading-comprehension",
+    "subjectId": "swedish",
+    "title": "Läsförståelse",
+    "description": "Lär dig förstå och tänka kring det du läser.",
+    "discoveryMasteryBonus": 5
+  },
+
+  "concept": {
+    "id": "reading-comprehension-1",
+    "subjectId": "swedish",
+    "pathId": "reading-comprehension",
+    "level": 1,
+    "title": "Läsförståelse nivå 1",
+    "description": "Läs korta texter och svara på enkla frågor.",
+    "emoji": "📖",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+
+  "lesson": {
+    "id": "reading-basics",
+    "title": "Läs och förstå",
+    "content": "När vi läser handlar det inte bara om att säga orden. Vi ska också förstå vad texten berättar. Läs noga och tänk efter innan du svarar."
+  },
+
+  "discoveries": [
+    {
+      "id": "reading-discovery-1",
+      "conceptId": "reading-comprehension-1",
+      "title": "Svenska alfabetet har 29 bokstäver",
+      "body": "De tre sista bokstäverna är Å, Ä och Ö. De står efter Z i det svenska alfabetet.",
+      "emoji": "🕵️"
+    },
+    {
+      "id": "reading-discovery-2",
+      "conceptId": "reading-comprehension-1",
+      "title": "Stockholm ligger på öar",
+      "body": "Stockholms innerstad är byggd på flera öar där Mälaren möter Östersjön. Därför kallas staden ibland för 'Nordens Venedig'.",
+      "emoji": "🗺️"
+    },
+    {
+      "id": "reading-discovery-3",
+      "conceptId": "reading-comprehension-1",
+      "title": "Ett ord kan betyda två saker",
+      "body": "'Fil' kan vara något man äter eller en samling på en dator. Orden runt omkring hjälper dig att förstå vilken sorts fil någon menar.",
+      "emoji": "💡"
+    }
+  ],
+
+  "questions": [
+    {
+      "id": "read-01",
+      "type": "multiple-choice",
+      "prompt": "Lisa har en röd cykel. Vilken färg har cykeln?",
+      "answer": "Röd",
+      "options": ["Blå", "Röd", "Grön"]
+    },
+    {
+      "id": "read-02",
+      "type": "multiple-choice",
+      "prompt": "Kalle har en hund. Vilket djur har Kalle?",
+      "answer": "Hund",
+      "options": ["Katt", "Hund", "Fågel"]
+    },
+    {
+      "id": "read-03",
+      "type": "true-false",
+      "prompt": "Emma äter ett äpple. Emma äter frukt.",
+      "answer": "Sant"
+    },
+    {
+      "id": "read-04",
+      "type": "multiple-choice",
+      "prompt": "Noah går till skolan. Vart går Noah?",
+      "answer": "Skolan",
+      "options": ["Affären", "Skolan", "Stranden"]
+    },
+    {
+      "id": "read-05",
+      "type": "true-false",
+      "prompt": "Maja har en blå tröja. Majas tröja är röd.",
+      "answer": "Falskt"
+    },
+    {
+      "id": "read-06",
+      "type": "multiple-choice",
+      "prompt": "Leo spelar fotboll på planen. Vad spelar Leo?",
+      "answer": "Fotboll",
+      "options": ["Basket", "Fotboll", "Tennis"]
+    },
+    {
+      "id": "read-07",
+      "type": "multiple-choice",
+      "prompt": "Sara har tre katter hemma. Hur många katter har Sara?",
+      "answer": "Tre",
+      "options": ["Två", "Tre", "Fyra"]
+    },
+    {
+      "id": "read-08",
+      "type": "true-false",
+      "prompt": "Olle badar i havet. Olle är i skogen.",
+      "answer": "Falskt"
+    },
+    {
+      "id": "read-09",
+      "type": "multiple-choice",
+      "prompt": "Mira läser en bok i soffan. Vad läser Mira?",
+      "answer": "En bok",
+      "options": ["En tidning", "En bok", "Ett brev"]
+    },
+    {
+      "id": "read-10",
+      "type": "text",
+      "prompt": "Anton dricker mjölk. Vad dricker Anton?",
+      "answer": "Mjölk"
+    },
+    {
+      "id": "read-11",
+      "type": "multiple-choice",
+      "prompt": "Lina har en gul ballong. Vilken färg har ballongen?",
+      "answer": "Gul",
+      "options": ["Röd", "Blå", "Gul"]
+    },
+    {
+      "id": "read-12",
+      "type": "true-false",
+      "prompt": "Vera har en katt. Vera har ett husdjur.",
+      "answer": "Sant"
+    },
+    {
+      "id": "read-13",
+      "type": "multiple-choice",
+      "prompt": "Max äter glass i parken. Var äter Max glass?",
+      "answer": "Parken",
+      "options": ["Parken", "Skolan", "Hemma"]
+    },
+    {
+      "id": "read-14",
+      "type": "text",
+      "prompt": "Ella rider på en häst. Vilket djur rider Ella på?",
+      "answer": "Häst"
+    },
+    {
+      "id": "read-15",
+      "type": "multiple-choice",
+      "prompt": "Erik har en grön ryggsäck. Vilken färg har ryggsäcken?",
+      "answer": "Grön",
+      "options": ["Blå", "Grön", "Röd"]
+    },
+    {
+      "id": "read-16",
+      "type": "true-false",
+      "prompt": "Nora spelar piano. Nora spelar ett instrument.",
+      "answer": "Sant"
+    },
+    {
+      "id": "read-17",
+      "type": "multiple-choice",
+      "prompt": "William kastar en boll. Vad kastar William?",
+      "answer": "Boll",
+      "options": ["Pinne", "Boll", "Bok"]
+    },
+    {
+      "id": "read-18",
+      "type": "text",
+      "prompt": "Elsa har två kaniner. Hur många kaniner har Elsa?",
+      "answer": "Två"
+    },
+    {
+      "id": "read-19",
+      "type": "multiple-choice",
+      "prompt": "Lucas cyklar till sin kompis. Hur tar sig Lucas dit?",
+      "answer": "Cyklar",
+      "options": ["Går", "Springer", "Cyklar"]
+    },
+    {
+      "id": "read-20",
+      "type": "true-false",
+      "prompt": "Sofia har en hund. Sofia har en katt.",
+      "answer": "Falskt"
+    }
+  ]
+}

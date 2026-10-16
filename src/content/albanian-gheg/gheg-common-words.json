@@ -1,0 +1,56 @@
+{
+  "id": "albanian-gheg-common-words",
+  "version": "1.0",
+  "subject": { "id": "albanian-gheg", "name": "Albanska (gegi)" },
+  "learningPath": {
+    "id": "albanian-gheg-vocabulary",
+    "subjectId": "albanian-gheg",
+    "title": "Albanska",
+    "description": "Lär dig albanska ord, steg för steg.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "albanian-gheg-common-words",
+    "subjectId": "albanian-gheg",
+    "pathId": "albanian-gheg-vocabulary",
+    "level": 1,
+    "title": "Ja, nej och vanliga ord",
+    "description": "Börja med några användbara ord och känn igen vad de betyder.",
+    "emoji": "👋",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "albanian-gheg-common-words-lesson",
+    "title": "Dina första ord",
+    "content": "På albanska betyder 'po' ja och 'jo' nej. Du kommer också att möta ord som 'qen' för hund och 'ujë' för vatten."
+  },
+  "discoveries": [
+    { "id": "gheg-common-discovery-1", "conceptId": "albanian-gheg-common-words", "title": "Ett alfabet med 36 bokstäver", "body": "Albanska har 36 bokstäver. Nio av dem skrivs med två tecken, som 'dh' och 'sh', men räknas ändå som en bokstav var.", "emoji": "🔤" },
+    { "id": "gheg-common-discovery-2", "conceptId": "albanian-gheg-common-words", "title": "Ett språk på flera håll", "body": "Albanska talas inte bara i Albanien. Det är också ett officiellt språk i Kosovo och talas i flera grannländer.", "emoji": "🗺️" },
+    { "id": "gheg-common-discovery-3", "conceptId": "albanian-gheg-common-words", "title": "Albanska har en egen språkgren", "body": "Albanska hör till en egen gren bland de indoeuropeiska språken. Språkforskare har därför jämfört det med många olika språk för att hitta dess släktingar.", "emoji": "🌍" }
+  ],
+  "questions": [
+    { "id": "gheg-common-01", "type": "multiple-choice", "prompt": "Vad betyder 'po'?", "answer": "Ja", "options": ["Ja", "Nej", "Tack"] },
+    { "id": "gheg-common-02", "type": "multiple-choice", "prompt": "Vad betyder 'jo'?", "answer": "Nej", "options": ["Ja", "Nej", "Hej"] },
+    { "id": "gheg-common-03", "type": "multiple-choice", "prompt": "Vad betyder 'qen'?", "answer": "Hund", "options": ["Hund", "Katt", "Fågel"] },
+    { "id": "gheg-common-04", "type": "multiple-choice", "prompt": "Vad betyder 'mace'?", "answer": "Katt", "options": ["Hund", "Katt", "Fisk"] },
+    { "id": "gheg-common-05", "type": "multiple-choice", "prompt": "Vad betyder 'ujë'?", "answer": "Vatten", "options": ["Vatten", "Bröd", "Mjölk"] },
+    { "id": "gheg-common-06", "type": "multiple-choice", "prompt": "Vad betyder 'bukë'?", "answer": "Bröd", "options": ["Ost", "Bröd", "Vatten"] },
+    { "id": "gheg-common-07", "type": "multiple-choice", "prompt": "Vad betyder 'mirë'?", "answer": "Bra", "options": ["Bra", "Nej", "Hund"] },
+    { "id": "gheg-common-08", "type": "multiple-choice", "prompt": "Vad betyder 'faleminderit'?", "answer": "Tack", "options": ["Hej", "Tack", "God natt"] },
+    { "id": "gheg-common-09", "type": "multiple-choice", "prompt": "Vad betyder 'nanë'?", "answer": "Mamma", "options": ["Mamma", "Pappa", "Syster"] },
+    { "id": "gheg-common-10", "type": "multiple-choice", "prompt": "Vad betyder 'babë'?", "answer": "Pappa", "options": ["Bror", "Pappa", "Mormor"] },
+    { "id": "gheg-common-11", "type": "multiple-choice", "prompt": "Vad betyder 'po' när någon frågar en fråga?", "answer": "Ja", "options": ["Ja", "Nej", "Tack"] },
+    { "id": "gheg-common-12", "type": "multiple-choice", "prompt": "Vilket albanskt ord betyder 'nej'?", "answer": "Jo", "options": ["Po", "Jo", "Mirë"] },
+    { "id": "gheg-common-13", "type": "multiple-choice", "prompt": "Vad betyder 'zog'?", "answer": "Fågel", "options": ["Fågel", "Katt", "Hund"] },
+    { "id": "gheg-common-14", "type": "multiple-choice", "prompt": "Vad betyder 'shtëpi'?", "answer": "Hus", "options": ["Vatten", "Hus", "Bröd"] },
+    { "id": "gheg-common-15", "type": "multiple-choice", "prompt": "Vilket ord betyder 'bra'?", "answer": "Mirë", "options": ["Jo", "Mirë", "Qen"] },
+    { "id": "gheg-common-16", "type": "multiple-choice", "prompt": "Vad betyder 'natën e mirë'?", "answer": "God natt", "options": ["God natt", "God morgon", "Tack"] },
+    { "id": "gheg-common-17", "type": "multiple-choice", "prompt": "Vad betyder 'ujë'?", "answer": "Vatten", "options": ["Bröd", "Vatten", "Katt"] },
+    { "id": "gheg-common-18", "type": "multiple-choice", "prompt": "Vad betyder 'hajde'?", "answer": "Kom", "options": ["Kom", "Sov", "Ät"] },
+    { "id": "gheg-common-19", "type": "multiple-choice", "prompt": "Vad betyder 'faleminderit'?", "answer": "Tack", "options": ["Nej", "Tack", "Hund"] },
+    { "id": "gheg-common-20", "type": "multiple-choice", "prompt": "Vad betyder 'mirupafshim'?", "answer": "Hej då", "options": ["Hej då", "Ja", "Vatten"] }
+  ]
+}

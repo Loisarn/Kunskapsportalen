@@ -1,0 +1,84 @@
+{
+  "id": "space-basics",
+  "version": "1.0",
+  "subject": { "id": "space", "name": "Rymden" },
+  "learningPath": {
+    "id": "space-exploration",
+    "subjectId": "space",
+    "title": "Rymden",
+    "description": "Utforska planeter, stjärnor och vår plats i universum.",
+    "discoveryMasteryBonus": 5
+  },
+  "concept": {
+    "id": "space-basics",
+    "subjectId": "space",
+    "pathId": "space-exploration",
+    "level": 1,
+    "title": "Vårt solsystem",
+    "description": "Lär känna planeterna och upptäck märkliga saker i rymden.",
+    "emoji": "🪐",
+    "difficulty": 1,
+    "requiredMastery": 90,
+    "prerequisites": []
+  },
+  "lesson": {
+    "id": "space-basics-lesson",
+    "title": "En stjärna med åtta planeter",
+    "content": "Solen är stjärnan i mitten av vårt solsystem. Åtta planeter färdas runt den, och på en av dem bor vi."
+  },
+  "knowledgeCards": [
+    {
+      "id": "space-card-solar-system",
+      "conceptId": "space-basics",
+      "title": "Vårt solsystem",
+      "description": "En stjärna och planeter på resa genom rymden.",
+      "emoji": "☀️",
+      "facts": {
+        "Stjärna": "Solen",
+        "Planeter": "Åtta planeter kretsar runt solen.",
+        "Vår planet": "Jorden är den tredje planeten från solen."
+      },
+      "discoveries": ["space-discovery-sunlight", "space-discovery-venus"]
+    },
+    {
+      "id": "space-card-planets",
+      "conceptId": "space-basics",
+      "title": "Planeter med överraskningar",
+      "description": "Varje planet har egenskaper som gör den speciell.",
+      "emoji": "🪐",
+      "facts": {
+        "Jupiter": "Den största planeten i solsystemet.",
+        "Venus": "Hetast av planeterna, trots att Merkurius ligger närmare solen.",
+        "Uranus": "Roterar nästan på sidan jämfört med de andra planeterna."
+      },
+      "discoveries": ["space-discovery-jupiter", "space-discovery-venus"]
+    }
+  ],
+  "discoveries": [
+    { "id": "space-discovery-sunlight", "conceptId": "space-basics", "title": "Solen är åtta minuter bort", "body": "Ljuset från solen behöver ungefär åtta minuter för att nå jorden. När du ser solen ser du den alltså som den var för en liten stund sedan.", "emoji": "☀️" },
+    { "id": "space-discovery-venus", "conceptId": "space-basics", "title": "Ett dygn längre än ett år", "body": "Venus snurrar så långsamt att ett varv runt sin egen axel tar längre tid än ett varv runt solen. Därför är ett dygn på Venus längre än ett Venusår.", "emoji": "🪐" },
+    { "id": "space-discovery-jupiter", "conceptId": "space-basics", "title": "Jupiter är en riktig jätte", "body": "Jupiter är så stor att mer än tusen jordklot skulle få plats inuti den. Ändå är solen mycket större än Jupiter.", "emoji": "🌌" }
+  ],
+  "questions": [
+    { "id": "space-01", "type": "multiple-choice", "prompt": "Vilken planet bor vi på?", "answer": "Jorden", "options": ["Jorden", "Mars", "Jupiter"] },
+    { "id": "space-02", "type": "multiple-choice", "prompt": "Vad heter stjärnan i mitten av vårt solsystem?", "answer": "Solen", "options": ["Månen", "Solen", "Polstjärnan"] },
+    { "id": "space-03", "type": "multiple-choice", "prompt": "Vilken är solsystemets största planet?", "answer": "Jupiter", "options": ["Jorden", "Jupiter", "Merkurius"] },
+    { "id": "space-04", "type": "multiple-choice", "prompt": "Vilken planet ligger närmast solen?", "answer": "Merkurius", "options": ["Merkurius", "Venus", "Mars"] },
+    { "id": "space-05", "type": "multiple-choice", "prompt": "Vilken planet är hetast?", "answer": "Venus", "options": ["Merkurius", "Venus", "Neptunus"] },
+    { "id": "space-06", "type": "multiple-choice", "prompt": "Vad kretsar jorden runt?", "answer": "Solen", "options": ["Solen", "Mars", "Saturnus"] },
+    { "id": "space-07", "type": "multiple-choice", "prompt": "Varför lyser månen på natten?", "answer": "Den reflekterar solljus", "options": ["Den reflekterar solljus", "Den är en stjärna", "Den har en lampa"] },
+    { "id": "space-08", "type": "multiple-choice", "prompt": "Vad är Saturnus ringar mest gjorda av?", "answer": "Is och sten", "options": ["Is och sten", "Moln och eld", "Sand och jord"] },
+    { "id": "space-09", "type": "multiple-choice", "prompt": "Varför ser Mars röd ut?", "answer": "Järn i marken har rostat", "options": ["Järn i marken har rostat", "Havet är rött", "Den ligger nära solen"] },
+    { "id": "space-10", "type": "multiple-choice", "prompt": "Vilken planet ligger längst från solen?", "answer": "Neptunus", "options": ["Jupiter", "Uranus", "Neptunus"] },
+    { "id": "space-11", "type": "multiple-choice", "prompt": "Vad heter galaxen där vårt solsystem finns?", "answer": "Vintergatan", "options": ["Vintergatan", "Andromeda", "Solsystemet"] },
+    { "id": "space-12", "type": "multiple-choice", "prompt": "Vilken planet har en stor mörkröd storm?", "answer": "Jupiter", "options": ["Jupiter", "Jorden", "Merkurius"] },
+    { "id": "space-13", "type": "multiple-choice", "prompt": "Vad kallas Pluto oftast i dag?", "answer": "En dvärgplanet", "options": ["En stjärna", "En dvärgplanet", "En måne"] },
+    { "id": "space-14", "type": "multiple-choice", "prompt": "Vilken planet roterar nästan på sidan?", "answer": "Uranus", "options": ["Uranus", "Mars", "Venus"] },
+    { "id": "space-15", "type": "multiple-choice", "prompt": "Vad är en stjärna?", "answer": "En het boll av gas som lyser", "options": ["En het boll av gas som lyser", "En planet täckt av is", "En sten som kretsar runt jorden"] },
+    { "id": "space-16", "type": "multiple-choice", "prompt": "Ungefär hur lång tid tar solens ljus till jorden?", "answer": "Åtta minuter", "options": ["Åtta sekunder", "Åtta minuter", "Åtta timmar"] },
+    { "id": "space-17", "type": "multiple-choice", "prompt": "Vad kallas en meteoroid som lyser när den far genom atmosfären?", "answer": "Ett stjärnfall", "options": ["Ett stjärnfall", "En ny planet", "En månstråle"] },
+    { "id": "space-18", "type": "multiple-choice", "prompt": "Varför hörs inte vanliga ljud genom tom rymd?", "answer": "Ljud behöver något att färdas genom", "options": ["Ljud behöver något att färdas genom", "Rymden är för ljus", "Planeterna är för långt bort från solen"] },
+    { "id": "space-19", "type": "multiple-choice", "prompt": "Hur många planeter kretsar runt solen?", "answer": "Åtta", "options": ["Sju", "Åtta", "Tio"] },
+    { "id": "space-20", "type": "multiple-choice", "prompt": "Vad finns i mitten av vårt solsystem?", "answer": "Solen", "options": ["Jorden", "Solen", "Månen"] }
+  ]
+}

@@ -73,6 +73,13 @@ function getToday(date = new Date()): string {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`
 }
 
+async function getSessionsForDay(profileId: string, date: string): Promise<PlaySession[]> {
+  const sessions = await database.sessions.where('profileId').equals(profileId).toArray()
+  return sessions
+    .filter((session) => getToday(new Date(session.startedAt)) === date)
+    .sort((left, right) => right.startedAt.localeCompare(left.startedAt))
+}
+
 function getQuestionKey(question: SessionQuestion): string {
   return `${question.conceptId}:${question.id}`
 }
@@ -116,42 +123,48 @@ export const SessionService = {
   async startSession(profileId: string, _conceptId?: string): Promise<{ session: PlaySession; questions: SessionQuestion[] }> {
     void _conceptId
     const questionPool = await getQuestionPool(profileId)
-    if (questionPool.length < 20) {
-      throw new Error('Det finns inte 20 unika frågor bland de öppnade äventyren ännu.')
+    if (!questionPool.length) {
+      throw new Error('Det finns inga frågor bland de öppnade äventyren ännu.')
     }
 
-    const questions = selectQuestions(questionPool, 20)
+    const questions = selectQuestions(questionPool, Math.min(20, questionPool.length))
     const session = createSession(profileId, questions)
     await database.sessions.add(session)
     return { session, questions }
   },
 
   async getDailyAdventureStatus(profileId: string, date = getToday()): Promise<{ session?: PlaySession; questionCount: number; completed: boolean }> {
-    const session = await database.sessions.where('[profileId+dailyDate]').equals([profileId, date]).first()
+    const [session] = await getSessionsForDay(profileId, date)
     return { session, questionCount: session?.totalQuestions ?? 20, completed: Boolean(session?.completedAt) }
   },
 
   async startDailyAdventure(profileId: string): Promise<{ session: PlaySession; questions: SessionQuestion[] }> {
     const dailyDate = getToday()
-    let session = await database.sessions.where('[profileId+dailyDate]').equals([profileId, dailyDate]).first()
+    const todaysSessions = await getSessionsForDay(profileId, dailyDate)
+    let session = todaysSessions.find((entry) => !entry.completedAt)
     let questionPool: QuestionCandidate[] | undefined
     if (!session) {
       questionPool = await getQuestionPool(profileId)
-      if (questionPool.length < 20) {
-        throw new Error('Det finns inte 20 unika frågor bland de öppnade äventyren ännu.')
+      if (!questionPool.length) {
+        throw new Error('Det finns inga frågor bland de öppnade äventyren ännu.')
       }
 
-      const proposedSession = createSession(profileId, selectQuestions(questionPool, 20), dailyDate)
+      const proposedSession = createSession(profileId, selectQuestions(questionPool, Math.min(20, questionPool.length)), todaysSessions.some((entry) => entry.dailyDate === dailyDate) ? undefined : dailyDate)
       session = proposedSession
       await database.transaction('rw', database.sessions, async () => {
-        const existing = await database.sessions.where('[profileId+dailyDate]').equals([profileId, dailyDate]).first()
-        if (existing) {
-          session = existing
+        const currentSessions = await getSessionsForDay(profileId, dailyDate)
+        const activeSession = currentSessions.find((entry) => !entry.completedAt)
+        if (activeSession) {
+          session = activeSession
         } else {
-          await database.sessions.add(proposedSession)
+          const hasDailyReward = currentSessions.some((entry) => entry.dailyDate === dailyDate)
+          session = hasDailyReward ? { ...proposedSession, dailyDate: undefined } : proposedSession
+          await database.sessions.add(session)
         }
       })
     }
+
+    if (!session) throw new Error('Äventyret kunde inte startas. Försök igen.')
 
     let questions = session.questionSnapshot
     if (!questions) {

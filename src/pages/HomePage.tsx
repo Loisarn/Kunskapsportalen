@@ -27,16 +27,17 @@ export function HomePage({ profile, onProfileUpdated }: { profile: ChildProfile;
   const startedPathCount = learningPaths?.learningPaths.filter(({ concepts: pathConcepts }) => pathConcepts.some(({ progress }) => progress.introduced)).length ?? 0
   const remainder = profile.xp % 100
   const dailyQuestionCount = dailyAdventure.session?.answers.length ?? 0
+  const dailyQuestionTotal = dailyAdventure.session?.totalQuestions ?? 20
   return <div className="home-page page-enter">
     <div className="welcome-row"><div><p className="eyebrow">HEJ {profile.name.toLocaleUpperCase('sv-SE')}!</p><h1>Vad kul att du är här <span className="wave">✋</span></h1></div><div className="daily-note"><span className="daily-note-icon">☀️</span><span>En ny dag,<br /><strong>nya upptäckter</strong></span></div></div>
     <section className="adventure-hero">
       <div className="hero-copy">
         <div className="hero-pill"><Sparkles size={14} /> DAGENS ÄVENTYR</div>
         <h2>Redo för dagens<br />äventyr?</h2>
-        <p>{dailyAdventure.completed ? 'Dagens äventyr är klart. Vila nu, så väntar ett nytt äventyr imorgon.' : 'Tjugo blandade frågor väljs från dina öppnade lärvägar.'}</p>
-        <div className="daily-adventure-progress"><span><i style={{ width: `${dailyAdventure.completed ? 100 : (dailyQuestionCount / 20) * 100}%` }} /></span><strong>{dailyAdventure.completed ? 20 : dailyQuestionCount} / 20 frågor</strong></div>
-        <button className="primary-button hero-button" onClick={() => navigate('/play')} disabled={!availableCount || dailyAdventure.completed}><Play size={18} fill="currentColor" /> {dailyAdventure.completed ? 'Dagens äventyr klart' : dailyQuestionCount ? 'Fortsätt äventyret' : 'Starta äventyr'} {!dailyAdventure.completed && <ArrowRight size={18} />}</button>
-        <div className="hero-reward"><span>✨</span> 100 XP och 1 stjärna · Samlade: {profile.stars ?? 0}</div>
+        <p>{dailyAdventure.completed ? 'Bra jobbat! Starta ett nytt äventyr när du vill.' : 'Blandade frågor från dina öppnade lärvägar. Spela flera äventyr om dagen.'}</p>
+        <div className="daily-adventure-progress"><span><i style={{ width: `${dailyAdventure.completed ? 100 : (dailyQuestionCount / dailyQuestionTotal) * 100}%` }} /></span><strong>{dailyQuestionCount} / {dailyQuestionTotal} frågor</strong></div>
+        <button className="primary-button hero-button" onClick={() => navigate('/play')} disabled={!availableCount}><Play size={18} fill="currentColor" /> {dailyAdventure.completed ? 'Nytt äventyr' : dailyQuestionCount ? 'Fortsätt äventyret' : 'Starta äventyr'} <ArrowRight size={18} /></button>
+        <div className="hero-reward"><span>✨</span> 100 XP + stjärna först · 50 XP för fler</div>
       </div>
       <div className="hero-art" aria-hidden="true"><span className="hero-orbit orbit-one" /><span className="hero-orbit orbit-two" /><span className="hero-star star-a">✦</span><span className="hero-star star-b">✧</span><span className="hero-planet">🌙</span><span className="hero-mascot">🦊</span><span className="hero-comet">✦</span></div>
       <div className="hero-bottom-line"><span>DIN ÄVENTYRSKARTA</span><span>{dailyAdventure.completed ? 'KLART FÖR IDAG' : availableCount ? 'BLANDADE LÄRVÄGAR' : 'VÄNTAR PÅ EN VUXEN'} <span className="status-dot" /></span></div>

@@ -8,5 +8,6 @@
 .completion-button.is-complete{border-color:#b7ddc5;color:#286b43;background:#e4f4e9}
 .concept-status.is-available,.path-level-status.is-available{color:#756c80;background:#f2f0f5}
 .concept-status.is-completed,.path-level-status.is-completed{color:#286b43;background:#e4f4e9}
+.parent-subject-list{display:grid;gap:9px}.parent-subject-group{overflow:hidden;border:1px solid var(--line);border-radius:13px;background:#fff}.parent-subject-summary{min-height:54px;display:flex;align-items:center;gap:10px;padding:9px 13px;list-style:none;cursor:pointer}.parent-subject-summary::-webkit-details-marker{display:none}.parent-subject-summary strong{min-width:0;flex:1;color:#403950;font-size:12px}.parent-subject-summary>span{flex:0 0 auto;color:#827c90;font-size:10px}.parent-subject-summary>svg{flex:0 0 auto;color:#827c90;transition:transform .18s}.parent-subject-group[open] .parent-subject-summary{border-bottom:1px solid #efedf3}.parent-subject-group[open] .parent-subject-summary>svg{transform:rotate(180deg)}.parent-subject-concepts{display:grid;gap:9px;padding:10px}
 @media(max-width:920px){.parent-concept-actions{grid-column:2;grid-row:2;grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}}
 @media(max-width:680px){.parent-concept-actions{grid-template-columns:1fr}.parent-concept-actions button{width:100%}}

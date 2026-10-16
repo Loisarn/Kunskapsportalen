@@ -8,6 +8,7 @@ import type { AppContextValue } from './providers/AppContext'
 import { AppRoutes } from './router/AppRoutes'
 import './app.css'
 import './parent-controls.css'
+import './mobile.css'
 
 function Application() {
   const [profiles, setProfiles] = useState<ChildProfile[]>([])

@@ -31,3 +31,15 @@
   .welcome-row { margin-bottom: 13px; }
   .adventure-hero { min-height: 255px; }
 }
+
+@media (max-width: 680px) {
+  body:has(.play-session) .mobile-nav { display: none; }
+  body:has(.play-session) .page-content { padding-bottom: 24px; }
+}
+
+@media (max-width: 680px) and (max-height: 720px) {
+  .question-card { min-height: 0; padding: 20px 14px 17px; }
+  .question-decoration { margin-bottom: 9px; }
+  .question-heading-row { margin-bottom: 15px; }
+  .play-encouragement { margin-top: 7px; }
+}

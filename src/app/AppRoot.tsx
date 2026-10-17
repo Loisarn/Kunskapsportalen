@@ -7,6 +7,7 @@ import { ProfileSelection } from '../features/profile-selection/ProfileSelection
 import type { AppContextValue } from './providers/AppContext'
 import { AppRoutes } from './router/AppRoutes'
 import './app.css'
+import './question-audio.css'
 import './parent-controls.css'
 import './mobile.css'
 

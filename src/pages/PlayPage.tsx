@@ -6,6 +6,17 @@ import { ConceptService } from '../services/ConceptService'
 import { SessionService, type SessionQuestion } from '../services/SessionService'
 import { renderFlagText } from '../features/play-session/FlagText'
 
+function getQuestionSpeechText(question: SessionQuestion): string {
+  const removeFlags = (text: string) => text.replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '').trim()
+  const prompt = removeFlags(question.prompt)
+  const options = question.type === 'multiple-choice'
+    ? (question.options ?? []).map((option, index) => `Alternativ ${String.fromCharCode(65 + index)}: ${removeFlags(option)}`)
+    : question.type === 'true-false'
+      ? ['Sant', 'Falskt']
+      : []
+  return options.length ? `${prompt} Svarsalternativen är: ${options.join('. ')}.` : prompt
+}
+
 export function PlayPage({ profile, onProfileUpdated }: { profile: ChildProfile; onProfileUpdated: () => Promise<void> }) {
   const navigate = useNavigate()
   const [conceptTitles, setConceptTitles] = useState<Record<string, string>>({})
@@ -68,8 +79,7 @@ export function PlayPage({ profile, onProfileUpdated }: { profile: ChildProfile;
       return
     }
     speech.cancel()
-    const spokenQuestion = question.prompt.replace(/[\u{1F1E6}-\u{1F1FF}]{2}/gu, '').trim()
-    const utterance = new SpeechSynthesisUtterance(spokenQuestion)
+    const utterance = new SpeechSynthesisUtterance(getQuestionSpeechText(question))
     utterance.voice = swedishVoice
     utterance.lang = swedishVoice.lang
     utterance.rate = 0.9

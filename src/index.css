@@ -132,6 +132,11 @@ a { color: inherit; text-decoration: none; }
 .weekly-challenge-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
 .weekly-challenge { min-width: 0; padding: 12px 13px; border: 1px solid var(--line); border-radius: 13px; background: #fff; }
 .weekly-challenge.is-complete { border-color: #cde5d3; background: #f6fbf6; }
+.weekly-challenge-section-summary { list-style: none; cursor: pointer; }
+.weekly-challenge-section-summary::-webkit-details-marker { display: none; }
+.weekly-challenge-section-toggle { display: inline-flex; align-items: center; gap: 7px; }
+.weekly-challenge-section-toggle > svg { color: #a19aaa; transition: transform .18s; }
+.parent-challenge-progress[open] > .weekly-challenge-section-summary .weekly-challenge-section-toggle > svg { transform: rotate(180deg); }
 .weekly-challenge-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .weekly-challenge-heading strong { overflow: hidden; color: #403950; font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
 .weekly-challenge-heading > span { flex: 0 0 auto; color: #548167; font-size: 9px; font-weight: 900; }
@@ -139,6 +144,9 @@ a { color: inherit; text-decoration: none; }
 .weekly-challenge-track { height: 5px; background: #eeebf2; }
 .weekly-challenge-track i { background: #59a77d; }
 .weekly-challenge > small { display: block; margin-top: 7px; color: #898397; font-size: 8px; line-height: 1.4; }
+.weekly-challenge-toggle { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding: 6px 0; border: 0; color: #74698f; background: transparent; font-size: 9px; font-weight: 800; cursor: pointer; }
+.weekly-challenge-toggle svg { transition: transform .18s; }
+.weekly-challenge-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
 .parent-discovery-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
 .parent-discovery-item { min-width: 0; display: flex; align-items: center; gap: 10px; padding: 10px 0; border-top: 1px solid #efedf3; }
 .parent-discovery-item > span { width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border-radius: 10px; background: #f1edff; font-size: 19px; }

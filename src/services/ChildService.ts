@@ -1,4 +1,4 @@
-import { database } from '../data/database'
+import { database, withSyncSuppressed } from '../data/database'
 import type { ChildProfile } from '../domain/types'
 
 const initialProfiles: ChildProfile[] = [
@@ -9,8 +9,9 @@ const initialProfiles: ChildProfile[] = [
 const selectedProfileKey = 'knowledge-portal.selected-profile'
 
 export const ChildService = {
-  async seedProfiles(): Promise<void> {
-    await database.transaction('rw', database.profiles, async () => {
+  async seedProfiles(seedDefaults = true): Promise<void> {
+    if (!seedDefaults) return
+    await withSyncSuppressed(() => database.transaction('rw', database.profiles, async () => {
       for (const profile of initialProfiles) {
         const existing = await database.profiles.get(profile.id)
         if (!existing) {
@@ -19,7 +20,7 @@ export const ChildService = {
           await database.profiles.put({ ...existing, name: profile.name })
         }
       }
-    })
+    }))
   },
 
   getProfiles: () => database.profiles.toArray(),
@@ -42,12 +43,14 @@ export const ChildService = {
     return profile
   },
   async deleteProfile(id: string): Promise<void> {
-    await database.transaction('rw', [database.profiles, database.progress, database.learningPathProgress, database.sessions, database.achievements, database.challengeProgress], async () => {
+    const changedAt = new Date().toISOString()
+    await database.transaction('rw', [database.profiles, database.progress, database.learningPathProgress, database.sessions, database.achievements, database.challengeProgress, database.syncOutbox], async () => {
       await database.progress.where('profileId').equals(id).delete()
       await database.learningPathProgress.where('profileId').equals(id).delete()
       await database.sessions.where('profileId').equals(id).delete()
       await database.achievements.where('profileId').equals(id).delete()
       await database.challengeProgress.where('profileId').equals(id).delete()
+      await database.syncOutbox.put({ id: `profiles:${id}`, tableName: 'profiles', recordId: id, operation: 'delete', changedAt })
       await database.profiles.delete(id)
     })
   },

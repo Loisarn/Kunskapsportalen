@@ -3,6 +3,7 @@ import type { ChildProfile, ContentPackage } from '../domain/types'
 import { ChildService } from '../services/ChildService'
 import { ConceptService } from '../services/ConceptService'
 import { ContentPackageService } from '../services/ContentPackageService'
+import { CloudSyncService } from '../services/CloudSyncService'
 import { ProfileSelection } from '../features/profile-selection/ProfileSelection'
 import type { AppContextValue } from './providers/AppContext'
 import { AppRoutes } from './router/AppRoutes'
@@ -16,20 +17,36 @@ function Application() {
   const [packages, setPackages] = useState<ContentPackage[]>([])
   const [profile, setProfile] = useState<ChildProfile>()
   const [ready, setReady] = useState(false)
+  useEffect(() => CloudSyncService.startBackgroundSync(), [])
   useEffect(() => { void (async () => {
+    if (navigator.storage?.persist) void navigator.storage.persist().catch(() => false)
+    const session = await CloudSyncService.getSession().catch(() => null)
+    const syncPromise = session ? CloudSyncService.syncNow() : undefined
     await ContentPackageService.loadPackages()
     setPackages(await ContentPackageService.getPackages())
-    await ChildService.seedProfiles()
+    await ChildService.seedProfiles(!session)
     const seeded = await ChildService.getProfiles(); setProfiles(seeded)
     const selected = await ChildService.getSelectedProfile()
     if (selected) { await ConceptService.ensureProgress(selected.id); setProfile(selected) }
     setReady(true)
+    if (syncPromise) void syncPromise.then(async (result) => {
+      if (!result.syncedAt) return
+      const syncedProfiles = await ChildService.getProfiles()
+      setProfiles(syncedProfiles)
+      const syncedSelection = await ChildService.getSelectedProfile()
+      if (syncedSelection) {
+        await ConceptService.ensureProgress(syncedSelection.id)
+        setProfile(syncedSelection)
+      }
+    })
   })() }, [])
   const profileId = profile?.id
   const refreshProfile = useCallback(async () => {
-    if (!profileId) return
-    const updated = await ChildService.getProfile(profileId)
-    if (updated) setProfile(updated)
+    setProfiles(await ChildService.getProfiles())
+    if (profileId) {
+      const updated = await ChildService.getProfile(profileId)
+      if (updated) setProfile(updated)
+    }
   }, [profileId])
   const selectProfile = async (id: string) => { const selected = await ChildService.selectProfile(id); await ConceptService.ensureProgress(selected.id); setProfile(selected) }
   if (!ready) return <div className="loading-state"><span className="loading-star">✦</span><p>Öppnar äventyrsboken...</p></div>

@@ -1,0 +1,143 @@
+.path-subject-list,
+.parent-discovery-subject-list {
+  display: grid;
+  gap: 8px;
+}
+
+.path-subject-group,
+.parent-discovery-subject {
+  overflow: hidden;
+  border: 1px solid #eeeaf3;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.path-subject-summary,
+.parent-discovery-subject-summary {
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.path-subject-summary::-webkit-details-marker,
+.parent-discovery-subject-summary::-webkit-details-marker {
+  display: none;
+}
+
+.path-subject-summary strong,
+.parent-discovery-subject-summary strong {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  color: #4b465c;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.path-subject-summary span,
+.parent-discovery-subject-summary span {
+  color: #918ba0;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.path-subject-summary svg,
+.parent-discovery-subject-summary svg {
+  flex: 0 0 auto;
+  color: #a19aaa;
+  transition: transform .18s;
+}
+
+.path-subject-group[open] > .path-subject-summary svg,
+.parent-discovery-subject[open] > .parent-discovery-subject-summary svg {
+  transform: rotate(180deg);
+}
+
+.path-subject-group > .path-progress-grid {
+  padding: 0 10px 10px;
+}
+
+.parent-discovery-subject > .parent-discovery-grid {
+  padding: 0 10px 10px;
+}
+
+.path-level-disclosure {
+  margin-top: 7px;
+  border-top: 1px solid #f2eff6;
+}
+
+.path-level-disclosure-summary {
+  min-height: 37px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.path-level-disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.path-level-disclosure-label {
+  flex: 1;
+  color: #74698f;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.path-level-label-open,
+.path-level-disclosure[open] .path-level-label-closed {
+  display: none;
+}
+
+.path-level-disclosure[open] .path-level-label-open {
+  display: inline;
+}
+
+.path-level-disclosure-summary > span:nth-child(2) {
+  color: #918ba0;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.path-level-disclosure-summary > svg {
+  flex: 0 0 auto;
+  color: #a19aaa;
+  transition: transform .18s;
+}
+
+.path-level-disclosure[open] > .path-level-disclosure-summary > svg {
+  transform: rotate(180deg);
+}
+
+.path-level-disclosure .path-level-list {
+  padding-bottom: 3px;
+}
+
+@media (max-width: 680px) {
+  .path-subject-summary,
+  .parent-discovery-subject-summary {
+    min-height: 45px;
+    padding: 7px 10px;
+  }
+
+  .path-subject-summary strong,
+  .parent-discovery-subject-summary strong {
+    font-size: 9px;
+  }
+
+  .path-subject-group > .path-progress-grid,
+  .parent-discovery-subject > .parent-discovery-grid {
+    padding: 0 8px 8px;
+  }
+
+  .path-level-disclosure-summary {
+    min-height: 35px;
+  }
+}

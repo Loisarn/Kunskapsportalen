@@ -79,6 +79,7 @@ export interface ChildProfile {
   stars?: number
   lastActiveDate?: string
   readingStartLevel?: number
+  updatedAt?: string
 }
 
 export type PlacementMethod = 'beginning' | 'placement' | 'manual'
@@ -107,6 +108,7 @@ export interface ConceptProgress {
   completedDiscoveries?: string[]
   completedDiscoveryDates?: Record<string, string>
   lastPracticedAt?: string
+  updatedAt?: string
 }
 
 export interface SessionAnswer {
@@ -129,6 +131,7 @@ export interface PlaySession {
   totalQuestions: number
   answers: SessionAnswer[]
   xpEarned: number
+  updatedAt?: string
 }
 
 export interface Achievement {
@@ -138,6 +141,7 @@ export interface Achievement {
   description: string
   emoji: string
   earnedAt: string
+  updatedAt?: string
 }
 
 export interface Challenge {
@@ -158,6 +162,7 @@ export interface ChildChallengeProgress {
   weekKey: string
   progress: number
   completedAt?: string
+  updatedAt?: string
 }
 
 export interface ParentSettings {

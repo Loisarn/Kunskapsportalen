@@ -1,8 +1,21 @@
 import { useEffect, useState } from 'react'
 import { BookOpen, Check, ChevronDown, Flame } from 'lucide-react'
+import '../app/subject-groups.css'
 import type { ChildProfile } from '../domain/types'
-import { LearningPathService } from '../services/LearningPathService'
+import { LearningPathService, type LearningPathDashboard } from '../services/LearningPathService'
 import { ProgressService } from '../services/ProgressService'
+
+function groupLearningPathsBySubject(learningPaths: LearningPathDashboard['learningPaths']) {
+  const groups = new Map<string, { id: string; name: string; learningPaths: LearningPathDashboard['learningPaths'] }>()
+  for (const entry of learningPaths) {
+    const subject = entry.concepts[0]?.contentPackage.subject
+    const id = subject?.id ?? entry.learningPath.subjectId
+    const group = groups.get(id) ?? { id, name: subject?.name ?? entry.learningPath.title, learningPaths: [] }
+    group.learningPaths.push(entry)
+    groups.set(id, group)
+  }
+  return [...groups.values()].sort((left, right) => left.name.localeCompare(right.name, 'sv'))
+}
 
 export function ProgressPage({ profile }: { profile: ChildProfile }) {
   const [summary, setSummary] = useState<Awaited<ReturnType<typeof ProgressService.getSummary>>>()
@@ -11,6 +24,7 @@ export function ProgressPage({ profile }: { profile: ChildProfile }) {
   const allConcepts = summary?.conceptProgress ?? []
   const [learningPathDashboard, setLearningPathDashboard] = useState<Awaited<ReturnType<typeof LearningPathService.getDashboard>>>()
   useEffect(() => { void LearningPathService.getDashboard(profile.id).then(setLearningPathDashboard) }, [profile.id])
+  const learningPathGroups = groupLearningPathsBySubject(learningPathDashboard?.learningPaths ?? [])
   const generalSubjectIds = ['animals', 'space', 'geography', 'general', 'general-questions', 'general-knowledge', 'allmanbildning']
   const subjectDefinitions: Array<{
     id: string
@@ -37,10 +51,10 @@ export function ProgressPage({ profile }: { profile: ChildProfile }) {
   const accuracy = summary?.questionsAnswered ? Math.round((summary.correctAnswers / summary.questionsAnswered) * 100) : 0
   const remainder = profile.xp % 100
   return <div className="progress-page page-enter"><div className="page-title-row"><div><p className="eyebrow">DU ÄR PÅ VÄG!</p><h1>Framsteg</h1><p className="page-subtitle">Varje fråga gör dig lite klokare.</p></div><span className="progress-page-avatar">{profile.avatar}</span></div>
-    <section className="path-progress-section"><div className="section-heading"><div><p className="eyebrow">DIN LÄRRESA</p><h2>Start och aktuell nivå</h2></div><span className="panel-emoji">🧭</span></div><div className="path-progress-grid">{learningPathDashboard?.learningPaths.map(({ learningPath, concepts: pathConcepts, progress }) => {
+    <section className="path-progress-section"><div className="section-heading"><div><p className="eyebrow">DIN LÄRRESA</p><h2>Start och aktuell nivå</h2></div><span className="panel-emoji">🧭</span></div><div className="path-subject-list">{learningPathGroups.map(({ id, name, learningPaths }) => <details className="path-subject-group" key={id}><summary className="path-subject-summary"><strong>{name}</strong><span>{learningPaths.length} lärvägar</span><ChevronDown size={17} /></summary><div className="path-progress-grid">{learningPaths.map(({ learningPath, concepts: pathConcepts, progress }) => {
       const currentConcept = pathConcepts.find(({ concept }) => concept.level === progress.currentLevel)
       return <article className="path-progress-item" key={learningPath.id}><div><span>{learningPath.title}</span><strong>Nivå {progress.currentLevel}</strong></div><small>Startade på nivå {progress.startingLevel}{currentConcept ? ` · ${currentConcept.concept.title}` : ''}</small><span className="path-progress-track"><i style={{ width: `${pathConcepts.length ? (progress.currentLevel / Math.max(...pathConcepts.map(({ concept }) => concept.level))) * 100 : 0}%` }} /></span></article>
-    })}</div></section>
+    })}</div></details>)}</div></section>
     <section className="level-overview"><div className="level-badge"><span>✦</span><small>BELÖNINGSNIVÅ</small><strong>{profile.level}</strong></div><div className="level-copy"><p className="eyebrow">XP-BELÖNINGAR</p><h2>Stjärnsamlare</h2><p>Du har samlat <strong>{profile.xp} stjärnpoäng</strong> och <strong>{profile.stars ?? 0} äventyrsstjärnor</strong>. Fortsätt upptäcka för att få fler belöningar!</p><div className="level-bar"><span><i style={{ width: `${remainder}%` }} /></span><small>{remainder} / 100 XP till nästa belöningsnivå</small></div></div><div className="level-sparkle">✨</div></section>
     <section className="progress-metrics"><div className="metric-box"><span className="metric-icon metric-purple"><BookOpen size={19} /></span><span>ÄVENTYR KLARA</span><strong>{summary?.sessionsCompleted ?? 0}</strong><small>hela äventyr</small></div><div className="metric-box"><span className="metric-icon metric-green"><Check size={19} /></span><span>TRÄFFSÄKERHET</span><strong>{accuracy}<small>%</small></strong><small>{summary?.correctAnswers ?? 0} rätt av {summary?.questionsAnswered ?? 0}</small></div><div className="metric-box"><span className="metric-icon metric-orange"><Flame size={19} /></span><span>DAGAR I RAD</span><strong>{profile.streakDays}</strong><small>dagar av nyfikenhet</small></div></section>
     <div className="progress-content-grid"><section className="progress-panel"><div className="section-heading"><div><p className="eyebrow">DET HÄR KAN DU REDAN</p><h2>Styrkor</h2></div><span className="panel-emoji">💪</span></div>{mastered.length ? mastered.map(({ concept, progress: item }) => <div className="mastery-row" key={concept.id}><span className="mastery-emoji">{concept.emoji}</span><span className="mastery-info"><strong>{concept.title}</strong><span className="mastery-track"><i style={{ width: `${item.mastery}%` }} /></span></span><span className="mastery-percent">{item.mastery}%</span></div>) : <div className="progress-empty"><span>🌱</span><p>Här växer snart dina styrkor. Fortsätt öva!</p></div>}</section>

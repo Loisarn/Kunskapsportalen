@@ -1,4 +1,4 @@
-import { database } from '../data/database'
+import { database, withSyncSuppressed } from '../data/database'
 import type { ConceptProgress } from '../domain/types'
 import { ChallengeService } from './ChallengeService'
 
@@ -11,7 +11,7 @@ export const ConceptService = {
     const packages = await database.contentPackages.toArray()
     const storedProgress = await database.progress.where('profileId').equals(profileId).toArray()
     const progressByConcept = new Map(storedProgress.map((progress) => [progress.conceptId, progress]))
-    await database.transaction('rw', database.progress, database.learningPathProgress, async () => {
+    await withSyncSuppressed(() => database.transaction('rw', database.progress, database.learningPathProgress, async () => {
       for (const contentPackage of packages) {
         const id = progressId(profileId, contentPackage.concept.id)
         if (!(await database.progress.get(id))) {
@@ -54,7 +54,7 @@ export const ConceptService = {
           updatedAt: new Date().toISOString(),
         })
       }
-    })
+    }))
   },
 
   async getConceptsWithProgress(profileId: string) {

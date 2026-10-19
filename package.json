@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.118.0",
     "dexie": "^4.4.6",
     "flag-icons": "^7.6.0",
     "lucide-react": "^1.57.0",

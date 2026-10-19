@@ -23,7 +23,7 @@ export function AppRoutes({ context, onProfileUpdated }: { context: AppContextVa
     <Route path="/discover" element={<DiscoverPage profile={profile} onProfileUpdated={onProfileUpdated} />} />
     <Route path="/progress" element={<ProgressPage profile={profile} />} />
     <Route path="/play" element={<PlayPage profile={profile} onProfileUpdated={onProfileUpdated} />} />
-    <Route path="/parent" element={<ParentPage profile={profile} />} />
+    <Route path="/parent" element={<ParentPage profile={profile} onProfileUpdated={onProfileUpdated} />} />
     <Route path="/onboarding" element={<OnboardingRoute context={context} />} />
     <Route path="*" element={<HomePage profile={profile} onProfileUpdated={onProfileUpdated} />} />
   </Route></Routes></BrowserRouter>
